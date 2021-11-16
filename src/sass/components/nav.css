@@ -1,0 +1,356 @@
+html {
+  padding: 0rem;
+  margin: 0rem;
+  font-size: 62.5%;
+}
+
+.NavBarContainer .navBar {
+  background-color: #1c4da4;
+  width: 99vw;
+  height: 6.6rem;
+  margin: 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.NavBarContainer .navBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+.NavBarContainer .navBar ul a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.NavBarContainer .navBar ul .cartIcon {
+  color: #ffffff;
+  font-size: 2.5rem;
+  padding: 0rem 2rem;
+}
+
+.NavBarContainer .navBar ul .login {
+  font-size: 2rem;
+  font-family: oswald, sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 0rem 2rem;
+}
+
+.NavBarContainer .nav {
+  background-color: #ffffff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  margin: 1rem 0rem;
+}
+
+.NavBarContainer .nav .navLogoContainer .imgLogo {
+  position: absolute;
+  top: 1rem;
+  left: 8rem;
+  width: 500px;
+  display: block;
+  margin: auto;
+}
+
+.NavBarContainer .nav .navMenuContainer {
+  display: block;
+  margin: auto;
+  border: 1px #1c4da4;
+}
+
+.NavBarContainer .nav .navMenuContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  padding-top: 1rem;
+}
+
+.NavBarContainer .nav .navMenuContainer li {
+  font-size: 3rem;
+  font-family: anton, sans-serif;
+  padding: 3.5rem;
+  letter-spacing: 5px;
+  color: #1c4da4;
+}
+
+.NavBarContainer .nav .navMenuContainer li a {
+  text-decoration: none;
+  color: #1c4da4;
+  cursor: pointer;
+}
+
+.NavBarContainer .nav .navMenuContainer .line {
+  width: 1px;
+  height: 3rem;
+  background-color: #1c4da4;
+}
+
+/* EXTRA SMALL */
+@media only screen and (max-width: 320px) {
+  .NavBarContainer .navBar {
+    width: 99vw;
+    height: 10rem;
+    margin: 0rem;
+  }
+  .NavBarContainer .navBar ul .cartIcon {
+    font-size: 2rem;
+    padding: 0rem 1rem;
+  }
+  .NavBarContainer .navBar ul .login {
+    font-size: 1.8rem;
+    font-family: oswald, sans-serif;
+    padding: 0rem;
+  }
+  .NavBarContainer .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0rem 0rem;
+  }
+  .NavBarContainer .nav .navLogoContainer .imgLogo {
+    position: absolute;
+    top: 7.2rem;
+    left: 0rem;
+    width: 250px;
+  }
+  .NavBarContainer .nav .navMenuContainer ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0rem;
+    margin: 15rem 0rem 0rem 0rem;
+  }
+  .NavBarContainer .nav .navMenuContainer li {
+    font-size: 2rem;
+    font-family: anton, sans-serif;
+    padding: .3rem;
+    letter-spacing: 1px;
+  }
+}
+
+/* SMALL */
+@media only screen and (min-width: 321px) and (max-width: 500px) {
+  .NavBarContainer .navBar {
+    width: 99vw;
+    height: 10rem;
+    margin: 0rem;
+  }
+  .NavBarContainer .navBar ul .cartIcon {
+    font-size: 2.5rem;
+    padding: 0rem 1.5rem;
+  }
+  .NavBarContainer .navBar ul .login {
+    font-size: 2rem;
+    font-family: oswald, sans-serif;
+    padding: 0rem;
+  }
+  .NavBarContainer .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0rem 0rem;
+  }
+  .NavBarContainer .nav .navLogoContainer .imgLogo {
+    position: absolute;
+    top: 6.7rem;
+    left: 1rem;
+    width: 300px;
+  }
+  .NavBarContainer .nav .navMenuContainer ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0rem;
+    margin: 15rem 0rem 0rem 0rem;
+  }
+  .NavBarContainer .nav .navMenuContainer li {
+    font-size: 2rem;
+    font-family: anton, sans-serif;
+    padding: .5rem;
+    letter-spacing: 2px;
+  }
+}
+
+/* MEDIUM */
+@media only screen and (min-width: 501px) and (max-width: 810px) {
+  .NavBarContainer .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0rem 0rem;
+  }
+  .NavBarContainer .nav .navLogoContainer .imgLogo {
+    position: absolute;
+    top: 3.2rem;
+    left: 1rem;
+    width: 300px;
+  }
+  .NavBarContainer .nav .navMenuContainer ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0rem;
+    margin: 15rem 0rem 0rem 0rem;
+  }
+  .NavBarContainer .nav .navMenuContainer li {
+    font-size: 2.5rem;
+    font-family: anton, sans-serif;
+    padding: 1.5rem;
+    letter-spacing: 2px;
+  }
+}
+
+/* BIG */
+@media only screen and (min-width: 811px) and (max-width: 1000px) {
+  .NavBarContainer .nav {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    margin: 1rem 0rem;
+  }
+  .NavBarContainer .nav .navLogoContainer .imgLogo {
+    position: absolute;
+    top: 2.1rem;
+    left: 1.7rem;
+    width: 400px;
+    display: block;
+    margin: auto;
+  }
+  .NavBarContainer .nav .navMenuContainer ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1rem .5rem 0rem 0rem;
+  }
+  .NavBarContainer .nav .navMenuContainer li {
+    font-size: 2.5rem;
+    font-family: anton, sans-serif;
+    padding: 1rem;
+    letter-spacing: 2px;
+  }
+}
+
+/* LARGE */
+@media only screen and (min-width: 1001px) and (max-width: 1100px) {
+  .NavBarContainer .nav {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    margin: 1rem 0rem;
+  }
+  .NavBarContainer .nav .navLogoContainer .imgLogo {
+    position: absolute;
+    top: 2.1rem;
+    left: 8rem;
+    width: 400px;
+    display: block;
+    margin: auto;
+  }
+  .NavBarContainer .nav .navMenuContainer ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1rem 3rem 0rem 0rem;
+  }
+  .NavBarContainer .nav .navMenuContainer li {
+    font-size: 2.8rem;
+    font-family: anton, sans-serif;
+    padding: 1.5rem;
+    letter-spacing: 1px;
+  }
+}
+
+/* EXTRA LARGE */
+@media only screen and (min-width: 1101px) and (max-width: 1500px) {
+  .NavBarContainer .nav {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    margin: 1rem 0rem;
+  }
+  .NavBarContainer .nav .navLogoContainer .imgLogo {
+    position: absolute;
+    top: 2.1rem;
+    left: 8rem;
+    width: 400px;
+    display: block;
+    margin: auto;
+  }
+  .NavBarContainer .nav .navMenuContainer ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1rem 3rem 0rem 0rem;
+  }
+  .NavBarContainer .nav .navMenuContainer li {
+    font-size: 3rem;
+    font-family: anton, sans-serif;
+    padding: 1.5rem;
+    letter-spacing: 5px;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

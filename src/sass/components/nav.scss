@@ -1,0 +1,318 @@
+@import "../variables/variables.scss";
+
+html {
+    padding: 0rem;
+    margin: 0rem;
+    font-size: 62.5%;;
+}
+
+.NavBarContainer {
+    .navBar {
+        background-color: $blue;
+        width: 99vw;
+        height: 6.6rem;
+        margin: 0rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: center;
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: $white;
+                cursor: pointer;
+            }
+            .cartIcon {
+                color: $white;
+                font-size: 2.5rem;
+                padding: 0rem 2rem;
+            }
+            .login {
+                @include font2 (2rem);
+                color: $white;
+                text-transform: uppercase;
+                padding: 0rem 2rem;
+            }
+        }
+        
+    }
+
+    .nav {
+        background-color: $white;
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        margin: 1rem 0rem;
+        .navLogoContainer {
+            .imgLogo{
+                position: absolute;
+                top: 1rem;
+                left: 8rem;
+                width: 500px;
+                display:block;
+                margin: auto;
+            }
+        }
+        .navMenuContainer { 
+            display:block;
+            margin: auto;
+            border:1px $blue;
+            ul {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                list-style: none;
+                padding-top: 1rem;
+            }
+            li {
+                @include font (3rem);
+                padding: 3.5rem;
+                letter-spacing: 5px;
+                color: $blue;
+                a{
+                    text-decoration: none;
+                    color: $blue;
+                    cursor: pointer;
+                }
+            }
+            .line {
+                width: 1px;
+                height: 3rem;
+                background-color: $blue;
+            }
+        }
+    }
+}
+
+/* EXTRA SMALL */
+
+@media only screen and (max-width: 320px) {
+    .NavBarContainer {
+        .navBar {
+            width: 99vw;
+            height: 10rem;
+            margin: 0rem;
+            ul {
+                .cartIcon {
+                    font-size: 2rem;
+                    padding: 0rem 1rem;
+                }
+                .login {
+                    @include font2 (1.8rem);
+                    padding: 0rem;
+                } 
+            }      
+        }
+        .nav {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0rem 0rem;
+            .navLogoContainer {
+                .imgLogo{
+                    position:absolute;
+                    top: 7.2rem;
+                    left: 0rem;
+                    width: 250px;
+                }
+            }
+            .navMenuContainer {
+                ul {
+                    justify-content: center;
+                    padding: 0rem;
+                    margin: 15rem 0rem 0rem 0rem;
+                }
+                li {
+                    @include font (2rem);
+                    padding: .3rem;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}
+
+/* SMALL */
+
+@media only screen and (min-width: 321px) and (max-width: 500px) {
+    .NavBarContainer {
+        .navBar {
+            width: 99vw;
+            height: 10rem;
+            margin: 0rem;
+            ul {
+                .cartIcon {
+                    font-size: 2.5rem;
+                    padding: 0rem 1.5rem;
+                }
+                .login {
+                    @include font2 (2rem);
+                    padding: 0rem;
+                }
+            }             
+        }
+        .nav {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0rem 0rem;
+            .navLogoContainer {
+                .imgLogo{
+                    position:absolute;
+                    top: 6.7rem;
+                    left: 1rem;
+                    width: 300px;
+                }
+            }
+            .navMenuContainer {
+                ul {
+                    justify-content: center;
+                    padding: 0rem;
+                    margin: 15rem 0rem 0rem 0rem;
+                }
+                li {
+                    @include font (2rem);
+                    padding: .5rem;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
+
+/* MEDIUM */
+
+@media only screen and (min-width: 501px) and (max-width: 810px) {
+    .NavBarContainer {
+        .nav {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0rem 0rem;
+            .navLogoContainer {
+                .imgLogo{
+                    position:absolute;
+                    top: 3.2rem;
+                    left: 1rem;
+                    width: 300px;
+                }
+            }
+            .navMenuContainer {
+                ul {
+                    justify-content: center;
+                    padding: 0rem;
+                    margin: 15rem 0rem 0rem 0rem;
+                }
+                li {
+                    @include font (2.5rem);
+                    padding: 1.5rem;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
+
+/* BIG */
+
+@media only screen and (min-width: 811px) and (max-width: 1000px) {
+    .NavBarContainer {
+        .nav {
+            grid-template-columns: 1fr 1fr;
+            margin: 1rem 0rem;
+            .navLogoContainer {
+                .imgLogo{
+                    position: absolute;
+                    top: 2.1rem;
+                    left: 1.7rem;
+                    width: 400px;
+                    display:block;
+                    margin: auto;
+                }
+            }
+            .navMenuContainer {
+                ul {
+                    justify-content: center;
+                    padding: 1rem .5rem 0rem 0rem;
+                }
+                li {
+                    @include font (2.5rem);
+                    padding: 1rem;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
+
+/* LARGE */
+
+@media only screen and (min-width: 1001px) and (max-width: 1100px) {
+    .NavBarContainer {
+        .nav {
+            grid-template-columns: 1fr 1fr;
+            margin: 1rem 0rem;
+            .navLogoContainer {
+                .imgLogo{
+                    position: absolute;
+                    top: 2.1rem;
+                    left: 8rem;
+                    width: 400px;
+                    display:block;
+                    margin: auto;
+                }
+            }
+            .navMenuContainer {
+                ul {
+                    justify-content: center;
+                    padding: 1rem 3rem 0rem 0rem;
+                }
+                li {
+                    @include font (2.8rem);
+                    padding: 1.5rem;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}
+
+/* EXTRA LARGE */
+
+@media only screen and (min-width: 1101px) and (max-width: 1500px) {
+    .NavBarContainer {
+        .nav {
+            grid-template-columns: 1fr 1fr;
+            margin: 1rem 0rem;
+            .navLogoContainer {
+                .imgLogo{
+                    position: absolute;
+                    top: 2.1rem;
+                    left: 8rem;
+                    width: 400px;
+                    display:block;
+                    margin: auto;
+                }
+            }
+            .navMenuContainer {
+                ul {
+                    justify-content: center;
+                    padding: 1rem 3rem 0rem 0rem;
+                }
+                li {
+                    @include font (3rem);
+                    padding: 1.5rem;
+                    letter-spacing: 5px;
+                }
+            }
+        }
+    }
+}

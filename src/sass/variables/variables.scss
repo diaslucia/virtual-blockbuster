@@ -1,0 +1,19 @@
+// Colors
+
+$blue: #1c4da4;
+$white: #ffffff;
+
+//Fonts
+
+@mixin font ($size) {
+    font-size: $size;
+    font-family: anton, sans-serif;
+}
+
+@mixin font2 ($size) {
+    font-size: $size;
+    font-family: oswald, sans-serif;
+}
+
+//Flex
+
