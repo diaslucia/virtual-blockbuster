@@ -1,14 +1,13 @@
 import Logo from './Logo.gif';
-import { ShoppingCartOutlined } from '@ant-design/icons';
-import '../sass/components/nav.css';
+import '../../sass/components/nav.css';
 
-function NavBar() {
+const NavBar = ({children}) => {
     return (
         <div className="NavBarContainer">
             <div className="navBar">
                 <ul>
                     <li className="login"><a href="">Log In</a></li>
-                    <li className="cartIcon"><a><ShoppingCartOutlined /></a></li>
+                    {children}
                 </ul>
             </div>
             <nav className="nav">
@@ -28,7 +27,7 @@ function NavBar() {
                 </div>
             </nav>
         </div>
-    )
+    );
 }
 
 export default NavBar

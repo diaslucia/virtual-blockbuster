@@ -30,7 +30,12 @@ html {
             .cartIcon {
                 color: $white;
                 font-size: 2.5rem;
-                padding: 0rem 2rem;
+                padding: 0rem 1rem 0rem 2rem;
+            }
+            .cartNumber {
+                @include font2 (2rem);
+                color: $white;
+                padding-right: 1.5rem;
             }
             .login {
                 @include font2 (2rem);
@@ -315,4 +320,11 @@ html {
             }
         }
     }
+}
+
+.greeting {
+    font-size: 3rem;
+    display: block;
+    margin: auto;
+    padding: 15rem 0rem 0rem 15rem;
 }

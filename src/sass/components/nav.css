@@ -50,7 +50,14 @@ html {
 .NavBarContainer .navBar ul .cartIcon {
   color: #ffffff;
   font-size: 2.5rem;
-  padding: 0rem 2rem;
+  padding: 0rem 1rem 0rem 2rem;
+}
+
+.NavBarContainer .navBar ul .cartNumber {
+  font-size: 2rem;
+  font-family: oswald, sans-serif;
+  color: #ffffff;
+  padding-right: 1.5rem;
 }
 
 .NavBarContainer .navBar ul .login {
@@ -352,5 +359,12 @@ html {
     padding: 1.5rem;
     letter-spacing: 5px;
   }
+}
+
+.greeting {
+  font-size: 3rem;
+  display: block;
+  margin: auto;
+  padding: 15rem 0rem 0rem 15rem;
 }
 /*# sourceMappingURL=nav.css.map */
