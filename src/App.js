@@ -1,6 +1,7 @@
 import NavBar from './components/NavBar/NavBar.js';
-import CartWidget from './components/NavBar/CartWidget.js';
+import CartWidget from './components/CartWidget/CartWidget.js';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.js';
+import ItemCount from "./components/ItemCount/ItemCount.js";
 
 
 function App() {
@@ -9,7 +10,9 @@ function App() {
       <NavBar>
         <CartWidget/>
       </NavBar>
-      <ItemListContainer greeting="Welcome to this website!"/>
+      <ItemListContainer>
+        <ItemCount stock={5} initial={1}/>
+      </ItemListContainer>
     </>
   );
 }

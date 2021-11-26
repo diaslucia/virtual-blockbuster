@@ -1,0 +1,31 @@
+@import "../variables/variables.scss";
+
+.itemCount {
+    @include flex(row, center);
+    .itemCountContainer {
+        @include flex(row, center);
+        border: 1px solid black;
+        padding: 0rem;
+        margin: 0rem;
+        .buttonAdd {
+            @include font2(3rem);
+            padding: 0rem 1.5rem;
+            background-color: $white;
+            border: 0rem;
+            margin: 0rem;
+        }
+        .itemCounter {
+            @include font2(2rem);
+            padding: 0rem 3rem;
+            margin: 0rem;
+        }
+        .buttonSubtract {
+            @include font2(3rem);
+            padding: 0rem 1.5rem;
+            background-color: $white;
+            border: 0rem;
+            margin: 0rem;
+        }
+    }
+    
+}

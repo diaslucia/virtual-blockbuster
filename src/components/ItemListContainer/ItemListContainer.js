@@ -1,10 +1,10 @@
 import '../../sass/components/nav.css';
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = ({children}) => {
     return (
-      <div>
-        <p className="greeting">{greeting}</p>
-      </div>
+      <>
+        {children}
+      </>
     );
 }
 
