@@ -6,7 +6,7 @@ const NavBar = ({children}) => {
         <div className="NavBarContainer">
             <div className="navBar">
                 <ul>
-                    <li className="login"><a href="">Log In</a></li>
+                    <li className="login">Log In</li>
                     {children}
                 </ul>
             </div>
@@ -16,13 +16,13 @@ const NavBar = ({children}) => {
                 </div>
                 <div className="navMenuContainer">
                     <ul>
-                        <li><a href="">HOME</a></li>
+                        <li>HOME</li>
                         <li><div className="line"></div></li>
-                        <li><a href="">MOVIES</a></li>
+                        <li>MOVIES</li>
                         <li><div className="line"></div></li>
-                        <li><a href="">SERIES</a></li>
+                        <li>SERIES</li>
                         <li><div className="line"></div></li>
-                        <li><a href="">FAQ</a></li>
+                        <li>FAQ</li>
                     </ul>
                 </div>
             </nav>

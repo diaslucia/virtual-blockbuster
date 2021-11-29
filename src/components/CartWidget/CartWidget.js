@@ -4,7 +4,7 @@ import { ShoppingCartOutlined } from '@ant-design/icons';
 const CartWidget = () => {
     return (
         <>
-        <li className="cartIcon"><a><ShoppingCartOutlined /></a></li>
+        <li className="cartIcon"><ShoppingCartOutlined /></li>
         <li className="cartNumber">0</li>
         </>
     )

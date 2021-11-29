@@ -5,14 +5,12 @@ const ItemCount = ({stock, initial}) => {
     const [counter, setCounter] = useState(initial);
 
     const onAdd = () => {
-        console.log("sumando");
         if (counter < stock){
             setCounter(counter + 1);
         }
     }
 
     const onSubtract = () => {
-        console.log("restando");
         if(counter > initial){
             setCounter(counter - 1);
         }
