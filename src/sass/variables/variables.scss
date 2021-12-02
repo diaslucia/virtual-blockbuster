@@ -2,6 +2,13 @@
 
 $blue: #1c4da4;
 $white: #ffffff;
+$pink: #ea2194;
+$magenta: #d61560;
+$yellow: #fed406;
+$purple: #781565;
+$aqua: #39c1be;
+$green: #149575;
+
 
 //Fonts
 
@@ -22,4 +29,28 @@ $white: #ffffff;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: center;
+}
+
+//Button
+
+@mixin button($size, $color, $background, $padding){
+    font-size: $size;
+    font-family: anton, sans-serif;
+    color: $color;
+    text-transform: uppercase;
+    background-color: $background;
+    letter-spacing: 3px;
+    padding: $padding;
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        &:hover {
+            cursor:pointer;
+            color: $purple;
+        }
+        &:active {
+            cursor:pointer;
+            color: $purple;
+            box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        }
 }

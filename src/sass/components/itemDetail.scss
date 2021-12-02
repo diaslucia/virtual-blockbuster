@@ -1,0 +1,210 @@
+@import "../variables/variables.scss";
+
+.ItemDetailContainerParent {
+    @include flex(column, center);
+    margin: 12rem 4rem 4rem 4rem;
+    .itemDetailContainer {
+        background: linear-gradient($yellow, $pink);
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        width: 100%;
+        .itemDetailInfo {
+            background:rgba(255, 255, 255, 0.322);
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+           .itemDetailDiv {
+            @include flex(row, center);
+                .itemDetailImg {
+                    img {
+                        width: 200px;
+                        margin: 2rem 2rem 2rem 8rem;
+                        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                    }
+                }
+                .itemDetailText {
+                    margin: 2rem 2rem 2rem 0rem;
+                    width: auto;
+                    h1{
+                        @include font2(3.5rem);
+                        text-transform: uppercase;
+                        letter-spacing: 3px;
+                        margin: 0rem 0rem 0rem 1rem;
+                        padding: 1rem 0rem;
+                    }
+                    h5{
+                        @include font2(1.2rem);
+                        text-transform: uppercase;
+                        letter-spacing: 3px;
+                        margin: 0rem 0rem 0rem 1rem;
+                    }
+                    p {
+                        @include font2(1.7rem);
+                        font-weight: 300;
+                        line-height: 2.5rem;
+                        background:rgba(255, 255, 255, 0.322);
+                        padding: 1.5rem;
+                    }
+                }
+           }
+            .itemDetailTrailer{
+                @include flex(row, center);
+                iframe {
+                    width: 80%;
+                    margin: 2rem;
+                    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                }
+            }
+        }
+        .itemDetailButtons{
+            @include flex(row, center);
+            background:rgba(255, 255, 255, 0.322);
+            width: 100%;
+            .itemDetailBuy {
+                @include flex(column, center);
+                button {
+                    @include button(2rem, $blue, $white, .6rem 4rem); 
+                    margin: 2rem;
+                }
+            }
+            .itemDetailRent {
+                @include flex(column, center);
+                button {
+                    @include button(2rem, $blue, $white, .6rem 4rem); 
+                    margin: 2rem;
+                }
+            }
+        }
+    }
+}
+
+/* SMALL */
+
+@media only screen and (max-width: 500px) {
+    .ItemDetailContainerParent {
+        margin: 3rem 0rem;
+        .itemDetailContainer {
+            width: 90%;
+            .itemDetailInfo {
+                @include flex(column, center);
+               .itemDetailDiv {
+                @include flex(column, center);
+                width: 90%;
+                    .itemDetailImg {
+                        img {
+                            width: 200px;
+                            margin: 2rem;
+                        }
+                    }
+                    .itemDetailText {
+                        margin:0rem;
+                    }
+               }
+                .itemDetailTrailer{
+                    @include flex(column, center);
+                    width: 100%;
+                    iframe {
+                        width: 90%;
+                        margin: 2rem;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+/* MEDIUM */
+
+@media only screen and (min-width: 501px) and (max-width: 840px) {
+    .ItemDetailContainerParent {
+        margin: 4rem;
+        .itemDetailContainer {
+            width: 90%;
+            .itemDetailInfo {
+                @include flex(column, center);
+               .itemDetailDiv {
+                @include flex(column, center);
+                width: 90%;
+                    .itemDetailImg {
+                        img {
+                            width: 200px;
+                            margin: 2rem;
+                        }
+                    }
+                    .itemDetailText {
+                        margin:0rem;
+                    }
+               }
+                .itemDetailTrailer{
+                    @include flex(column, center);
+                    width: 100%;
+                    iframe {
+                        width: 90%;
+                        margin: 2rem;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+/* BIG LARGE */
+
+@media only screen and (min-width: 841px) and (max-width: 1100px) {
+    .ItemDetailContainerParent {
+        .itemDetailContainer {
+            width: 90%;
+            .itemDetailInfo {
+                @include flex(column, center);
+               .itemDetailDiv {
+                width: 90%;
+                    .itemDetailImg {
+                        img {
+                            width: 200px;
+                            margin: 2rem;
+                        }
+                    }
+               }
+                .itemDetailTrailer{
+                    @include flex(column, center);
+                    width: 100%;
+                    iframe {
+                        width: 80%;
+                        margin: 2rem;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+/* EXTRA LARGE */
+
+@media only screen and (min-width: 1101px) and (max-width: 1500px) {
+    .ItemDetailContainerParent {
+        .itemDetailContainer {
+            width: 90%;
+            .itemDetailInfo {
+                @include flex(column, center);
+               .itemDetailDiv {
+                width: 90%;
+                    .itemDetailImg {
+                        img {
+                            width: 250px;
+                            margin: 2rem 2rem 2rem 8rem;
+                        }
+                    }
+               }
+                .itemDetailTrailer{
+                    @include flex(column, center);
+                    iframe {
+                        width: 800px;
+                        margin: 2rem;
+                    }
+                }
+            }
+
+        }
+    }
+}
