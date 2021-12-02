@@ -23,6 +23,7 @@ export const getProducts = () => {
         setTimeout(() => {
             resolve(products);
         }, 2000)
+<<<<<<< HEAD
     })
 }
 
@@ -31,5 +32,7 @@ export const getItem = () => {
         setTimeout(() => {
             resolve(products[0]);
         }, 2000)
+=======
+>>>>>>> 8f7ef2cb172d180e6479c9351cb9f61881822b9e
     })
 }
