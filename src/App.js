@@ -11,7 +11,9 @@ function App() {
       <NavBar>
         <CartWidget/>
       </NavBar>
-      
+      <ItemListContainer>
+        <ItemCount stock={5} initial={1}/>
+      </ItemListContainer>
       <ItemDetailContainer/>
     </>
   );
@@ -19,7 +21,3 @@ function App() {
 
 export default App;
 
-/* 
-<ItemListContainer>
-  <ItemCount stock={5} initial={1}/>
-</ItemListContainer> */
