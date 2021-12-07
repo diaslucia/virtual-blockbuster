@@ -1,27 +1,33 @@
 import {useEffect, useState} from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
+import ItemCount from "../ItemCount/ItemCount";
 import "../../sass/components/itemDetail.css"
-import { getItem } from "../../products";
+import { getProductById } from "../../products";
+import { useParams } from "react-router";
 
 const ItemDetailContainer = () => {
     const [item, setItem] = useState([])
-    console.log(item);
+    const { paramId } = useParams();
     
     useEffect(() => {
-        const items = getItem()
-        
-        items.then(item => {
+
+        getProductById(paramId).then(item => {
             setItem(item)
+        }).catch(err => {
+            console.log(err)
         })
 
         return(() => {
             setItem([])
         })
-    }, [])
+
+    }, [paramId])
 
     return (
         <div className="ItemDetailContainerParent">
-            <ItemDetail item={item}/>
+            <ItemDetail item={item}>
+                <ItemCount stock={5} initial={1}/>
+            </ItemDetail>
         </div>
     )
 }

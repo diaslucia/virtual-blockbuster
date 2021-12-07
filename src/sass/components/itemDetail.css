@@ -16,15 +16,15 @@
 }
 
 .ItemDetailContainerParent .itemDetailContainer {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fed406), to(#ea2194));
-  background: linear-gradient(#fed406, #ea2194);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 217, 0, 0.5)), to(rgba(219, 32, 141, 0.5)));
+  background: linear-gradient(rgba(255, 217, 0, 0.5), rgba(219, 32, 141, 0.5));
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 8px;
+          box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 8px;
   width: 100%;
+  padding: 1rem;
 }
 
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo {
-  background: rgba(255, 255, 255, 0.322);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -39,22 +39,36 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailImg img {
-  width: 200px;
-  margin: 2rem 2rem 2rem 8rem;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  height: 50vh;
+  width: auto;
+  margin: 2rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 11px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 11px;
 }
 
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 2rem 2rem 2rem 0rem;
   width: auto;
 }
@@ -64,12 +78,12 @@
   font-family: oswald, sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin: 0rem 0rem 0rem 1rem;
+  margin: 2rem 0rem 2rem 1rem;
   padding: 1rem 0rem;
 }
 
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText h5 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: oswald, sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -77,12 +91,174 @@
 }
 
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText p {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   font-family: oswald, sans-serif;
   font-weight: 300;
   line-height: 2.5rem;
   background: rgba(255, 255, 255, 0.322);
   padding: 1.5rem;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: #ffffff;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .buttonAdd {
+  font-size: 3rem;
+  font-family: oswald, sans-serif;
+  padding: 0rem 1.5rem;
+  background-color: #ffffff;
+  color: #1c4da4;
+  border: 0rem;
+  margin: 0rem;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .buttonAdd :active {
+  color: #781565;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter {
+  font-size: 2rem;
+  font-family: oswald, sans-serif;
+  text-align: center;
+  color: #1c4da4;
+  padding: 0rem 3rem;
+  margin: 0rem;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .buttonSubtract {
+  font-size: 3rem;
+  font-family: oswald, sans-serif;
+  padding: 0rem 1.5rem;
+  background-color: #ffffff;
+  color: #1c4da4;
+  border: 0rem;
+  margin: 0rem;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .buttonSubtract :active {
+  color: #781565;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .buyButton {
+  font-size: 2rem;
+  font-family: anton, sans-serif;
+  color: #1c4da4;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  letter-spacing: 3px;
+  padding: 0.6rem 5.5rem;
+  border: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin: 2rem;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .buyButton:hover {
+  cursor: pointer;
+  color: #781565;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .buyButton:active {
+  cursor: pointer;
+  color: #781565;
+  -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+          box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailRent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailRent .rentButton {
+  font-size: 2rem;
+  font-family: anton, sans-serif;
+  color: #1c4da4;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  letter-spacing: 3px;
+  padding: 0.6rem 5.5rem;
+  border: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin: 2rem;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailRent .rentButton:hover {
+  cursor: pointer;
+  color: #781565;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailRent .rentButton:active {
+  cursor: pointer;
+  color: #781565;
+  -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+          box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailTrailer {
@@ -99,117 +275,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 50vw;
 }
 
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailTrailer iframe {
-  width: 80%;
+  width: 50vw;
+  height: 50vh;
   margin: 2rem;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-
-.ItemDetailContainerParent .itemDetailContainer .itemDetailButtons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: rgba(255, 255, 255, 0.322);
-  width: 100%;
-}
-
-.ItemDetailContainerParent .itemDetailContainer .itemDetailButtons .itemDetailBuy {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.ItemDetailContainerParent .itemDetailContainer .itemDetailButtons .itemDetailBuy button {
-  font-size: 2rem;
-  font-family: anton, sans-serif;
-  color: #1c4da4;
-  text-transform: uppercase;
-  background-color: #ffffff;
-  letter-spacing: 3px;
-  padding: 0.6rem 4rem;
-  border: 0px;
-  border-radius: 0px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  margin: 2rem;
-}
-
-.ItemDetailContainerParent .itemDetailContainer .itemDetailButtons .itemDetailBuy button:hover {
-  cursor: pointer;
-  color: #781565;
-}
-
-.ItemDetailContainerParent .itemDetailContainer .itemDetailButtons .itemDetailBuy button:active {
-  cursor: pointer;
-  color: #781565;
-  -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-          box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-}
-
-.ItemDetailContainerParent .itemDetailContainer .itemDetailButtons .itemDetailRent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.ItemDetailContainerParent .itemDetailContainer .itemDetailButtons .itemDetailRent button {
-  font-size: 2rem;
-  font-family: anton, sans-serif;
-  color: #1c4da4;
-  text-transform: uppercase;
-  background-color: #ffffff;
-  letter-spacing: 3px;
-  padding: 0.6rem 4rem;
-  border: 0px;
-  border-radius: 0px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  margin: 2rem;
-}
-
-.ItemDetailContainerParent .itemDetailContainer .itemDetailButtons .itemDetailRent button:hover {
-  cursor: pointer;
-  color: #781565;
-}
-
-.ItemDetailContainerParent .itemDetailContainer .itemDetailButtons .itemDetailRent button:active {
-  cursor: pointer;
-  color: #781565;
-  -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-          box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 11px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 11px;
 }
 
 /* SMALL */
@@ -252,11 +326,26 @@
     width: 90%;
   }
   .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailImg img {
-    width: 200px;
     margin: 2rem;
   }
   .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText {
     margin: 0rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-top: 1rem;
   }
   .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailTrailer {
     display: -webkit-box;
@@ -276,6 +365,7 @@
   }
   .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailTrailer iframe {
     width: 90%;
+    height: 300px;
     margin: 2rem;
   }
 }
@@ -320,11 +410,25 @@
     width: 90%;
   }
   .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailImg img {
-    width: 200px;
     margin: 2rem;
   }
   .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText {
     margin: 0rem;
+  }
+  .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailTrailer {
     display: -webkit-box;
@@ -369,10 +473,22 @@
             align-items: center;
   }
   .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 90%;
   }
   .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailImg img {
-    width: 200px;
     margin: 2rem;
   }
   .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailTrailer {
@@ -392,7 +508,7 @@
     width: 100%;
   }
   .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailTrailer iframe {
-    width: 80%;
+    width: 70vw;
     margin: 2rem;
   }
 }
@@ -421,7 +537,6 @@
     width: 90%;
   }
   .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailImg img {
-    width: 250px;
     margin: 2rem 2rem 2rem 8rem;
   }
   .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailTrailer {
@@ -440,7 +555,7 @@
             align-items: center;
   }
   .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailTrailer iframe {
-    width: 800px;
+    width: 70vw;
     margin: 2rem;
   }
 }

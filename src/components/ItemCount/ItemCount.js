@@ -1,5 +1,5 @@
 import {useState} from "react"
-import '../../sass/components/itemCount.css';
+import "../../sass/components/itemDetail.css"
 
 const ItemCount = ({stock, initial}) => {
     const [counter, setCounter] = useState(initial);
@@ -17,12 +17,10 @@ const ItemCount = ({stock, initial}) => {
     }
 
     return (
-        <div className="itemCount">
-            <div className ="itemCountContainer">
-                <button className="buttonSubtract" onClick={onSubtract}>-</button>
-                <p className="itemCounter">{counter}</p>
-                <button className="buttonAdd" onClick={onAdd}>+</button>
-            </div>
+        <div className ="itemCountContainer">
+            <button className="buttonSubtract" onClick={onSubtract}>-</button>
+            <p className="itemCounter">{counter}</p>
+            <button className="buttonAdd" onClick={onAdd}>+</button>
         </div>
     )
 }

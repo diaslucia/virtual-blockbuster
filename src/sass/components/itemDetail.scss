@@ -4,77 +4,121 @@
     @include flex(column, center);
     margin: 12rem 4rem 4rem 4rem;
     .itemDetailContainer {
-        background: linear-gradient($yellow, $pink);
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        background: linear-gradient($lightyellow, $lightpink);
+        box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 8px;
         width: 100%;
+        padding: 1rem;
         .itemDetailInfo {
-            background:rgba(255, 255, 255, 0.322);
             display:grid;
             grid-template-columns: 1fr 1fr;
            .itemDetailDiv {
-            @include flex(row, center);
+            @include flex2(row, flex-start, flex-start);
                 .itemDetailImg {
                     img {
-                        width: 200px;
-                        margin: 2rem 2rem 2rem 8rem;
-                        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                        height: 50vh;
+                        width: auto;
+                        margin: 2rem;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 11px;
                     }
                 }
                 .itemDetailText {
+                    @include flex2(column, flex-start, flex-start);
                     margin: 2rem 2rem 2rem 0rem;
                     width: auto;
                     h1{
                         @include font2(3.5rem);
                         text-transform: uppercase;
                         letter-spacing: 3px;
-                        margin: 0rem 0rem 0rem 1rem;
+                        margin: 2rem 0rem 2rem 1rem;
                         padding: 1rem 0rem;
                     }
                     h5{
-                        @include font2(1.2rem);
+                        @include font2(1.5rem);
                         text-transform: uppercase;
                         letter-spacing: 3px;
                         margin: 0rem 0rem 0rem 1rem;
                     }
                     p {
-                        @include font2(1.7rem);
+                        @include font2(1.9rem);
                         font-weight: 300;
                         line-height: 2.5rem;
                         background:rgba(255, 255, 255, 0.322);
                         padding: 1.5rem;
                     }
+                    .itemDetailButtons{
+                        @include flex2(row, flex-start, flex-end);
+                        width: 100%;
+                        margin-top: 5rem;
+                        .itemDetailBuy {
+                            @include flex(column, center);
+                            .itemCountContainer {
+                                @include flex(row, center);
+                                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                                background-color: $white;
+                                padding: 0rem;
+                                margin: 0rem;
+                                .buttonAdd {
+                                    @include font2(3rem);
+                                    padding: 0rem 1.5rem;
+                                    background-color: $white;
+                                    color: $blue;
+                                    border: 0rem;
+                                    margin: 0rem;
+                                    :active {
+                                        color: $purple;
+                                    }
+                                }
+                                .itemCounter {
+                                    @include font2(2rem);
+                                    text-align: center;
+                                    color: $blue;
+                                    padding: 0rem 3rem;
+                                    margin: 0rem;
+                                }
+                                .buttonSubtract {
+                                    @include font2(3rem);
+                                    padding: 0rem 1.5rem;
+                                    background-color: $white;
+                                    color: $blue;
+                                    border: 0rem;
+                                    margin: 0rem;
+                                    :active {
+                                        color: $purple;
+                                    }
+                                }
+                            }
+                            .buyButton {
+                                @include button(2rem, $blue, $white, .6rem 5.5rem);
+                                margin: 2rem;
+                            }
+                        }
+                        .itemDetailRent {
+                            @include flex(column, center);
+                            .rentButton {
+                                @include button(2rem, $blue, $white, .6rem 5.5rem); 
+                                margin: 2rem;
+                            }
+                        }
+                    }
                 }
            }
             .itemDetailTrailer{
                 @include flex(row, center);
+                width: 50vw;
                 iframe {
-                    width: 80%;
+                    width: 50vw;
+                    height: 50vh;
                     margin: 2rem;
-                    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-                }
-            }
-        }
-        .itemDetailButtons{
-            @include flex(row, center);
-            background:rgba(255, 255, 255, 0.322);
-            width: 100%;
-            .itemDetailBuy {
-                @include flex(column, center);
-                button {
-                    @include button(2rem, $blue, $white, .6rem 4rem); 
-                    margin: 2rem;
-                }
-            }
-            .itemDetailRent {
-                @include flex(column, center);
-                button {
-                    @include button(2rem, $blue, $white, .6rem 4rem); 
-                    margin: 2rem;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 11px;
                 }
             }
         }
     }
 }
+
+
+    
+
 
 /* SMALL */
 
@@ -90,12 +134,15 @@
                 width: 90%;
                     .itemDetailImg {
                         img {
-                            width: 200px;
                             margin: 2rem;
                         }
                     }
                     .itemDetailText {
                         margin:0rem;
+                        .itemDetailButtons{
+                            @include flex2(row, center, flex-end);
+                            margin-top: 1rem;
+                        }
                     }
                }
                 .itemDetailTrailer{
@@ -103,6 +150,7 @@
                     width: 100%;
                     iframe {
                         width: 90%;
+                        height: 300px;
                         margin: 2rem;
                     }
                 }
@@ -120,18 +168,20 @@
         .itemDetailContainer {
             width: 90%;
             .itemDetailInfo {
-                @include flex(column, center);
+                @include flex2(column, center, center);
                .itemDetailDiv {
                 @include flex(column, center);
                 width: 90%;
                     .itemDetailImg {
                         img {
-                            width: 200px;
                             margin: 2rem;
                         }
                     }
                     .itemDetailText {
                         margin:0rem;
+                        .itemDetailButtons{
+                            @include flex2(row, center, flex-end);
+                        }
                     }
                }
                 .itemDetailTrailer{
@@ -157,10 +207,10 @@
             .itemDetailInfo {
                 @include flex(column, center);
                .itemDetailDiv {
+                @include flex(row, center);
                 width: 90%;
                     .itemDetailImg {
                         img {
-                            width: 200px;
                             margin: 2rem;
                         }
                     }
@@ -169,7 +219,7 @@
                     @include flex(column, center);
                     width: 100%;
                     iframe {
-                        width: 80%;
+                        width: 70vw;
                         margin: 2rem;
                     }
                 }
@@ -191,7 +241,6 @@
                 width: 90%;
                     .itemDetailImg {
                         img {
-                            width: 250px;
                             margin: 2rem 2rem 2rem 8rem;
                         }
                     }
@@ -199,7 +248,7 @@
                 .itemDetailTrailer{
                     @include flex(column, center);
                     iframe {
-                        width: 800px;
+                        width: 70vw;
                         margin: 2rem;
                     }
                 }

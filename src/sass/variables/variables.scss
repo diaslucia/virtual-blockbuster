@@ -8,6 +8,8 @@ $yellow: #fed406;
 $purple: #781565;
 $aqua: #39c1be;
 $green: #149575;
+$lightyellow: rgba(255, 217, 0, 0.5);
+$lightpink: rgba(219, 32, 141, 0.5);
 
 
 //Fonts
@@ -29,6 +31,13 @@ $green: #149575;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: center;
+}
+
+@mixin flex2($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
 }
 
 //Button

@@ -1,5 +1,6 @@
 import Logo from './Logo.gif';
 import '../../sass/components/nav.css';
+import { Link } from "react-router-dom";
 
 const NavBar = ({children}) => {
     return (
@@ -12,15 +13,15 @@ const NavBar = ({children}) => {
             </div>
             <nav className="nav">
                 <div className="navLogoContainer">
-                    <img className="imgLogo" src={Logo} alt="logo"/>
+                    <Link to={"/"}><img className="imgLogo" src={Logo} alt="logo"/></Link>
                 </div>
                 <div className="navMenuContainer">
                     <ul>
-                        <li>HOME</li>
+                        <li><Link to={"/"}>HOME</Link></li>
                         <li><div className="line"></div></li>
-                        <li>MOVIES</li>
+                        <li><Link to={"/category/movies"}>MOVIES</Link></li>
                         <li><div className="line"></div></li>
-                        <li>SERIES</li>
+                        <li><Link to={"/category/series"}>SERIES</Link></li>
                         <li><div className="line"></div></li>
                         <li>FAQ</li>
                     </ul>

@@ -3,10 +3,13 @@
 
 .itemCardContainer {
     @include flex(row, center);
-    margin-top: 7rem;
+    background: linear-gradient(to right,$white,$lightyellow);
+    margin-top: 10rem;
+    .itemLink {
+        text-decoration: none;
+    }
     .itemCard {
         @include flex(column, center);
-        border: 1px solid black;
         margin: 2rem;
         width: 200px;
         .itemCardImg {
