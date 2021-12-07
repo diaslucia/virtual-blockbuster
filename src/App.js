@@ -3,6 +3,7 @@ import CartWidget from './components/CartWidget/CartWidget.js';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.js';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer.js';
 import ItemCount from "./components/ItemCount/ItemCount.js";
+import { BrowserRouter, Switch, Router } from "react-router-dom";
 
 
 function App() {
