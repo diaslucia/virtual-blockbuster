@@ -1,4 +1,4 @@
-# Virtual BlockBuster
+# Virtual BlockBuster 📽️
 
 Este sitio web simula ser una tienda online para alquilar o comprar películas y series.  
 
@@ -6,11 +6,11 @@ La idea surgió después de notar el auge de servicios de streaming que traen co
 
 ¿Por qué no inspirarse en los viejos tiempos y, crear un sitio donde puedas encontrar todo en un solo lugar? Así nace "BlockBuster Virtual, just like the good old times".
  
-## Estado del Proyecto
+## Estado del Proyecto 🚧
 
 El proyecto todavía se encuentra en desarrollo. Se espera sumarle al sitio un carrito y más contenido/componentes.
  
-## Tecnologías
+## Tecnologías 🛠️
 
 Lista de tecnologías utilizadas para este proyecto:
 
@@ -20,7 +20,7 @@ Lista de tecnologías utilizadas para este proyecto:
 
 - [SASS](https://sass-lang.com/): Version 6.0.1
 
-## Instalación
+## Instalación y Ejecución 🚀
 
 Lista de pasos para empezar con la instalación del proyecto.
 
@@ -28,13 +28,13 @@ Lista de pasos para empezar con la instalación del proyecto.
 2. Abrimos la consola y la ubicamos en el directorio de nuestro proyecto
 ```
 $cd directorioDeTuProyecto
-$npm init
+$npm install
 ```
 3.Creamos la App de React
 ```
 $npm create-react-app nombreDeTuProyecto
 ```
-4. Ingresamos a nuestro proyecto y abrimos la página con
+4. Iniciamos la aplicación con npm (para finalizar su ejecución usamos Ctrl + C)
 ```
 $npm start
 ```
@@ -44,4 +44,15 @@ $npm install node-sass --save
 ```
 6. Renombramos "src/App.css" a "src/App.scss" y actualizamos "src/App.js" para que importe "src/App.scss". Para más información: https://create-react-app.dev/docs/adding-a-sass-stylesheet/
 
-## Información sobre su funcionamiento
+## Información sobre su funcionamiento 🍿
+
+Dentro de la carpeta ***src*** se encuentras las carpetas y los archivos del que agregué al proyecto.
+
+> #### src/App.js
+> Contiene la navegación del sitio web. 
+
+> #### src/products,js
+> Simula el backend, se encuentran el listado de los productos con su respectiva información y detalle.
+> ***getProducts()***
+> A través de una promesa, esta función me devuelve todos mis productos.
+> ![getProductsImg](http://imgfz.com/i/zKQC8lO.png)
