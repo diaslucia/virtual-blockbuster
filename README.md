@@ -48,7 +48,7 @@ $npm install node-sass --save
 
 ## Información sobre su funcionamiento 🍿
 
-Dentro de la carpeta ***src*** se encuentras las carpetas y los archivos del que agregué al proyecto.
+Dentro de la carpeta ***src*** se encuentras las carpetas y los archivos del proyecto.
 
 > ### src/App.js
 > Contiene la navegación del sitio web. 
