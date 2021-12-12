@@ -7,11 +7,11 @@ La idea surgió después de notar el auge de servicios de streaming que traen co
 
 Lista de tecnologías utilizadas para este proyecto:
 
-[Node JS](https://nodejs.org/es/): Version 14.17.6
+- [Node JS](https://nodejs.org/es/): Version 14.17.6
 
--[React](https://es.reactjs.org/)
+- [React](https://es.reactjs.org/)
 
--[SASS](https://sass-lang.com/)
+- [SASS](https://sass-lang.com/)
 
 ## Instalación
 
