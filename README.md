@@ -84,12 +84,37 @@ Dentro de la carpeta ***src*** se encuentras las carpetas y los archivos del que
 > NavBar contiene el componente del navegador del sitio y pasa por props a {children} que es el menú del carrito (src/components/CartWidget.js)
 
 > ### src/components/ItemListContainer.js
-> *useEffect* nos permite mostrar los productos cuando estos ya estén listos.
+> ***useEffect*** nos permite mostrar los productos cuando estos ya estén listos.
 > 
-> *useState* nos guarda en una variable los productos que traemos con la función getProducts() o getProductByCategory() según corresponda.
+> ***useState*** nos guarda en una variable los productos que traemos con la función *getProducts()* o *getProductByCategory()* según corresponda.
 > 
-> *useParams* nos trae el valor del path.
+> ***useParams*** nos trae el valor del path.
 > 
-> Dentro del *useEffect* pasé un condicional dónde *if* el path no tiene una categoría definida, voy a traer a todos mis productos, pero si *else* hay una categoría definida, voy a traer a todos los productos de esa categoría. Al mismo tiempo, queda atento a cualquier cambio con [categorías].
+> Dentro del ***useEffect*** pasé un condicional dónde *if* el path no tiene una categoría definida, voy a traer a todos mis productos, pero si *else* hay una categoría definida, voy a traer a todos los productos de esa categoría. Al mismo tiempo, queda atento a cualquier cambio con *[category]*.
 >
 >![ItemListContainer](http://imgfz.com/i/dyQw06U.png)
+
+> ### src/components/ItemList.js
+> Toma a los productos traidos por props y los mapea para crear un componente *Item* (src/components/Item.js) con cada uno.
+>![ItemList](http://imgfz.com/i/Df62toE.png) 
+
+> ### src/components/ItemDetailContainer.js
+> ***useParams*** nos trae el valor del path.
+> 
+> ***useState*** nos guarda en una variable los productos que traemos con la función *getProductById()*.
+>
+> ***useEffect*** nos permite mostrar los productos cuando estos ya estén listos. Con la función *getProductById()*, usamos el path (paramId) como parámetro para traer la información del producto que haga match. Al mismo tiempo, queda atento a cualquier cambio con *[paramId]*.
+>
+> El componente ***ItemDetail*** envuelve al componente *ItemCount* que explicaré a continuación.
+> 
+>![ItemDetailContainer](http://imgfz.com/i/4jdVlOq.png) 
+
+> ### src/components/ItemDetail.js
+> Pasan como props la información del producto *{item}* y *{children}* (src/components/ItemCount.js). La información se distribuye para poder armar la card y el children se agrega a la card como un componente separado.
+
+> ### src/components/ItemCount.js
+> Primero se establece un número de conteo inicial (el valor *initial* que se pasó por props) y se lo almacena como variable usando *useState*.
+>
+> Los botón para sumar y sustraer tienen sus propios eventListeners que suman o restar el valor que este en el *useState*.
+>
+> ![ItemCount](http://imgfz.com/i/Rxase4w.png)
