@@ -18,6 +18,8 @@ Lista de tecnologías utilizadas para este proyecto:
 
 - [React](https://es.reactjs.org/): Version 17.0.2
 
+- [Javascript](https://www.javascript.com/)
+
 - [SASS](https://sass-lang.com/): Version 6.0.1
 
 ## Instalación y Ejecución 🚀
@@ -51,7 +53,7 @@ Dentro de la carpeta ***src*** se encuentras las carpetas y los archivos del que
 > ### src/App.js
 > Contiene la navegación del sitio web. 
 
-> ### src/products,js
+> ### src/products.js
 > Simula el backend, se encuentran el listado de los productos con su respectiva información y detalle.
 > 
 > #### ***getProducts()***
@@ -60,7 +62,7 @@ Dentro de la carpeta ***src*** se encuentras las carpetas y los archivos del que
 > 
 > ![getProducts](http://imgfz.com/i/zKQC8lO.png)
 >
->#### ***getProductById()***
+> #### ***getProductById()***
 >
 > A través de una promesa, esta función me devuelve un producto por Id por props.
 > 
@@ -77,3 +79,17 @@ Dentro de la carpeta ***src*** se encuentras las carpetas y los archivos del que
 > A través de una promesa, esta función me devuelve el primer producto de mi lista de productos.
 > 
 > ![getItem](http://imgfz.com/i/PhkQ1t3.png)
+
+> ### src/components/NavBar.js
+> NavBar contiene el componente del navegador del sitio y pasa por props a {children} que es el menú del carrito (src/components/CartWidget.js)
+
+> ### src/components/ItemListContainer.js
+> *useEffect* nos permite mostrar los productos cuando estos ya estén listos.
+> 
+> *useState* nos guarda en una variable los productos que traemos con la función getProducts() o getProductByCategory() según corresponda.
+> 
+> *useParams* nos trae el valor del path.
+> 
+> Dentro del *useEffect* pasé un condicional dónde *if* el path no tiene una categoría definida, voy a traer a todos mis productos, pero si *else* hay una categoría definida, voy a traer a todos los productos de esa categoría. Al mismo tiempo, queda atento a cualquier cambio con [categorías].
+>
+>![ItemListContainer](http://imgfz.com/i/dyQw06U.png)
