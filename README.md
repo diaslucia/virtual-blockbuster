@@ -1,11 +1,9 @@
 # Virtual BlockBuster
-***
 Este sitio web simula ser una tienda online para alquilar o comprar películas y series.
 La idea surgió después de notar el auge de servicios de streaming que traen consigo el problema de tener que suscribirse a más de uno, para poder ver nuestra película/show favorito.
 ¿Por qué no inspirarse en los viejos tiempos y, crear un sitio donde puedas encontrar todo en un solo lugar? Así nace "BlockBuster Virtual, just like the good old times".
  
 ## Tecnologías
-***
 
 Lista de tecnologías utilizadas para este proyecto:
 
@@ -15,8 +13,7 @@ Lista de tecnologías utilizadas para este proyecto:
 
 -[SASS](https://sass-lang.com/)
 
-##Instalación
-***
+## Instalación
 
 Lista de pasos para empezar con la instalación del proyecto.
 
