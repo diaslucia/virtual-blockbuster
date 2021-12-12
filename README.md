@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Virtual BlockBuster
+***
+Este sitio web simula ser una tienda online para alquilar o comprar películas y series.
+La idea surgió después de notar el auge de servicios de streaming que traen consigo el problema de tener que suscribirse a más de uno, para poder ver nuestra película/show favorito.
+¿Por qué no inspirarse en los viejos tiempos y, crear un sitio donde puedas encontrar todo en un solo lugar? Así nace "BlockBuster Virtual, just like the good old times".
+ 
+## Tecnologías
+***
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Lista de tecnologías utilizadas para este proyecto:
+*[Node JS](https://nodejs.org/es/): Version 14.17.6
+*[React](https://es.reactjs.org/):
+*[SASS](https://sass-lang.com/): Version
 
-## Available Scripts
+##Instalación
+***
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Lista de pasos para empezar con la instalación del proyecto.
+```
+1. Instalar Node JS de https://nodejs.org/es/
+2. Abrimos la consola y la ubicamos en el directorio de nuestro proyecto
+	$cd directorioDeTuProyecto
+	$npm init
+3.Creamos la App de React
+	$npm create-react-app nombreDeTuProyecto
+4. Ingresamos a nuestro proyecto y abrimos la página con
+	$npm start
+5. Instalamos SASS desde consola
+	$npm install node-sass --save
+6. Renombramos "src/App.css" a "src/App.scss" y actualizamos "src/App.js" para que importe "src/App.scss". Para más información: https://create-react-app.dev/docs/adding-a-sass-stylesheet/
+```
