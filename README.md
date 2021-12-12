@@ -8,24 +8,34 @@ La idea surgió después de notar el auge de servicios de streaming que traen co
 ***
 
 Lista de tecnologías utilizadas para este proyecto:
+
 *[Node JS](https://nodejs.org/es/): Version 14.17.6
-*[React](https://es.reactjs.org/):
-*[SASS](https://sass-lang.com/): Version
+
+*[React](https://es.reactjs.org/)
+
+*[SASS](https://sass-lang.com/)
 
 ##Instalación
 ***
 
 Lista de pasos para empezar con la instalación del proyecto.
-```
+
 1. Instalar Node JS de https://nodejs.org/es/
 2. Abrimos la consola y la ubicamos en el directorio de nuestro proyecto
-	$cd directorioDeTuProyecto
-	$npm init
-3.Creamos la App de React
-	$npm create-react-app nombreDeTuProyecto
-4. Ingresamos a nuestro proyecto y abrimos la página con
-	$npm start
-5. Instalamos SASS desde consola
-	$npm install node-sass --save
-6. Renombramos "src/App.css" a "src/App.scss" y actualizamos "src/App.js" para que importe "src/App.scss". Para más información: https://create-react-app.dev/docs/adding-a-sass-stylesheet/
 ```
+$cd directorioDeTuProyecto
+$npm init
+```
+3.Creamos la App de React
+```
+$npm create-react-app nombreDeTuProyecto
+```
+4. Ingresamos a nuestro proyecto y abrimos la página con
+```
+$npm start
+```
+5. Instalamos SASS desde consola
+```
+$npm install node-sass --save
+```
+6. Renombramos "src/App.css" a "src/App.scss" y actualizamos "src/App.js" para que importe "src/App.scss". Para más información: https://create-react-app.dev/docs/adding-a-sass-stylesheet/
