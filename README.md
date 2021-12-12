@@ -30,7 +30,7 @@ Lista de pasos para empezar con la instalación del proyecto.
 $cd directorioDeTuProyecto
 $npm install
 ```
-3.Creamos la App de React
+3. Creamos la App de React
 ```
 $npm create-react-app nombreDeTuProyecto
 ```
@@ -54,18 +54,26 @@ Dentro de la carpeta ***src*** se encuentras las carpetas y los archivos del que
 > ### src/products,js
 > Simula el backend, se encuentran el listado de los productos con su respectiva información y detalle.
 > 
-> ####***getProducts()***
+> #### ***getProducts()***
+> 
 > A través de una promesa, esta función me devuelve todos mis productos.
+> 
 > ![getProducts](http://imgfz.com/i/zKQC8lO.png)
 >
->####***getProductById()***
+>#### ***getProductById()***
+>
 > A través de una promesa, esta función me devuelve un producto por Id por props.
+> 
 > ![getProductById](http://imgfz.com/i/Z2xy7tg.png)
 > 
-> ####***getProductByCategory()***
+> #### ***getProductByCategory()***
+> 
 > A través de una promesa, esta función me devuelve todos mis productos filtrados por una categoría que se define por props.
+> 
 > ![getProductByCategory](http://imgfz.com/i/my28oMJ.png)
 >
-> ####***getItem()***
+> #### ***getItem()***
+> 
 > A través de una promesa, esta función me devuelve el primer producto de mi lista de productos.
+> 
 > ![getItem](http://imgfz.com/i/PhkQ1t3.png)
