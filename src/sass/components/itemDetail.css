@@ -117,7 +117,7 @@
   margin-top: 5rem;
 }
 
-.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy {
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,7 +133,7 @@
           align-items: center;
 }
 
-.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer {
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,14 +147,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #ffffff;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  background-color: #ffffff;
   padding: 0rem;
   margin: 0rem;
 }
 
-.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .buttonAdd {
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter .buttonAdd {
   font-size: 3rem;
   font-family: oswald, sans-serif;
   padding: 0rem 1.5rem;
@@ -164,20 +164,22 @@
   margin: 0rem;
 }
 
-.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .buttonAdd :active {
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter .buttonAdd :active {
   color: #781565;
 }
 
-.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter {
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter .itemCounter {
   font-size: 2rem;
   font-family: oswald, sans-serif;
   text-align: center;
   color: #1c4da4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   padding: 0rem 3rem;
   margin: 0rem;
 }
 
-.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .buttonSubtract {
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter .buttonSubtract {
   font-size: 3rem;
   font-family: oswald, sans-serif;
   padding: 0rem 1.5rem;
@@ -187,11 +189,11 @@
   margin: 0rem;
 }
 
-.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .buttonSubtract :active {
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter .buttonSubtract :active {
   color: #781565;
 }
 
-.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .buyButton {
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounterBuy .buyButton {
   font-size: 2rem;
   font-family: anton, sans-serif;
   color: #1c4da4;
@@ -206,12 +208,12 @@
   margin: 2rem;
 }
 
-.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .buyButton:hover {
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounterBuy .buyButton:hover {
   cursor: pointer;
   color: #781565;
 }
 
-.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .buyButton:active {
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounterBuy .buyButton:active {
   cursor: pointer;
   color: #781565;
   -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;

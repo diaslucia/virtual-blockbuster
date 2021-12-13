@@ -8,7 +8,8 @@ const products = [
       "duration": "2h 35m",
       "plot": "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.",
       "trailer": "https://www.youtube.com/embed/n9xhJrPXop4",
-      "category": "movies"
+      "category": "movies",
+      "stock" : 5
     },
     {
         "id": 2,
@@ -19,7 +20,8 @@ const products = [
         "duration": "1h 57m",
         "plot": "A young girl, passionate about fashion design, is mysteriously able to enter the 1960s where she encounters her idol, a dazzling wannabe singer. But 1960s London is not what it seems, and time seems to be falling apart with shady consequences.",
         "trailer": "https://www.youtube.com/embed/AcVnFrxjPjI",
-        "category": "movies" 
+        "category": "movies",
+        "stock" : 5 
     },
     {
         "id": 100,
@@ -30,7 +32,8 @@ const products = [
         "duration": "42m",
         "plot": "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
         "trailer": "https://www.youtube.com/embed/fXmAurh012s",
-        "category": "series"
+        "category": "series",
+        "stock" : 5
         
     },
     {
@@ -42,7 +45,8 @@ const products = [
         "duration": "53m",
         "plot": "A missing child causes four families to help each other for answers. What they could not imagine is that this mystery would be connected to innumerable other secrets of the small town.",
         "trailer": "https://www.youtube.com/embed/rrwycJ08PSA",
-        "category": "series"
+        "category": "series",
+        "stock" : 5
         
     }
   

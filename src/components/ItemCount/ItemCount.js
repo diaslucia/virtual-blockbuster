@@ -1,8 +1,11 @@
 import {useState} from "react"
+import { useHistory } from "react-router-dom";
 import "../../sass/components/itemDetail.css"
 
-const ItemCount = ({stock, initial}) => {
-    const [counter, setCounter] = useState(initial);
+
+const ItemCount = ({stock}) => {
+    const [counter, setCounter] = useState(0);
+    let history = useHistory();
 
     const onAdd = () => {
         if (counter < stock){
@@ -11,16 +14,27 @@ const ItemCount = ({stock, initial}) => {
     }
 
     const onSubtract = () => {
-        if(counter > initial){
+        if(counter > 0){
             setCounter(counter - 1);
+        }
+    }
+   
+    const buyButton = () => {
+    if(counter > 0){
+        history.push("/cart");
         }
     }
 
     return (
-        <div className ="itemCountContainer">
-            <button className="buttonSubtract" onClick={onSubtract}>-</button>
-            <p className="itemCounter">{counter}</p>
-            <button className="buttonAdd" onClick={onAdd}>+</button>
+        <div className="itemCountContainer">
+            <div className="itemCounter">
+                <button className="buttonSubtract" onClick={onSubtract}>-</button>
+                <p className="itemCounter">{counter}</p>
+                <button className="buttonAdd" onClick={onAdd}>+</button>
+            </div>
+            <div className="itemCounterBuy">
+                <button className="buyButton" onClick={buyButton}>Buy</button>
+            </div>
         </div>
     )
 }

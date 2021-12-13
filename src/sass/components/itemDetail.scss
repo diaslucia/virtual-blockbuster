@@ -50,46 +50,51 @@
                         width: 100%;
                         margin-top: 5rem;
                         .itemDetailBuy {
-                            @include flex(column, center);
                             .itemCountContainer {
-                                @include flex(row, center);
-                                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-                                background-color: $white;
-                                padding: 0rem;
-                                margin: 0rem;
-                                .buttonAdd {
-                                    @include font2(3rem);
-                                    padding: 0rem 1.5rem;
-                                    background-color: $white;
-                                    color: $blue;
-                                    border: 0rem;
-                                    margin: 0rem;
-                                    :active {
-                                        color: $purple;
-                                    }
-                                }
+                                @include flex(column, center);
                                 .itemCounter {
-                                    @include font2(2rem);
-                                    text-align: center;
-                                    color: $blue;
-                                    padding: 0rem 3rem;
-                                    margin: 0rem;
-                                }
-                                .buttonSubtract {
-                                    @include font2(3rem);
-                                    padding: 0rem 1.5rem;
+                                    @include flex(row, center);
                                     background-color: $white;
-                                    color: $blue;
-                                    border: 0rem;
+                                    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                                    padding: 0rem;
                                     margin: 0rem;
-                                    :active {
-                                        color: $purple;
+                                    .buttonAdd {
+                                        @include font2(3rem);
+                                        padding: 0rem 1.5rem;
+                                        background-color: $white;
+                                        color: $blue;
+                                        border: 0rem;
+                                        margin: 0rem;
+                                        :active {
+                                            color: $purple;
+                                        }
+                                    }
+                                    .itemCounter {
+                                        @include font2(2rem);
+                                        text-align: center;
+                                        color: $blue;
+                                        box-shadow: none;
+                                        padding: 0rem 3rem;
+                                        margin: 0rem;
+                                    }
+                                    .buttonSubtract {
+                                        @include font2(3rem);
+                                        padding: 0rem 1.5rem;
+                                        background-color: $white;
+                                        color: $blue;
+                                        border: 0rem;
+                                        margin: 0rem;
+                                        :active {
+                                            color: $purple;
+                                        }
                                     }
                                 }
-                            }
-                            .buyButton {
-                                @include button(2rem, $blue, $white, .6rem 5.5rem);
-                                margin: 2rem;
+                                .itemCounterBuy {
+                                    .buyButton {
+                                        @include button(2rem, $blue, $white, .6rem 5.5rem);
+                                        margin: 2rem;
+                                    }
+                                }
                             }
                         }
                         .itemDetailRent {
