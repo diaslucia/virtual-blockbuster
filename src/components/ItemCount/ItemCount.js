@@ -1,11 +1,7 @@
-import {useState} from "react"
-import { useHistory } from "react-router-dom";
 import "../../sass/components/itemDetail.css"
 
 
-const ItemCount = ({stock}) => {
-    const [counter, setCounter] = useState(0);
-    let history = useHistory();
+const ItemCount = ({stock, counter, setCounter, item, addCart}) => {
 
     const onAdd = () => {
         if (counter < stock){
@@ -21,7 +17,8 @@ const ItemCount = ({stock}) => {
    
     const buyButton = () => {
     if(counter > 0){
-        history.push("/cart");
+        const dataItem = { ...item, quantity: counter };
+        addCart(dataItem)
         }
     }
 
