@@ -1,17 +1,19 @@
 import "../../sass/components/itemDetail.css";
 import ItemCount from "../ItemCount/ItemCount";
 import { useContext, useState } from "react";
+import { Link } from "react-router-dom";
 import Context from "../CartContext/CartContext";
 
 const ItemDetail = ({item}) => {
-    const [counter, setCounter] = useState(0)
+    const [counter, setCounter] = useState(1)
+    const [condition, setCondition] = useState(false)
 
     const { addCart } = useContext(Context);
 
     const rent = () => {
         const dataItem = { ...item, quantity: counter };
         addCart(dataItem)
-        console.log(dataItem)
+        setCondition(!condition);
     }
 
     return(
@@ -25,12 +27,25 @@ const ItemDetail = ({item}) => {
                         <h1>{item.name}</h1>
                         <h5>{item.genre} -<br/> {item.duration}</h5>
                         <p>{item.plot}</p>
-                        <div className="itemDetailButtons">
+                        <div className="itemDetailButtons" style={{justifyContent: false ? "flex-start" : "center"}}>
                             <div className="itemDetailBuy">
-                                <ItemCount stock={item.stock} counter={counter} setCounter={setCounter} item={item} addCart={addCart}/>
+                                {condition === false ?
+                                <ItemCount stock={item.stock} counter={counter} setCounter={setCounter} item={item} addCart={addCart} condition={condition} setCondition={setCondition} price={item.price}/>
+                                :
+                                <Link to="/cart" className="goToCart">Ir al carrito</Link>}
+                                
                             </div>
                             <div className="itemDetailRent">
+                                {condition === false ?
+                                <>
+                                <p className="rentPrice">${item.price}</p>
+                                <p className="rentDays">3 days</p>
                                 <button className="rentButton" onClick={rent}>Rent</button>
+                                </>
+                                :
+                                <></>
+                                }
+                                
                             </div>
                         </div>
                     </div>

@@ -1,29 +1,35 @@
 import "../../sass/components/itemDetail.css"
+import { useState } from "react";
 
 
-const ItemCount = ({stock, counter, setCounter, item, addCart}) => {
+const ItemCount = ({stock, counter, setCounter, item, addCart, condition, setCondition, price}) => {
+    const [priceItem, setPriceItem] = useState(price);
 
     const onAdd = () => {
         if (counter < stock){
             setCounter(counter + 1);
+            setPriceItem(priceItem + price)
         }
     }
 
     const onSubtract = () => {
-        if(counter > 0){
+        if(counter > 1){
             setCounter(counter - 1);
+            setPriceItem(priceItem - price)
         }
     }
    
     const buyButton = () => {
-    if(counter > 0){
-        const dataItem = { ...item, quantity: counter };
+        const dataItem = { ...item, quantity: counter, price: priceItem };
         addCart(dataItem)
-        }
+        setCondition(!condition);
     }
 
     return (
         <div className="itemCountContainer">
+            <div className="itemCountPrice">
+            <p className="buyPrice">${priceItem}</p>
+            </div>
             <div className="itemCounter">
                 <button className="buttonSubtract" onClick={onSubtract}>-</button>
                 <p className="itemCounter">{counter}</p>

@@ -8,7 +8,6 @@ export const CartContext = ({children}) => {
     const addCart = (item) => {
         if(!checkDuplicate(item.id)){
             setCart([...cart, item]);
-            
         } else {
             let prod = cart.find(product => product.id === item.id);
             prod.quantity = item.quantity + prod.quantity;

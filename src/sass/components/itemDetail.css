@@ -69,7 +69,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 2rem 2rem 2rem 0rem;
+  margin: 0rem 2rem 2rem 0rem;
   width: auto;
 }
 
@@ -117,6 +117,33 @@
   margin-top: 5rem;
 }
 
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .goToCart {
+  font-size: 2rem;
+  font-family: anton, sans-serif;
+  color: #1c4da4;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  letter-spacing: 3px;
+  padding: 0.6rem 4rem;
+  border: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  text-decoration: none;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .goToCart:hover {
+  cursor: pointer;
+  color: #781565;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .goToCart:active {
+  cursor: pointer;
+  color: #781565;
+  -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+          box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,6 +158,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCountPrice .buyPrice {
+  font-size: 2rem;
+  font-family: anton, sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.322);
+  letter-spacing: 3px;
+  padding: 1rem 0rem;
+  text-align: center;
+  width: 150px;
+  margin: 1rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter {
@@ -152,6 +194,7 @@
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   padding: 0rem;
   margin: 0rem;
+  width: 150px;
 }
 
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter .buttonAdd {
@@ -200,12 +243,13 @@
   text-transform: uppercase;
   background-color: #ffffff;
   letter-spacing: 3px;
-  padding: 0.6rem 5.5rem;
+  padding: 0.6rem 5.7rem;
   border: 0px;
   border-radius: 0px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  margin: 2rem;
+  margin: 1rem;
+  width: 150px;
 }
 
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounterBuy .buyButton:hover {
@@ -236,6 +280,36 @@
           align-items: center;
 }
 
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailRent .rentPrice {
+  font-size: 2rem;
+  font-family: anton, sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.322);
+  letter-spacing: 3px;
+  padding: 1rem 0rem;
+  text-align: center;
+  width: 150px;
+  margin: 1rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailRent .rentDays {
+  font-size: 2rem;
+  font-family: anton, sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.322);
+  letter-spacing: 3px;
+  padding: 1rem 0rem;
+  text-align: center;
+  width: 150px;
+  margin: 0rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailRent .rentButton {
   font-size: 2rem;
   font-family: anton, sans-serif;
@@ -248,7 +322,8 @@
   border-radius: 0px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  margin: 2rem;
+  margin: 1rem;
+  width: 150px;
 }
 
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailRent .rentButton:hover {
