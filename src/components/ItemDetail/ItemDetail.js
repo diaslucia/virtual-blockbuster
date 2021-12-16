@@ -1,7 +1,16 @@
 import "../../sass/components/itemDetail.css";
 import ItemCount from "../ItemCount/ItemCount";
+import { useContext } from "react";
+import Context from "../CartContext/CartContext";
 
 const ItemDetail = ({item}) => {
+
+    console.log(item)
+    const { addCart } = useContext(Context);
+
+    const rent = (item) => {
+        addCart(item)
+    }
 
     return(
         <div className="itemDetailContainer">
@@ -19,7 +28,7 @@ const ItemDetail = ({item}) => {
                                 <ItemCount stock={item.stock}/>
                             </div>
                             <div className="itemDetailRent">
-                                <button className="rentButton">Rent</button>
+                                <button className="rentButton" onClick={rent(item)}>Rent</button>
                             </div>
                         </div>
                     </div>
