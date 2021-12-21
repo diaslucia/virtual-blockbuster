@@ -11,9 +11,9 @@ export const CartContext = ({children}) => {
         } else {
             let prod = cart.find(product => product.id === item.id);
             prod.quantity = item.quantity + prod.quantity;
+            prod.price = item.price + prod.price;
             if(prod.quantity <= prod.stock){
                 setCart([...cart]);
-                console.log(cart)
             } else {
                 console.log("no hay suficiente stock")
             }
@@ -34,12 +34,26 @@ export const CartContext = ({children}) => {
         setCart([]);
     }
 
+    const totalAmount = () => {
+        let numberCart = 0;
+        cart.map(product => numberCart += product.quantity);
+        return numberCart;
+    }
+
+    const totalPrice = () => {
+        let total = 0;
+        cart.map(product => total += product.price);
+        return total;
+    }
+
     return(
         <Context.Provider value={{
                                     cart,
                                     addCart,
                                     removeItem,
-                                    deleteCart}}>
+                                    deleteCart,
+                                    totalAmount,
+                                    totalPrice}}>
             {children}
         </Context.Provider>
     )

@@ -60,6 +60,10 @@ html {
   padding-right: 1.5rem;
 }
 
+.NavBarContainer .navBar ul .cartNumberEmpty {
+  padding-right: 2rem;
+}
+
 .NavBarContainer .navBar ul .login {
   font-size: 2rem;
   font-family: oswald, sans-serif;

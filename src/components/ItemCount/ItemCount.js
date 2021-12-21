@@ -1,9 +1,13 @@
 import "../../sass/components/itemDetail.css"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 const ItemCount = ({stock, counter, setCounter, item, addCart, condition, setCondition, price}) => {
-    const [priceItem, setPriceItem] = useState(price);
+    const [priceItem, setPriceItem] = useState(0);
+
+    useEffect(() => {
+        setPriceItem(price);
+    }, [price])
 
     const onAdd = () => {
         if (counter < stock){

@@ -134,12 +134,12 @@
 
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .goToCart:hover {
   cursor: pointer;
-  color: #781565;
+  color: #1b458f;
 }
 
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .goToCart:active {
   cursor: pointer;
-  color: #781565;
+  color: #1b458f;
   -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
           box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
@@ -207,8 +207,9 @@
   margin: 0rem;
 }
 
-.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter .buttonAdd :active {
-  color: #781565;
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter .buttonAdd:hover {
+  cursor: pointer;
+  color: #1b458f;
 }
 
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter .itemCounter {
@@ -232,8 +233,9 @@
   margin: 0rem;
 }
 
-.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter .buttonSubtract :active {
-  color: #781565;
+.ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounter .buttonSubtract:hover {
+  cursor: pointer;
+  color: #1b458f;
 }
 
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounterBuy .buyButton {
@@ -254,12 +256,12 @@
 
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounterBuy .buyButton:hover {
   cursor: pointer;
-  color: #781565;
+  color: #1b458f;
 }
 
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailBuy .itemCountContainer .itemCounterBuy .buyButton:active {
   cursor: pointer;
-  color: #781565;
+  color: #1b458f;
   -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
           box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
@@ -328,12 +330,12 @@
 
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailRent .rentButton:hover {
   cursor: pointer;
-  color: #781565;
+  color: #1b458f;
 }
 
 .ItemDetailContainerParent .itemDetailContainer .itemDetailInfo .itemDetailDiv .itemDetailText .itemDetailButtons .itemDetailRent .rentButton:active {
   cursor: pointer;
-  color: #781565;
+  color: #1b458f;
   -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
           box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }

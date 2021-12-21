@@ -37,6 +37,9 @@ html {
                 color: $white;
                 padding-right: 1.5rem;
             }
+            .cartNumberEmpty {
+                padding-right: 2rem;
+            }
             .login {
                 @include font2 (2rem);
                 color: $white;

@@ -1,1 +1,119 @@
 @import "../variables/variables.scss";
+
+.cart {
+    @include flex(row, flex-start);
+    margin: 12rem 0rem;
+    margin-top: 12rem;
+    background-image: url("../../assets/wallpaperCart.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 8rem 0rem;
+    .cartItemContainer{
+        @include flex(row, center);
+        background-image: url("../../assets/CartItemWallpaper.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+        width: 50vw;
+        padding: 3rem 5rem;
+        margin-bottom: 2rem;
+        .cartImgContainer {
+            img{
+                width:80px;
+                border: 2px solid $yellow;
+            }
+        }
+        .cartItemDetails {
+            margin: 0rem 2rem;
+            h1{
+                width: 100px;
+                @include font2(2rem);
+                letter-spacing: .5px;
+                text-transform: uppercase;
+                color: $yellow;
+                margin: .5rem 0rem;
+            }
+            p{
+                @include font2(1.5rem);
+                letter-spacing: .5px;
+                text-transform: uppercase;
+                color: $yellow;
+                margin: .5rem 0rem;
+            }
+        }
+        .removeItem {
+            font-size:2rem;
+            color: $yellow;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .cartTotal {
+        @include flex2(column, flex-start, flex-start);
+        padding: 3rem 0rem;
+        width: 50vw;
+        p {
+            @include font2(2rem);
+            letter-spacing: .5px;
+            text-transform: uppercase;
+            color: $blue;
+            margin: 0rem;
+        }
+        .emptyCartButton{
+            @include button(1.8rem, $yellow, $blue, .5rem 2rem);
+            margin: 2rem 0rem;
+            &:hover {
+                color: $yellow;
+                background-color: $darkblue;
+            }
+            &:active {
+                color: $yellow;
+                background-color: $darkblue;
+                box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
+            }
+        }
+        .checkoutButton{
+            @include button(1.8rem, $yellow, $blue, .5rem 2rem);
+            &:hover {
+                color: $yellow;
+                background-color: $darkblue;
+            }
+            &:active {
+                color: $yellow;
+                background-color: $darkblue;
+                box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
+            }
+        }
+    }
+}
+.emptyCart {
+    @include flex(column, center);
+    margin-top: 12rem;
+    background-image: url("../../assets/wallpaperCart.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 50vh;
+    h1 {
+        @include font2(3.5rem);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin: 0rem;
+        color: $pink;
+    }
+    p {
+        @include button(2rem, $yellow, $blue, 1rem 3rem);
+            &:hover {
+                color: $yellow;
+                background-color: $darkblue;
+            }
+            &:active {
+                color: $yellow;
+                background-color: $darkblue;
+                box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
+            }
+        a {text-decoration: none; color: $yellow;}
+    }
+}

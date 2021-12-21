@@ -85,8 +85,9 @@
                                         color: $blue;
                                         border: 0rem;
                                         margin: 0rem;
-                                        :active {
-                                            color: $purple;
+                                        &:hover {
+                                            cursor: pointer;
+                                            color: $darkblue;
                                         }
                                     }
                                     .itemCounter {
@@ -104,8 +105,9 @@
                                         color: $blue;
                                         border: 0rem;
                                         margin: 0rem;
-                                        :active {
-                                            color: $purple;
+                                        &:hover {
+                                            cursor: pointer;
+                                            color: $darkblue;
                                         }
                                     }
                                 }
