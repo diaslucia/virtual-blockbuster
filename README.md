@@ -53,33 +53,6 @@ Dentro de la carpeta ***src*** se encuentras las carpetas y los archivos del pro
 > ### src/App.js
 > Contiene la navegación del sitio web. 
 
-> ### src/products.js
-> Simula el backend, se encuentran el listado de los productos con su respectiva información y detalle.
-> 
-> #### ***getProducts()***
-> 
-> A través de una promesa, esta función me devuelve todos mis productos.
-> 
-> ![getProducts](http://imgfz.com/i/zKQC8lO.png)
->
-> #### ***getProductById()***
->
-> A través de una promesa, esta función me devuelve un producto por Id por props.
-> 
-> ![getProductById](http://imgfz.com/i/Z2xy7tg.png)
-> 
-> #### ***getProductByCategory()***
-> 
-> A través de una promesa, esta función me devuelve todos mis productos filtrados por una categoría que se define por props.
-> 
-> ![getProductByCategory](http://imgfz.com/i/my28oMJ.png)
->
-> #### ***getItem()***
-> 
-> A través de una promesa, esta función me devuelve el primer producto de mi lista de productos.
-> 
-> ![getItem](http://imgfz.com/i/PhkQ1t3.png)
-
 > ### src/components/NavBar.js
 > NavBar contiene el componente del navegador del sitio y pasa por props a {children} que es el menú del carrito (src/components/CartWidget.js)
 
