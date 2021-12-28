@@ -1,5 +1,5 @@
 import "../../sass/components/itemDetail.css"
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 
 const ItemCount = ({stock, counter, setCounter, item, addCart, condition, setCondition, price}) => {

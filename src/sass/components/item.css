@@ -12,6 +12,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(rgba(255, 217, 0, 0.5)));
   background: linear-gradient(to right, #ffffff, rgba(255, 217, 0, 0.5));
   margin-top: 10rem;
@@ -29,14 +31,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 2rem;
   width: 200px;
+  height: 400px;
 }
 
 .itemCardContainer .itemCard .itemCardImg {
@@ -49,6 +52,7 @@
   font-family: oswald, sans-serif;
   letter-spacing: .5px;
   text-transform: uppercase;
+  text-align: center;
   color: #1c4da4;
   margin: .5rem 0rem;
 }
