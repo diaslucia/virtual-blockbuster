@@ -16,6 +16,7 @@
         background-repeat: no-repeat;
         background-size:contain;
         width: 50vw;
+        height: 15vh;
         padding: 3rem 5rem;
         margin-bottom: 2rem;
         .cartImgContainer {
@@ -28,9 +29,10 @@
             margin: 0rem 2rem;
             h1{
                 width: 100px;
-                @include font2(2rem);
+                @include font2(1.3rem);
                 letter-spacing: .5px;
                 text-transform: uppercase;
+                overflow:hidden;
                 color: $yellow;
                 margin: .5rem 0rem;
             }
