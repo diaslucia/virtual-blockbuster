@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Context from "../CartContext/CartContext";
 
 const ItemDetail = ({item}) => {
-    const [counter, setCounter] = useState(1)
+    const [counter, setCounter] = useState(0)
     const [condition, setCondition] = useState(false)
 
     const { addCart } = useContext(Context);
@@ -32,7 +32,7 @@ const ItemDetail = ({item}) => {
                                 {condition === false ?
                                 <ItemCount stock={item.stock} counter={counter} setCounter={setCounter} item={item} addCart={addCart} condition={condition} setCondition={setCondition} price={item.price}/>
                                 :
-                                <Link to="/cart" className="goToCart">Ir al carrito</Link>}
+                                <Link to="/cart" className="goToCart">Go to cart</Link>}
                                 
                             </div>
                             <div className="itemDetailRent">

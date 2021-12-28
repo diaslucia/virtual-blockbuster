@@ -63,7 +63,7 @@
         }
         .emptyCartButton{
             @include button(1.8rem, $yellow, $blue, .5rem 2rem);
-            margin: 2rem 0rem;
+            margin: 2rem 1rem 2rem 0rem;
             &:hover {
                 color: $yellow;
                 background-color: $darkblue;
@@ -76,6 +76,7 @@
         }
         .checkoutButton{
             @include button(1.8rem, $yellow, $blue, .5rem 2rem);
+            text-decoration: none;
             &:hover {
                 color: $yellow;
                 background-color: $darkblue;

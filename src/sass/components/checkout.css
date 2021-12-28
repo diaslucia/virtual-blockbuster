@@ -1,19 +1,18 @@
-.cart {
+.checkoutContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 12rem 0rem;
-  margin-top: 12rem;
   background-image: url("../../assets/wallpaperCart.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -21,67 +20,17 @@
   padding: 8rem 0rem;
 }
 
-.cart .cartItemContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-image: url("../../assets/CartItemWallpaper.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 50vw;
-  padding: 3rem 5rem;
-  margin-bottom: 2rem;
-}
-
-.cart .cartItemContainer .cartImgContainer img {
-  width: 80px;
-  border: 2px solid #fed406;
-}
-
-.cart .cartItemContainer .cartItemDetails {
-  margin: 0rem 2rem;
-}
-
-.cart .cartItemContainer .cartItemDetails h1 {
-  width: 100px;
-  font-size: 2rem;
+.checkoutContainer .titleContainer p {
+  font-size: 2.5rem;
   font-family: oswald, sans-serif;
   letter-spacing: .5px;
   text-transform: uppercase;
-  color: #fed406;
-  margin: .5rem 0rem;
+  color: #1c4da4;
+  margin: 0rem;
+  text-align: center;
 }
 
-.cart .cartItemContainer .cartItemDetails p {
-  font-size: 1.5rem;
-  font-family: oswald, sans-serif;
-  letter-spacing: .5px;
-  text-transform: uppercase;
-  color: #fed406;
-  margin: .5rem 0rem;
-}
-
-.cart .cartItemContainer .removeItem {
-  font-size: 2rem;
-  color: #fed406;
-}
-
-.cart .cartItemContainer .removeItem:hover {
-  cursor: pointer;
-}
-
-.cart .cartTotal {
+.checkoutContainer .formContainer form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,59 +44,49 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 3rem 0rem;
-  width: 50vw;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-.cart .cartTotal p {
+.checkoutContainer .formContainer form label {
   font-size: 2rem;
   font-family: oswald, sans-serif;
   letter-spacing: .5px;
   text-transform: uppercase;
   color: #1c4da4;
-  margin: 0rem;
+  background-color: #fed406;
+  padding: 1rem;
+  margin: .5rem;
 }
 
-.cart .cartTotal .emptyCartButton {
-  font-size: 1.8rem;
-  font-family: anton, sans-serif;
-  color: #fed406;
+.checkoutContainer .formContainer form input {
+  width: auto;
+  border: none;
+  padding: 1rem;
+  margin-left: 1rem;
+  background-color: #fed406;
+}
+
+.checkoutContainer .formContainer form input:focus {
+  outline: 0rem;
+  padding: 1rem;
+  margin-left: 1rem;
+  background-color: rgba(255, 217, 0, 0.5);
+}
+
+.checkoutContainer .formContainer form input:focus {
   text-transform: uppercase;
-  background-color: #1c4da4;
-  letter-spacing: 3px;
-  padding: 0.5rem 2rem;
-  border: 0px;
-  border-radius: 0px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  margin: 2rem 1rem 2rem 0rem;
+  color: #1c4da4;
+  background-color: rgba(255, 217, 0, 0.5);
 }
 
-.cart .cartTotal .emptyCartButton:hover {
-  cursor: pointer;
-  color: #1b458f;
+.checkoutContainer .formContainer form input#name, .checkoutContainer .formContainer form input#email, .checkoutContainer .formContainer form input#number {
+  text-transform: uppercase;
+  color: #1c4da4;
+  background-color: rgba(255, 217, 0, 0.5);
 }
 
-.cart .cartTotal .emptyCartButton:active {
-  cursor: pointer;
-  color: #1b458f;
-  -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-          box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-}
-
-.cart .cartTotal .emptyCartButton:hover {
-  color: #fed406;
-  background-color: #1b458f;
-}
-
-.cart .cartTotal .emptyCartButton:active {
-  color: #fed406;
-  background-color: #1b458f;
-  -webkit-box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
-          box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
-}
-
-.cart .cartTotal .checkoutButton {
+.checkoutContainer .buyContainer .confirmButton {
   font-size: 1.8rem;
   font-family: anton, sans-serif;
   color: #fed406;
@@ -162,31 +101,31 @@
   text-decoration: none;
 }
 
-.cart .cartTotal .checkoutButton:hover {
+.checkoutContainer .buyContainer .confirmButton:hover {
   cursor: pointer;
   color: #1b458f;
 }
 
-.cart .cartTotal .checkoutButton:active {
+.checkoutContainer .buyContainer .confirmButton:active {
   cursor: pointer;
   color: #1b458f;
   -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
           box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
-.cart .cartTotal .checkoutButton:hover {
+.checkoutContainer .buyContainer .confirmButton:hover {
   color: #fed406;
   background-color: #1b458f;
 }
 
-.cart .cartTotal .checkoutButton:active {
+.checkoutContainer .buyContainer .confirmButton:active {
   color: #fed406;
   background-color: #1b458f;
   -webkit-box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
           box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
 }
 
-.emptyCart {
+.thankYou {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,63 +139,68 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 12rem;
+  margin: 12rem 0rem;
   background-image: url("../../assets/wallpaperCart.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  padding: 8rem 0rem;
 }
 
-.emptyCart h1 {
+.thankYou p {
+  font-size: 2.5rem;
+  font-family: oswald, sans-serif;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: #1c4da4;
+  margin: 0rem 0rem .5rem 0rem;
+  text-align: center;
+}
+
+.thankYou h1 {
   font-size: 3.5rem;
   font-family: oswald, sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin: 0rem;
-  color: #ea2194;
+  margin: 0rem 0rem 2rem 0rem;
 }
 
-.emptyCart p {
-  font-size: 2rem;
+.thankYou .doneOrder {
+  font-size: 1.8rem;
   font-family: anton, sans-serif;
   color: #fed406;
   text-transform: uppercase;
   background-color: #1c4da4;
   letter-spacing: 3px;
-  padding: 1rem 3rem;
+  padding: 0.5rem 2rem;
   border: 0px;
   border-radius: 0px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  text-decoration: none;
 }
 
-.emptyCart p:hover {
+.thankYou .doneOrder:hover {
   cursor: pointer;
   color: #1b458f;
 }
 
-.emptyCart p:active {
+.thankYou .doneOrder:active {
   cursor: pointer;
   color: #1b458f;
   -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
           box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
-.emptyCart p:hover {
+.thankYou .doneOrder:hover {
   color: #fed406;
   background-color: #1b458f;
 }
 
-.emptyCart p:active {
+.thankYou .doneOrder:active {
   color: #fed406;
   background-color: #1b458f;
   -webkit-box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
           box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
 }
-
-.emptyCart p a {
-  text-decoration: none;
-  color: #fed406;
-}
-/*# sourceMappingURL=cart.css.map */
+/*# sourceMappingURL=checkout.css.map */
