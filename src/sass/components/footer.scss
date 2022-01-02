@@ -1,0 +1,97 @@
+@import "../variables/variables.scss";
+
+footer {
+    background-color: $blue;
+    padding: 2rem 0rem;
+    .footerContainer{
+        @include flex2(row, space-around, flex-start);
+        margin: 0rem 3rem;
+        .footerNav{
+            align-self: center;
+            justify-self: flex-end;
+            ul {
+                @include flex(row, center);
+                list-style: none;
+                li {
+                    @include font (2rem);
+                    padding: 3rem;
+                    letter-spacing: 2px;
+                    color: $white;
+                        a{text-decoration: none;
+                            color: $white;
+                            cursor: pointer;}
+                }
+                .line {
+                    width: 1px;
+                    height: 3rem;
+                    background-color: $white;
+                }
+            }
+        }
+        .footerLogo{
+            align-self: center;
+            .logoFooter{
+                width: 200px;
+                margin: 0rem 3rem;
+            }
+        }
+        .footerAboutUs{
+            @include flex2(column, center, flex-start);
+            margin: 2rem;
+            h1{
+                @include font2(1.5rem);
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $white;
+                margin: 0rem 0rem .5rem 0rem;
+            }
+            p{
+                @include font2(1.2rem);
+                margin: .3rem 0rem;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $white;
+            }
+        }
+        .footerHelp{
+            @include flex2(column, center, flex-start);
+            margin: 2rem;
+            h1{
+                @include font2(1.5rem);
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $white;
+                margin: 0rem 0rem .5rem 0rem;
+            }
+            p{
+                @include font2(1.2rem);
+                margin: .3rem 0rem;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $white;
+            }
+        }
+        .footerConnect{
+            @include flex2(column, center, flex-start);
+            margin: 2rem;
+            h1{
+                @include font2(1.5rem);
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $white;
+                margin: 0rem 0rem .5rem 0rem;
+            }
+            .icons{
+                @include flex(row, center);
+                .iconConnect{
+                    font-size: 3rem;
+                    color: $white;
+                }
+                .iconConnectMiddle {
+                    margin: 1rem;
+                }
+            }
+            
+        }
+    }
+}

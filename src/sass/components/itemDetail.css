@@ -1,3 +1,79 @@
+.findProduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0rem;
+  margin-bottom: 6rem;
+  background-image: url("../../assets/wallpaperCart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100vw;
+}
+
+.findProduct h1 {
+  font-size: 3.5rem;
+  font-family: oswald, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0rem;
+  color: #ea2194;
+}
+
+.findProduct p {
+  font-size: 2rem;
+  font-family: anton, sans-serif;
+  color: #fed406;
+  text-transform: uppercase;
+  background-color: #1c4da4;
+  letter-spacing: 3px;
+  padding: 1rem 3rem;
+  border: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.findProduct p:hover {
+  cursor: pointer;
+  color: #1b458f;
+}
+
+.findProduct p:active {
+  cursor: pointer;
+  color: #1b458f;
+  -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+          box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.findProduct p:hover {
+  color: #fed406;
+  background-color: #1b458f;
+}
+
+.findProduct p:active {
+  color: #fed406;
+  background-color: #1b458f;
+  -webkit-box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
+          box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
+}
+
+.findProduct p a {
+  text-decoration: none;
+  color: #fed406;
+}
+
 .ItemDetailContainerParent {
   display: -webkit-box;
   display: -ms-flexbox;

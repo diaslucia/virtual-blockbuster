@@ -1,0 +1,197 @@
+footer {
+  background-color: #1c4da4;
+  padding: 2rem 0rem;
+}
+
+footer .footerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0rem 3rem;
+}
+
+footer .footerContainer .footerNav {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  justify-self: flex-end;
+}
+
+footer .footerContainer .footerNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+footer .footerContainer .footerNav ul li {
+  font-size: 2rem;
+  font-family: anton, sans-serif;
+  padding: 3rem;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+footer .footerContainer .footerNav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+footer .footerContainer .footerNav ul .line {
+  width: 1px;
+  height: 3rem;
+  background-color: #ffffff;
+}
+
+footer .footerContainer .footerLogo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer .footerContainer .footerLogo .logoFooter {
+  width: 200px;
+  margin: 0rem 3rem;
+}
+
+footer .footerContainer .footerAboutUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 2rem;
+}
+
+footer .footerContainer .footerAboutUs h1 {
+  font-size: 1.5rem;
+  font-family: oswald, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0rem 0rem .5rem 0rem;
+}
+
+footer .footerContainer .footerAboutUs p {
+  font-size: 1.2rem;
+  font-family: oswald, sans-serif;
+  margin: .3rem 0rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+footer .footerContainer .footerHelp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 2rem;
+}
+
+footer .footerContainer .footerHelp h1 {
+  font-size: 1.5rem;
+  font-family: oswald, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0rem 0rem .5rem 0rem;
+}
+
+footer .footerContainer .footerHelp p {
+  font-size: 1.2rem;
+  font-family: oswald, sans-serif;
+  margin: .3rem 0rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+footer .footerContainer .footerConnect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 2rem;
+}
+
+footer .footerContainer .footerConnect h1 {
+  font-size: 1.5rem;
+  font-family: oswald, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0rem 0rem .5rem 0rem;
+}
+
+footer .footerContainer .footerConnect .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footerContainer .footerConnect .icons .iconConnect {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+footer .footerContainer .footerConnect .icons .iconConnectMiddle {
+  margin: 1rem;
+}
+/*# sourceMappingURL=footer.css.map */

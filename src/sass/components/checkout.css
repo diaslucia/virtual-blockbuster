@@ -30,6 +30,16 @@
   text-align: center;
 }
 
+.checkoutContainer .titleContainer .checkEmail {
+  font-size: 1.5rem;
+  font-family: oswald, sans-serif;
+  letter-spacing: 0px;
+  text-transform: none;
+  color: #ea2194;
+  margin-top: 2rem;
+  text-align: center;
+}
+
 .checkoutContainer .formContainer form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,6 +61,7 @@
 .checkoutContainer .formContainer form label {
   font-size: 2rem;
   font-family: oswald, sans-serif;
+  width: 25vw;
   letter-spacing: .5px;
   text-transform: uppercase;
   color: #1c4da4;
@@ -60,7 +71,7 @@
 }
 
 .checkoutContainer .formContainer form input {
-  width: auto;
+  width: 10vw;
   border: none;
   padding: 1rem;
   margin-left: 1rem;

@@ -1,5 +1,37 @@
 @import "../variables/variables.scss";
 
+.findProduct{
+    @include flex(column, center);
+    margin-top: 0rem;
+    margin-bottom:6rem;
+    background-image: url("../../assets/wallpaperCart.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 50vh;
+    width: 100vw;
+    h1 {
+        @include font2(3.5rem);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin: 0rem;
+        color: $pink;
+    }
+    p {
+        @include button(2rem, $yellow, $blue, 1rem 3rem);
+            &:hover {
+                color: $yellow;
+                background-color: $darkblue;
+            }
+            &:active {
+                color: $yellow;
+                background-color: $darkblue;
+                box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
+            }
+        a {text-decoration: none; color: $yellow;}
+    }
+}
+
 .ItemDetailContainerParent {
     @include flex(column, center);
     margin: 12rem 4rem 4rem 4rem;

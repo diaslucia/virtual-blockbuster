@@ -16,7 +16,7 @@
       flex-wrap: wrap;
   background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(rgba(255, 217, 0, 0.5)));
   background: linear-gradient(to right, #ffffff, rgba(255, 217, 0, 0.5));
-  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .itemCardContainer .itemLink {
@@ -37,7 +37,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 2rem;
+  margin: 0rem 2rem;
   width: 200px;
   height: 400px;
 }

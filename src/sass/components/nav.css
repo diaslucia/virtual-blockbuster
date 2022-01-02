@@ -4,6 +4,14 @@ html {
   font-size: 62.5%;
 }
 
+.banner2 {
+  display: block;
+  margin: auto;
+  width: 100vw;
+  margin-top: 9rem;
+  margin-bottom: 3rem;
+}
+
 .NavBarContainer .navBar {
   background-color: #1c4da4;
   width: 99vw;

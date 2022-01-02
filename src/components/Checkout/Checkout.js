@@ -7,10 +7,12 @@ import { useContext, useEffect, useState } from "react";
 
 const Checkout = () => {
     const [processingOrder, setProcessingOrder] = useState(false);
+    const [checkEmail, setCheckEmail] = useState(false);
     const [orderDone, setOrderDone] = useState(false);
     const [idOrder, setIdOrder] = useState("");
     const [userName, setUserName] = useState("");
     const [userEmail, setUserEmail] = useState("");
+    const [userEmailAgain, setUserEmailAgain] = useState("");
     const [userNumber, setUserNumber] = useState("");
     const { totalPrice, cart, deleteCart } = useContext(Context);
 
@@ -23,46 +25,50 @@ const Checkout = () => {
     }
 
     const confirmOrder = () => {
-        setProcessingOrder(true)
-
-        const objOrder = {
-            name: userName,
-            email: userEmail,
-            phone: userNumber,
-            date: Timestamp.fromDate(new Date()),
-            items: cart,
-            total: totalPrice()
-        }
-
-        const batch = writeBatch(db)
-        const outOfStock = []
-
-        objOrder.items.forEach((prod) => {
-            getDoc(doc(db, "items", prod.id)).then((documentSnapshot) => {
-                if(documentSnapshot.data().stock >= prod.quantity) {
-                    batch.update(doc(db, "items", documentSnapshot.id), {
-                        stock: documentSnapshot.data().stock - prod.quantity
-                    })
-                } else {
-                    outOfStock.push({ id: documentSnapshot.id, ...documentSnapshot.data()})
-                }
-            })
-        })
-
-        if(outOfStock.length === 0) {
-            addDoc(collection(db, "orders"), objOrder).then(({id}) => {
-                batch.commit().then(() => {
-                    setIdOrder(id)
-                    setOrderDone(true)
+        if(userEmail === userEmailAgain) {
+            setProcessingOrder(true);
+        
+            const objOrder = {
+                name: userName,
+                email: userEmail,
+                phone: userNumber,
+                date: Timestamp.fromDate(new Date()),
+                items: cart,
+                total: totalPrice()
+            }
+    
+            const batch = writeBatch(db)
+            const outOfStock = []
+    
+            objOrder.items.forEach((prod) => {
+                getDoc(doc(db, "items", prod.id)).then((documentSnapshot) => {
+                    if(documentSnapshot.data().stock >= prod.quantity) {
+                        batch.update(doc(db, "items", documentSnapshot.id), {
+                            stock: documentSnapshot.data().stock - prod.quantity
+                        })
+                    } else {
+                        outOfStock.push({ id: documentSnapshot.id, ...documentSnapshot.data()})
+                    }
                 })
-            }).catch((error) => {
-                console.log(`Eror: ${error}`)
-            }).finally(() => {
-                setProcessingOrder(false)
-                deleteCart()
             })
+    
+            if(outOfStock.length === 0) {
+                addDoc(collection(db, "orders"), objOrder).then(({id}) => {
+                    batch.commit().then(() => {
+                        setIdOrder(id)
+                        setOrderDone(true)
+                    })
+                }).catch((error) => {
+                    console.log(`Eror: ${error}`)
+                }).finally(() => {
+                    setProcessingOrder(false);
+                    setCheckEmail(false);
+                    deleteCart()
+                })
+            }
+        } else {
+            setCheckEmail(true);
         }
-
     }
 
     if(processingOrder) {
@@ -75,6 +81,11 @@ const Checkout = () => {
             <div className="checkoutContainer">
                 <div className="titleContainer">
                     <p>To proceed with the checkout<br></br>fill in the form</p>
+                    { checkEmail === true ?
+                    <p className="checkEmail">Sorry, we were unable to match the email address entered.<br></br> Please, check your entries and try again.</p>
+                    :
+                    <></>
+                    }
                 </div>
                 <div className="formContainer">
                     <form>
@@ -83,8 +94,12 @@ const Checkout = () => {
                             <input type="text" id="name" name="name" value={userName} onChange={(e)=> setUserName(e.target.value)}></input>
                         </label>
                         <label>
-                            Email Address:
+                            Email:
                             <input type="email" id="email" name="email" value={userEmail} onChange={(e)=> setUserEmail(e.target.value)}></input>
+                        </label>
+                        <label>
+                            Type Email Again:
+                            <input type="email" id="email2" name="email2" value={userEmailAgain} onChange={(e)=> setUserEmailAgain(e.target.value)}></input>
                         </label>
                         <label>
                             Phone Number:
