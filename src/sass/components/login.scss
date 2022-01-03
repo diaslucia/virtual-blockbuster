@@ -1,0 +1,79 @@
+@import "../variables/variables.scss";
+
+.loginContainer{
+    @include flex(column, center);
+    margin-top: 12rem;
+    margin-bottom:10rem;
+    background-image: url("../../assets/wallpaperCart.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 50vh;
+    .logTitle{
+        h1{
+            @include font2(2.5rem);
+            letter-spacing: .5px;
+            text-transform: uppercase;
+            color: $blue;
+            margin: 0rem;
+            text-align: center;
+        }
+    }
+    .formContainer {
+        form {
+        @include flex2(column, flex-start, flex-start);
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        label {
+            @include font2(2rem);
+            width: 25vw;
+            letter-spacing: .5px;
+            text-transform: uppercase;
+            color: $blue;
+            background-color: $yellow;
+            padding: 1rem;
+            margin: .5rem;
+        }
+        input {
+            width: 10vw;
+            border: none;
+            padding: 1rem;
+            margin-left: 1rem;
+            background-color: $yellow;
+        }
+        input:focus {
+            outline: 0rem;
+            padding: 1rem;
+            margin-left: 1rem;
+            background-color: $lightyellow;
+        }
+        input:focus {
+            text-transform: uppercase;
+            color: $blue;
+            background-color: $lightyellow;
+        }
+        input#name, input#email, input#number {
+            text-transform: uppercase;
+            color: $blue;
+            background-color: $lightyellow;
+        }
+        button {
+            @include button(1.8rem, $yellow, $blue, .5rem 2rem);
+            text-decoration: none;
+            display: block;
+            margin: auto;
+            margin-top: 2rem;
+                &:hover {
+                    color: $yellow;
+                    background-color: $darkblue;
+                }
+                &:active {
+                    color: $yellow;
+                    background-color: $darkblue;
+                    box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
+                }
+            }
+        }
+    }
+}
+

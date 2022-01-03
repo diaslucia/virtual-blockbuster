@@ -48,11 +48,19 @@ html {
             .cartNumberEmpty {
                 padding-right: 2rem;
             }
-            .login {
+            .log {
                 @include font2 (2rem);
                 color: $white;
                 text-transform: uppercase;
                 padding: 0rem 2rem;
+                cursor: pointer;
+            }
+            .welcomeSign{
+                @include font2 (2rem);
+                color: $yellow;
+                text-transform: uppercase;
+                padding: 0rem;
+                margin: 0rem;
             }
         }
         

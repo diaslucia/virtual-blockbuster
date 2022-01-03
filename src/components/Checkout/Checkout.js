@@ -1,5 +1,6 @@
 import "../../sass/components/checkout.css"
-import Context from "../CartContext/CartContext";
+import Context from "../Context/CartContext";
+import UserContext from "../Context/UserContext";
 import { Link } from "react-router-dom";
 import { db } from "../../services/firebase/firebase";
 import { collection, addDoc, doc, writeBatch, Timestamp, getDoc} from "firebase/firestore";
@@ -15,6 +16,7 @@ const Checkout = () => {
     const [userEmailAgain, setUserEmailAgain] = useState("");
     const [userNumber, setUserNumber] = useState("");
     const { totalPrice, cart, deleteCart } = useContext(Context);
+    const { user  } = useContext(UserContext);
 
     useEffect(() => {
         return cart
@@ -95,7 +97,11 @@ const Checkout = () => {
                         </label>
                         <label>
                             Email:
+                            {user === undefined ?
                             <input type="email" id="email" name="email" value={userEmail} onChange={(e)=> setUserEmail(e.target.value)}></input>
+                            :
+                            <input type="email" id="email" name="email" value={user.email} onChange={(e)=> setUserEmail(e.target.value)}></input>
+                            }
                         </label>
                         <label>
                             Type Email Again:

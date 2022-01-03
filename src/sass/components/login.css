@@ -1,0 +1,132 @@
+.loginContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 12rem;
+  margin-bottom: 10rem;
+  background-image: url("../../assets/wallpaperCart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+.loginContainer .logTitle h1 {
+  font-size: 2.5rem;
+  font-family: oswald, sans-serif;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: #1c4da4;
+  margin: 0rem;
+  text-align: center;
+}
+
+.loginContainer .formContainer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.loginContainer .formContainer form label {
+  font-size: 2rem;
+  font-family: oswald, sans-serif;
+  width: 25vw;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: #1c4da4;
+  background-color: #fed406;
+  padding: 1rem;
+  margin: .5rem;
+}
+
+.loginContainer .formContainer form input {
+  width: 10vw;
+  border: none;
+  padding: 1rem;
+  margin-left: 1rem;
+  background-color: #fed406;
+}
+
+.loginContainer .formContainer form input:focus {
+  outline: 0rem;
+  padding: 1rem;
+  margin-left: 1rem;
+  background-color: rgba(255, 217, 0, 0.5);
+}
+
+.loginContainer .formContainer form input:focus {
+  text-transform: uppercase;
+  color: #1c4da4;
+  background-color: rgba(255, 217, 0, 0.5);
+}
+
+.loginContainer .formContainer form input#name, .loginContainer .formContainer form input#email, .loginContainer .formContainer form input#number {
+  text-transform: uppercase;
+  color: #1c4da4;
+  background-color: rgba(255, 217, 0, 0.5);
+}
+
+.loginContainer .formContainer form button {
+  font-size: 1.8rem;
+  font-family: anton, sans-serif;
+  color: #fed406;
+  text-transform: uppercase;
+  background-color: #1c4da4;
+  letter-spacing: 3px;
+  padding: 0.5rem 2rem;
+  border: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  text-decoration: none;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.loginContainer .formContainer form button:hover {
+  cursor: pointer;
+  color: #1b458f;
+}
+
+.loginContainer .formContainer form button:active {
+  cursor: pointer;
+  color: #1b458f;
+  -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+          box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.loginContainer .formContainer form button:hover {
+  color: #fed406;
+  background-color: #1b458f;
+}
+
+.loginContainer .formContainer form button:active {
+  color: #fed406;
+  background-color: #1b458f;
+  -webkit-box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
+          box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
+}
+/*# sourceMappingURL=login.css.map */

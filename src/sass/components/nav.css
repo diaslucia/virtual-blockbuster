@@ -72,12 +72,22 @@ html {
   padding-right: 2rem;
 }
 
-.NavBarContainer .navBar ul .login {
+.NavBarContainer .navBar ul .log {
   font-size: 2rem;
   font-family: oswald, sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   padding: 0rem 2rem;
+  cursor: pointer;
+}
+
+.NavBarContainer .navBar ul .welcomeSign {
+  font-size: 2rem;
+  font-family: oswald, sans-serif;
+  color: #fed406;
+  text-transform: uppercase;
+  padding: 0rem;
+  margin: 0rem;
 }
 
 .NavBarContainer .nav {

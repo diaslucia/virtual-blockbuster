@@ -2,7 +2,7 @@ import '../../sass/components/nav.css';
 import { ShoppingCartOutlined } from '@ant-design/icons';
 import { Link } from "react-router-dom";
 import { useContext} from "react";
-import Context from "../CartContext/CartContext";
+import Context from "../Context/CartContext";
 
 const CartWidget = () => {
 

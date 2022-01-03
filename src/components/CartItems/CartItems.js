@@ -1,5 +1,5 @@
 import "../../sass/components/cart.css"
-import Context from "../CartContext/CartContext";
+import Context from "../Context/CartContext";
 import { useContext} from "react";
 import { DeleteOutlined } from '@ant-design/icons';
 
