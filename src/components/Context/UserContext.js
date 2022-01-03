@@ -10,10 +10,11 @@ export const UserContextProvider = ({children}) => {
             username: objUserLogin.username,
             email: objUserLogin.email
         });
-        /* window.localStorage.setItem("user", JSON.stringify(objUserLogin)) */
+        window.localStorage.setItem("user", JSON.stringify(objUserLogin))
     }
     const logout = () => {
         setUser();
+        window.localStorage.removeItem("user");
     }
 
     return(
