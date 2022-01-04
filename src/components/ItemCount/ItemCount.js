@@ -1,10 +1,14 @@
 import "../../sass/components/itemDetail.css"
-import { useState } from "react";
+import { useContext, useState } from "react";
+import Context from "../Context/CartContext";
+import { Link } from "react-router-dom";
 
-
-const ItemCount = ({stock, counter, setCounter, item, addCart, condition, setCondition, price}) => {
+const ItemCount = ({stock, item, price}) => {
+    const [condition, setCondition] = useState(false);
+    const [counter, setCounter] = useState(0);
     const [priceItem, setPriceItem] = useState(0);
-
+    const { addCart } = useContext(Context);
+    
    
     const onAdd = () => {
         if (counter < stock){
@@ -29,19 +33,25 @@ const ItemCount = ({stock, counter, setCounter, item, addCart, condition, setCon
     }
 
     return (
-        <div className="itemCountContainer">
-            <div className="itemCountPrice">
-            <p className="buyPrice">${priceItem}</p>
+        <>
+        {condition === false ?
+            <div className="itemCountContainer">
+                <div className="itemCountPrice">
+                    <p className="buyPrice">${priceItem}</p>
+                </div>
+                <div className="itemCounter">
+                    <button className="buttonSubtract" onClick={onSubtract}>-</button>
+                    <p className="itemCounter">{counter}</p>
+                    <button className="buttonAdd" onClick={onAdd}>+</button>
+                </div>
+                <div className="itemCounterBuy">
+                    <button className="buyButton" onClick={buyButton}>Buy</button>
+                </div>
             </div>
-            <div className="itemCounter">
-                <button className="buttonSubtract" onClick={onSubtract}>-</button>
-                <p className="itemCounter">{counter}</p>
-                <button className="buttonAdd" onClick={onAdd}>+</button>
-            </div>
-            <div className="itemCounterBuy">
-                <button className="buyButton" onClick={buyButton}>Buy</button>
-            </div>
-        </div>
+            :
+            <Link to="/cart" className="goToCart">Go to cart</Link>}
+        </>
+        
     )
 }
 

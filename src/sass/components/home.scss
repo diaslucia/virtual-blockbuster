@@ -1,0 +1,27 @@
+@import "../variables/variables.scss";
+
+.banner2{
+    display: block;
+    margin: auto;
+    width:100vw;
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+}
+
+.seeMore{
+    @include button(2.3rem, $yellow, $blue, .5rem 4rem);
+    text-decoration: none;
+    display: block;
+    margin:auto;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+        &:hover {
+            color: $yellow;
+            background-color: $darkblue;
+        }
+        &:active {
+            color: $yellow;
+            background-color: $darkblue;
+            box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
+        }
+}

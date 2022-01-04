@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useCallback } from 'react';
+import React, { useEffect, useContext } from 'react';
 import NavBar from './components/NavBar/NavBar.js';
 import CartWidget from './components/CartWidget/CartWidget.js';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.js';
@@ -11,23 +11,17 @@ import Login from './components/Login/Login.js';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { CartContext } from './components/Context/CartContext';
 import UserContext from "./components/Context/UserContext";
-/* import UserEvent from '@testing-library/user-event'; */
 
 function App() {
+  const { login } = useContext(UserContext);
 
-  const logged = useCallback(() => {
-    const { login } = useContext(UserContext);
-  })
-  
-  
   useEffect(() => {
-    logged();
     const loggedUserJSON = window.localStorage.getItem("user");
     if (loggedUserJSON) {
       const objUserLogin = JSON.parse(loggedUserJSON);
-      login(logged);
+      login(objUserLogin);
     }
-  }, [])
+  }, []) //eslint-disable-line
 
   return (
       <CartContext>

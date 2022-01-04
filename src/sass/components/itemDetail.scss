@@ -152,40 +152,6 @@
                                 }
                             }
                         }
-                        .itemDetailRent {
-                            @include flex(column, center);
-                            .rentPrice {
-                                font-size: 2rem;
-                                font-family: anton, sans-serif;
-                                color: $white;
-                                text-transform: uppercase;
-                                background-color: rgba(255, 255, 255, 0.322);
-                                letter-spacing: 3px;
-                                padding: 1rem 0rem;
-                                text-align: center;
-                                width: 150px;
-                                margin: 1rem;
-                                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-                            }
-                            .rentDays {
-                                font-size: 2rem;
-                                font-family: anton, sans-serif;
-                                color: $white;
-                                text-transform: uppercase;
-                                background-color: rgba(255, 255, 255, 0.322);
-                                letter-spacing: 3px;
-                                padding: 1rem 0rem;
-                                text-align: center;
-                                width: 150px;
-                                margin: 0rem;
-                                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-                            }
-                            .rentButton {
-                                @include button(2rem, $blue, $white, .6rem 5.5rem); 
-                                margin: 1rem;
-                                width: 150px;
-                            }
-                        }
                     }
                 }
            }
@@ -201,10 +167,7 @@
             }
         }
     }
-}
-
-
-    
+}    
 
 
 /* SMALL */

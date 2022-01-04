@@ -1,4 +1,4 @@
-import Logo from './Logo.gif';
+import Logo from "./Logo.gif"
 import '../../sass/components/nav.css';
 import { Link } from "react-router-dom";
 import { useContext } from "react";
@@ -23,7 +23,6 @@ const NavBar = ({children}) => {
                         <li className="log" onClick={handleLogout}>Log Out</li>
                     </>
                     }
-                    
                     {children}
                 </ul>
             </div>

@@ -10,7 +10,6 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-//db means data base
 export const db = getFirestore(app);
 
 

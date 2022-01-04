@@ -3,6 +3,7 @@
 footer {
     background-color: $blue;
     padding: 2rem 0rem;
+    margin-top: 10rem;
     .footerContainer{
         @include flex2(row, space-around, flex-start);
         margin: 0rem 3rem;

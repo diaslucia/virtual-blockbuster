@@ -5,7 +5,6 @@
     @include flex(row, center);
     flex-wrap: wrap;
     background: linear-gradient(to right,$white,$lightyellow);
-    margin-bottom: 10rem;
     .itemLink {
         text-decoration: none;
     }

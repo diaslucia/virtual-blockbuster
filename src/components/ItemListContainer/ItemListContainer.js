@@ -1,6 +1,6 @@
-import '../../sass/components/nav.css';
-import {useState, useEffect} from "react"
+import '../../sass/components/home.css';
 import ItemList from "../ItemList/ItemList";
+import {useState, useEffect} from "react"
 import { useParams } from "react-router";
 import { collection, getDocs, query, where, limit } from "firebase/firestore";
 import { db } from "../../services/firebase/firebase";
@@ -9,15 +9,15 @@ import ClipLoader from "react-spinners/ClipLoader";
 
 const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
+  const [amountProd, setAmountProd] = useState(14);
   const [loading, setLoading] = useState(true);
-  const [img, setImg] = useState("");
   const { category } = useParams();
 
   useEffect(() => {
 
     if(!category) {
       setLoading(true)
-      getDocs(collection(db, "items")).then((querySnapshot) => {
+      getDocs(query(collection(db, "items"), limit(amountProd))).then((querySnapshot) => {
         const products = querySnapshot.docs.map(doc => {
         return {id: doc.id, ...doc.data()}
         })
@@ -29,18 +29,11 @@ const ItemListContainer = () => {
       })
     } else {
       setLoading(true)
-      getDocs(query(collection(db,"items"), where("category", "==", category), limit(100))).then((querySnapshot) => {
+      getDocs(query(collection(db,"items"), where("category", "==", category))).then((querySnapshot) => {
         const products = querySnapshot.docs.map(doc => {
           return {id: doc.id, ...doc.data()}
         })
         setProducts(products)
-        if(category === "movies"){
-          setImg("/movies.jpg");
-        } else if (category === "series"){
-          setImg("/series.jpg");
-        } else{
-          setImg("");
-        }
       }).catch((error) => {
         console.log("Can't find items", error)
       }).finally(() => {
@@ -52,27 +45,40 @@ const ItemListContainer = () => {
       setProducts([])
     })
     
-  }, [category])
+  }, [category, amountProd])
 
-  const override = css`
+
+  if(loading) {
+    const override = css`
     display: block;
     margin: auto;
     margin-top: 20rem;
     margin-bottom: 20rem;
     `;
+    return <ClipLoader size={50} color={"#1C4DA4"} loading={loading} css={override}/>
+  }
 
-  if(loading) {
-      return <ClipLoader size={50} color={"#1C4DA4"} loading={loading} css={override}/>
+  const seeMore = () => {
+    setAmountProd(amountProd + 14);
   }
 
   return (
     <>
-      {category === undefined ?
-        <></>
-        :
-        <img className="banner2" src={img} alt="banner"></img>
-      }
+      {(() => {
+        if (category === "movies") {
+          return <img className="banner2" src="/assets/movies.jpg" alt="banner"></img>
+        } else if (category === "series") {
+          return <img className="banner2" src="/assets/series.jpg" alt="banner"></img>
+        } else {
+          return <></>
+        }
+      })()}
       <ItemList products={products}/>
+      {category === undefined ?
+        <button onClick={seeMore} className="seeMore">See More</button>
+        :
+        <></>
+      }
     </>
   );
 }

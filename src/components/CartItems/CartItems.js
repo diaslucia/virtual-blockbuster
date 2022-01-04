@@ -1,18 +1,25 @@
 import "../../sass/components/cart.css"
 import Context from "../Context/CartContext";
-import { useContext} from "react";
+import { useContext, useState, useEffect } from "react";
 import { DeleteOutlined } from '@ant-design/icons';
 
 const CartItems = ({product}) => {
-
+    const [color, setColor] = useState("cartItemContainer")
     const { removeItem } = useContext(Context);
 
     const removeProduct = () => {
         removeItem(product.id);
     }
+
+    useEffect(() => {
+        if(product.id.includes("rent")){
+            setColor("cartItemContainerYellow");
+        }
+    }, [product.id])
+    
     
     return (
-        <div className="cartItemContainer">
+        <div className={color}>
             <div className="cartImgContainer">
                 <img src={product.img} alt={product.name}/>
             </div>

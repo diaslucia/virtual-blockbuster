@@ -16,7 +16,7 @@ const Checkout = () => {
     const [userEmailAgain, setUserEmailAgain] = useState("");
     const [userNumber, setUserNumber] = useState("");
     const { totalPrice, cart, deleteCart } = useContext(Context);
-    const { user  } = useContext(UserContext);
+    const { user } = useContext(UserContext);
 
     useEffect(() => {
         return cart
@@ -41,7 +41,7 @@ const Checkout = () => {
     
             const batch = writeBatch(db)
             const outOfStock = []
-    
+            
             objOrder.items.forEach((prod) => {
                 getDoc(doc(db, "items", prod.id)).then((documentSnapshot) => {
                     if(documentSnapshot.data().stock >= prod.quantity) {
@@ -105,7 +105,12 @@ const Checkout = () => {
                         </label>
                         <label>
                             Type Email Again:
+                            {user === undefined ?
                             <input type="email" id="email2" name="email2" value={userEmailAgain} onChange={(e)=> setUserEmailAgain(e.target.value)}></input>
+                            :
+                            <input type="email" id="email2" name="email2" value={user.email} onChange={(e)=> setUserEmailAgain(e.target.value)}></input>
+                            }
+                            
                         </label>
                         <label>
                             Phone Number:

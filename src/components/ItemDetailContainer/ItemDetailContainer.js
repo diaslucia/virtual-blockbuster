@@ -1,6 +1,6 @@
-import {useEffect, useState} from "react";
-import ItemDetail from "../ItemDetail/ItemDetail";
 import "../../sass/components/itemDetail.css";
+import ItemDetail from "../ItemDetail/ItemDetail";
+import {useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router";
 import { getDoc, doc } from "firebase/firestore";
@@ -30,14 +30,14 @@ const ItemDetailContainer = () => {
 
     }, [paramId])
 
-    const override = css`
-    display: block;
-    margin: auto;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-    `;
-
+    
     if(loading) {
+        const override = css`
+        display: block;
+        margin: auto;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        `;
         return <ClipLoader size={50} color={"#1C4DA4"} loading={loading} css={override}/>
     }
 
