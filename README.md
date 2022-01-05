@@ -1,18 +1,18 @@
-# Virtual BlockBuster 📽️
+# Virtual Blockbuster 📽️
 
-Este sitio web simula ser una tienda online para alquilar o comprar películas y series.  
+This website simulates an online shop to buy movies or series.
 
-La idea surgió después de notar el auge de servicios de streaming que traen consigo el problema de tener que suscribirse a más de uno, para poder ver nuestra película/show favorito.  
+I came up with the idea after noticing the inconvinience of suscribing to soo many different streaming services, in order to watch your favorite movie/serie.
 
-¿Por qué no inspirarse en los viejos tiempos y, crear un sitio donde puedas encontrar todo en un solo lugar? Así nace "BlockBuster Virtual, just like the good old times".
+Why not letting yourself get inspired by the simplicity of the past and create a place where you can find anything you want to watch? That's how "Blockbuster Virtual, just like the good old times" was born.
  
-## Estado del Proyecto 🚧
+## Project status 🚧
 
-El proyecto todavía se encuentra en desarrollo. Se espera sumarle al sitio un carrito y más contenido/componentes.
+The project is finished but it has potencially many other features that can be added.
  
-## Tecnologías 🛠️
+## Tecnologies 🛠️
 
-Lista de tecnologías utilizadas para este proyecto:
+List of tecnologies used for this project:
 
 - [Node JS](https://nodejs.org/es/): Version 14.17.6
 
@@ -22,29 +22,45 @@ Lista de tecnologías utilizadas para este proyecto:
 
 - [SASS](https://sass-lang.com/): Version 6.0.1
 
-## Instalación y Ejecución 🚀
+## Instalation & Ejecution 🚀
 
-Lista de pasos para empezar con la instalación del proyecto.
+Steps to install and run the project:
 
-1. Instalar Node JS de https://nodejs.org/es/
-2. Abrimos la consola y la ubicamos en el directorio de nuestro proyecto
+1. Install Node JS from https://nodejs.org/en/
+2. Open the console in your code editor and change the directory to the one in your current project:
 ```
-$cd directorioDeTuProyecto
+$cd yourProjectDirectory
 $npm install
 ```
-3. Creamos la App de React
+3. Create React App
 ```
 $npm create-react-app nombreDeTuProyecto
 ```
-4. Iniciamos la aplicación con npm (para finalizar su ejecución usamos Ctrl + C)
+4. You can start the app with npm (and close it with Ctrl + C)
 ```
 $npm start
 ```
-5. Instalamos SASS desde consola
+5. Install SASS. [More information here](https://create-react-app.dev/docs/adding-a-sass-stylesheet/)
 ```
 $npm install node-sass --save
 ```
-6. Renombramos "src/App.css" a "src/App.scss" y actualizamos "src/App.js" para que importe "src/App.scss". Para más información: https://create-react-app.dev/docs/adding-a-sass-stylesheet/
+6. Rename the file "src/App.css" to "src/App.scss" and we make sure that "src/App.js" imports the "src/App.scss" file. 
+
+7. Install Spinners. [More information here](https://www.davidhu.io/react-spinners/)
+```
+$npm install --save react-spinners
+```
+8. Create a .babelrc file in your project and add the following code (this is because the spinners package uses a pluggin called emotion):
+```
+{
+    "presets": ["@babel/preset-react", "@babel/preset-env"],
+    "plugins": ["@emotion"]
+}
+```
+9. Install Ant Design Icons. [More information here](https://ant.design/components/icon/)
+```
+$npm install --save @ant-design/icons
+```
 
 ## Información sobre su funcionamiento 🍿
 
