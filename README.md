@@ -26,70 +26,105 @@ List of tecnologies used for this project:
 
 Steps to install and run the project:
 
+### Node JS & React App
+
 1. Install Node JS from https://nodejs.org/en/
-2. Open the console in your code editor and change the directory to the one in your current project:
+2. Clone the project
+```
+$git clone https://github.com/diaslucia/virtual-blockbuster.git
+```
+3. Open the console in your code editor and change the directory to the one in your current project
 ```
 $cd yourProjectDirectory
+```
+4. Install the libraries
+```
 $npm install
 ```
-3. Create React App
-```
-$npm create-react-app nombreDeTuProyecto
-```
-4. You can start the app with npm (and close it with Ctrl + C)
+5. Ejecute the app (and close it with Ctrl + C)
 ```
 $npm start
 ```
-5. Install SASS. [More information here](https://create-react-app.dev/docs/adding-a-sass-stylesheet/)
+
+### SASS
+
+1. Install SASS. [More information here](https://create-react-app.dev/docs/adding-a-sass-stylesheet/)
 ```
 $npm install node-sass --save
 ```
-6. Rename the file "src/App.css" to "src/App.scss" and we make sure that "src/App.js" imports the "src/App.scss" file. 
+2. Rename the file "src/App.css" to "src/App.scss" and we make sure that "src/App.js" imports the "src/App.scss" file. 
 
-7. Install Spinners. [More information here](https://www.davidhu.io/react-spinners/)
+### Spinners
+
+1. Install Spinners. [More information here](https://www.davidhu.io/react-spinners/)
 ```
 $npm install --save react-spinners
 ```
-8. Create a .babelrc file in your project and add the following code (this is because the spinners package uses a pluggin called emotion):
+2. Create a .babelrc file in your project and add the following code (this is because the spinners package uses a pluggin called emotion):
 ```
 {
     "presets": ["@babel/preset-react", "@babel/preset-env"],
     "plugins": ["@emotion"]
 }
 ```
-9. Install Ant Design Icons. [More information here](https://ant.design/components/icon/)
+
+### Icons
+
+1. Install Ant Design Icons. [More information here](https://ant.design/components/icon/)
 ```
 $npm install --save @ant-design/icons
 ```
 
-## Información sobre su funcionamiento 🍿
+### Firebase
 
-Dentro de la carpeta ***src*** se encuentras las carpetas y los archivos del proyecto.
+1. Configure the .env file with your firebase credentials
+
+2. Fields of first firebase database colection with the categories
+
+> categories -> id: movies -> description: movies
+> categories -> id: series -> description: series
+
+3. Fields of second firebase database colection with all the movies and series
+
+> item -> automatic id -> category(movies or series) / duration(string with movie lenght) / genre / img(url) / name / plot / price(number type) / stock(number type) / trailer(youtube link)
+
+
+## Code 🍿
 
 > ### src/App.js
-> Contiene la navegación del sitio web. 
+> In this file you will find the route map:
+> ***Path="/"*** contains the home page with the ***Banner*** and ***ItemListContainer*** components.
+> ***Path="/category/:category"*** contains the ***ItemListContainer*** component filtered by category.
+> ***Path="/item/:paramId"*** contains the ***ItemDetailContainer*** component and shows the details of the product you clicked in.
+> ***Path="/cart"*** contains the ***Cart*** component with the summary of your purchase.
+> ***Path="/checkout"*** contains the ***Checkout*** component with form to finished your purchase and returns your order number.
+> ***Path="/login"*** contains the ***Login*** component.
+> The ***NavBar*** and ***Footer*** components render in every avaliable route.
+> ***CartContext*** wraps the whole app and contains the functions related to the cart.
 
 > ### src/components/NavBar.js
-> NavBar contiene el componente del navegador del sitio y pasa por props a {children} que es el menú del carrito (src/components/CartWidget.js)
+> ***NavBar*** contains the buttons to log in and to go to the cart.
+> It shows the element ***CartWidget*** as children.
+> The function ***GetDocs()*** opens the collection in the firebase dabase called "categories" and saves each of them in the state of ***setCategories()***. Those categories are mapped inside the return() to use them as buttons.
+
+> ### src/components/CartWidget.js
+> We import the function ***totalAmount()*** from ***CartContext*** to get the number of total products saved in the cart and we display it.
+> If there are no products in the cart, we won't show it.
 
 > ### src/components/ItemListContainer.js
-> ***useEffect*** nos permite mostrar los productos cuando estos ya estén listos.
-> 
-> ***useState*** nos guarda en una variable los productos que traemos con la función *getProducts()* o *getProductByCategory()* según corresponda.
-> 
-> ***useParams*** nos trae el valor del path.
-> 
-> Dentro del ***useEffect*** pasé un condicional dónde *if* el path no tiene una categoría definida, voy a traer a todos mis productos, pero si *else* hay una categoría definida, voy a traer a todos los productos de esa categoría. Al mismo tiempo, queda atento a cualquier cambio con *[category]*.
+> We import the function ***GetProducts()*** from ***firebase*** that takes the parameters to filter our products.
+> ***setProducts()*** saves the products so we can display them.
+> We also imported a ***ClipLoader*** from the Spinner library that disappears once the products are loaded.
+
+> ### src/services/firebase/firebase.js
 >
->![ItemListContainer](http://imgfz.com/i/dyQw06U.png)
 
 > ### src/components/ItemList.js
 > Toma a los productos traidos por props y los mapea para crear un componente *Item* (src/components/Item.js) con cada uno.
 >![ItemList](http://imgfz.com/i/Df62toE.png) 
 
-> ### src/components/ItemDetailContainer.js
-> ***useParams*** nos trae el valor del path.
-> 
+
+
 > ***useState*** nos guarda en una variable los productos que traemos con la función *getProductById()*.
 >
 > ***useEffect*** nos permite mostrar los productos cuando estos ya estén listos. Con la función *getProductById()*, usamos el path (paramId) como parámetro para traer la información del producto que haga match. Al mismo tiempo, queda atento a cualquier cambio con *[paramId]*.
