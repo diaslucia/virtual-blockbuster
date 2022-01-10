@@ -162,3 +162,49 @@ $npm install --save @ant-design/icons
 > We set a ***counter*** state to 0 so the buttons can add or substract the amount we want to buy. We also set a ***price*** state at 0 so we can add or substract the price of the item and save it in the state.
 >
 > When we click on "buy" the ***buyButton()*** function adds this item to the cart (***addCart()***) with the quantity as the *counter* and the price as the *price* state.
+
+> ### src/context/CartContext.js
+>
+> Here we can find all the functions we need to build and manage the cart.
+>
+> ***cart*** starts as an empty object.
+>
+> ***addCart()*** checks if the item that wants to be added is repeated. If it's not duplicated, it saves the item in ***cart*** but if it is already in the cart, it finds the item and updates the price and quantity. It also checks if the product has stock.
+>
+> ***checkDuplicate()*** return a boolean if the item is duplicated or not.
+> 
+> ***removeItem()*** returns to ***cart*** all the products that are already there except for the one that we are removing.
+> 
+> ***deleteCart()*** sets the ***cart*** to an empty object.
+>
+> ***totalAmount()*** returns the total value of quantity of all products stored in the ***cart***.
+>
+> ***totalPrice()*** returns the total value of price of all products stored in the ***cart***.
+
+> ### src/components/Cart.js
+>
+> We bring **totalPrice()***, ***deleteCart()*** and ***cart*** from ***CartContext***
+>
+> If the ***cart*** lenght is 0, it will show a message to go back shopping. If not, it will show all the products you are buying with the total price.
+
+> ### src/components/Checkout.js
+>
+> Once we fill the form with our personal information and press "Confirm Order", the ***confirmOrder()*** function is ejecuted.
+>
+> ***objOrder*** builds an object with the user information. Then, for each product they buy, we check there is stock and we substract the amount they are buying from the firebase database.
+>
+> We also imported a ***ClipLoader*** from the Spinner library that disappears once the order number is loaded.
+
+> ### src/context/UserContext.js
+>
+> Here we can find all the functions we need to build and manage the log in.
+>
+> ***user*** starts empty.
+>
+> ***login()*** sets the ***user*** with the information passed through props. It also storages this object in the Local Storage.
+>
+> ***logout()*** sets the ***user*** as empty and deletes the user object from the LocalStorage.
+
+> ### src/components/Login.js
+>
+> When we submit the form, the function ***handleLogin()*** is ejecuted. The function builds an object with the information the user typed on the form and sends them as props to ***login()***.
