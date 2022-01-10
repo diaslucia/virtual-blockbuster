@@ -52,7 +52,7 @@ $npm start
 ```
 $npm install node-sass --save
 ```
-2. Rename the file "src/App.css" to "src/App.scss" and we make sure that "src/App.js" imports the "src/App.scss" file. 
+2. I renamed the file "src/App.css" to "src/App.scss" and I made sure that "src/App.js" imports the "src/App.scss" file. 
 
 ### Spinners
 
@@ -60,7 +60,7 @@ $npm install node-sass --save
 ```
 $npm install --save react-spinners
 ```
-2. Create a .babelrc file in your project and add the following code (this is because the spinners package uses a pluggin called emotion):
+2. To make it work, I created a .babelrc file in the project and added the following code (this is because the spinners package uses a pluggin called emotion):
 ```
 {
     "presets": ["@babel/preset-react", "@babel/preset-env"],
