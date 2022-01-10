@@ -79,12 +79,12 @@ $npm install --save @ant-design/icons
 
 1. Configure the .env file with your firebase credentials
 
-2. Fields for the first firebase db colection (categories)
+2. Fields for the first firebase db collection (categories)
 
 > categories -> id: movies -> description: movies
 > categories -> id: series -> description: series
 
-3. Fields for the second firebase db colection (movies and series)
+3. Fields for the second firebase db collection (movies and series)
 
 > item -> automatic id -> category(movies or series) / duration(string with movie lenght) / genre / img(url) / name / plot / price(number type) / stock(number type) / trailer(youtube link)
 
@@ -92,6 +92,7 @@ $npm install --save @ant-design/icons
 ## Code 🍿
 
 > ### src/App.js
+> 
 > In this file you will find the route map:
 > 
 > ***Path="/"*** contains the home page with the ***Banner*** and ***ItemListContainer*** components.
@@ -111,42 +112,53 @@ $npm install --save @ant-design/icons
 > ***CartContext*** wraps the whole app and contains the functions related to the cart.
 
 > ### src/components/NavBar.js
+> 
 > ***NavBar*** contains the buttons to log in and to go to the cart.
+> 
 > It shows the element ***CartWidget*** as children.
+> 
 > The function ***GetDocs()*** opens the collection in the firebase dabase called "categories" and saves each of them in the state of ***setCategories()***. Those categories are mapped inside the return() to use them as buttons.
 
 > ### src/components/CartWidget.js
+> 
 > We import the function ***totalAmount()*** from ***CartContext*** to get the number of total products saved in the cart and we display it.
+> 
 > If there are no products in the cart, we won't show it.
 
 > ### src/components/ItemListContainer.js
+> 
 > We import the function ***GetProducts()*** from ***firebase*** that takes the parameters to filter our products.
+> 
 > ***setProducts()*** saves the products so we can display them.
+> 
 > We also imported a ***ClipLoader*** from the Spinner library that disappears once the products are loaded.
 
 > ### src/services/firebase/firebase.js
 >
+> It contains the configuration of firebase so we can bring the products using some functions.
+>
+> ***getProducts()*** returns all the products in the firebase database collection or just some of them if the function was called with parameters.
 
 > ### src/components/ItemList.js
-> Toma a los productos traidos por props y los mapea para crear un componente *Item* (src/components/Item.js) con cada uno.
->![ItemList](http://imgfz.com/i/Df62toE.png) 
-
-
-
-> ***useState*** nos guarda en una variable los productos que traemos con la función *getProductById()*.
 >
-> ***useEffect*** nos permite mostrar los productos cuando estos ya estén listos. Con la función *getProductById()*, usamos el path (paramId) como parámetro para traer la información del producto que haga match. Al mismo tiempo, queda atento a cualquier cambio con *[paramId]*.
+> This component brings the products passed by props and maps each of them into the ***Item*** component.
+
+> ### src/components/Item.js
 >
-> El componente ***ItemDetail*** envuelve al componente *ItemCount* que explicaré a continuación.
-> 
->![ItemDetailContainer](http://imgfz.com/i/4jdVlOq.png) 
+> It contains the item card.
+
+> ### src/components/ItemDetailContainer.js
+>
+> We import the function ***GetProducts()*** from ***firebase*** that takes the item with the id that matches the id of our path (*paramId*)
+>
+> We also imported a ***ClipLoader*** from the Spinner library that disappears once the product is loaded.
 
 > ### src/components/ItemDetail.js
-> Pasan como props la información del producto *{item}* y *{children}* (src/components/ItemCount.js). La información se distribuye para poder armar la card y el children se agrega a la card como un componente separado.
+>
+> It recieves the information of the item by props and builds a card. It contains the ***ItemCount*** component.
 
 > ### src/components/ItemCount.js
-> Primero se establece un número de conteo inicial (el valor *initial* que se pasó por props) y se lo almacena como variable usando *useState*.
 >
-> Los botón para sumar y sustraer tienen sus propios eventListeners que suman o restar el valor que este en el *useState*.
+> We set a ***counter*** state to 0 so the buttons can add or substract the amount we want to buy. We also set a ***price*** state at 0 so we can add or substract the price of the item and save it in the state.
 >
-> ![ItemCount](http://imgfz.com/i/Rxase4w.png)
+> When we click on "buy" the ***buyButton()*** function adds this item to the cart (***addCart()***) with the quantity as the *counter* and the price as the *price* state.
