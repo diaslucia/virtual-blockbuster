@@ -1,6 +1,6 @@
 import "../../sass/components/login.css";
 import { useState, useContext } from "react";
-import UserContext from "../Context/UserContext";
+import UserContext from "../../context/UserContext";
 import { useHistory } from "react-router-dom";
 
 const Login = () => {

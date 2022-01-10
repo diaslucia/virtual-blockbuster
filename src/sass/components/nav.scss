@@ -78,10 +78,7 @@ html {
             margin: auto;
             border:1px $blue;
             ul {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-around;
+                @include flex(row, space-around);
                 list-style: none;
                 padding-top: 1rem;
             }
@@ -100,6 +97,26 @@ html {
                 width: 1px;
                 height: 3rem;
                 background-color: $blue;
+            }
+            .categories{
+                @include flex(row, center);
+                list-style: none;
+                .categoriesMap{
+                    @include flex(row, space-around);
+                    .categoryOption{
+                        @include font (3rem);
+                        text-transform: uppercase;
+                        padding: 3.5rem;
+                        letter-spacing: 5px;
+                        color: $blue;
+                        text-decoration: none;
+                        a{
+                            text-decoration: none;
+                            color: $blue;
+                            cursor: pointer;
+                        }
+                    }
+                }
             }
         }
     }

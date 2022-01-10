@@ -114,11 +114,11 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   list-style: none;
   padding-top: 1rem;
 }
@@ -141,6 +141,54 @@ html {
   width: 1px;
   height: 3rem;
   background-color: #1c4da4;
+}
+
+.NavBarContainer .nav .navMenuContainer .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.NavBarContainer .nav .navMenuContainer .categories .categoriesMap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.NavBarContainer .nav .navMenuContainer .categories .categoriesMap .categoryOption {
+  font-size: 3rem;
+  font-family: anton, sans-serif;
+  text-transform: uppercase;
+  padding: 3.5rem;
+  letter-spacing: 5px;
+  color: #1c4da4;
+  text-decoration: none;
+}
+
+.NavBarContainer .nav .navMenuContainer .categories .categoriesMap .categoryOption a {
+  text-decoration: none;
+  color: #1c4da4;
+  cursor: pointer;
 }
 
 /* EXTRA SMALL */

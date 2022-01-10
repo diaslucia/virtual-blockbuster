@@ -1,7 +1,7 @@
-import "../../sass/components/cart.css"
-import CartItems from "../CartItems/CartItems"
+import "../../sass/components/cart.css";
+import CartItems from "../CartItems/CartItems";
 import { useContext, useEffect } from "react";
-import Context from "../Context/CartContext";
+import Context from "../../context/CartContext";
 import { Link } from "react-router-dom";
 
 

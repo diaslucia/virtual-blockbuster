@@ -2,10 +2,10 @@ import '../../sass/components/home.css';
 import ItemList from "../ItemList/ItemList";
 import {useState, useEffect} from "react"
 import { useParams } from "react-router";
-import { collection, getDocs, query, where, limit } from "firebase/firestore";
-import { db } from "../../services/firebase/firebase";
+import { getProducts } from "../../services/firebase/firebase";
 import { css } from "@emotion/react";
 import ClipLoader from "react-spinners/ClipLoader";
+
 
 const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
@@ -14,37 +14,18 @@ const ItemListContainer = () => {
   const { category } = useParams();
 
   useEffect(() => {
+    setLoading(true)
+        getProducts("category", "==", category, amountProd).then(products => {
+            setProducts(products)
+        }).catch(error => {
+            console.log(error)
+        }).finally(() => {
+            setLoading(false)
+        })
 
-    if(!category) {
-      setLoading(true)
-      getDocs(query(collection(db, "items"), limit(amountProd))).then((querySnapshot) => {
-        const products = querySnapshot.docs.map(doc => {
-        return {id: doc.id, ...doc.data()}
-        })
-        setProducts(products)
-      }).catch((error) => {
-        console.log("Can't find items", error)
-      }).finally(() => {
-        setLoading(false)
+      return (() => {
+        setProducts([])
       })
-    } else {
-      setLoading(true)
-      getDocs(query(collection(db,"items"), where("category", "==", category))).then((querySnapshot) => {
-        const products = querySnapshot.docs.map(doc => {
-          return {id: doc.id, ...doc.data()}
-        })
-        setProducts(products)
-      }).catch((error) => {
-        console.log("Can't find items", error)
-      }).finally(() => {
-        setLoading(false)
-      })
-    }
- 
-    return (() => {
-      setProducts([])
-    })
-    
   }, [category, amountProd])
 
 
@@ -56,10 +37,6 @@ const ItemListContainer = () => {
     margin-bottom: 20rem;
     `;
     return <ClipLoader size={50} color={"#1C4DA4"} loading={loading} css={override}/>
-  }
-
-  const seeMore = () => {
-    setAmountProd(amountProd + 14);
   }
 
   return (
@@ -74,11 +51,11 @@ const ItemListContainer = () => {
         }
       })()}
       <ItemList products={products}/>
-      {category === undefined ?
-        <button onClick={seeMore} className="seeMore">See More</button>
-        :
-        <></>
-      }
+      {(() => {
+          if (category === undefined) {
+          return <button onClick={() => setAmountProd(amountProd + 14)} className="seeMore">Show More</button>
+          }
+      })()}
     </>
   );
 }

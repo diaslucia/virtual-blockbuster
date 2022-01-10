@@ -64,6 +64,54 @@ footer .footerContainer .footerNav ul .line {
   background-color: #ffffff;
 }
 
+footer .footerContainer .footerNav ul .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+footer .footerContainer .footerNav ul .categories .categoriesMap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footerContainer .footerNav ul .categories .categoriesMap .categoryOption {
+  font-size: 2rem;
+  font-family: anton, sans-serif;
+  text-transform: uppercase;
+  padding: 3rem;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer .footerContainer .footerNav ul .categories .categoriesMap .categoryOption a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 footer .footerContainer .footerLogo {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;

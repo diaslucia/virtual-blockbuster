@@ -1,8 +1,22 @@
 import '../../sass/components/footer.css';
 import { InstagramOutlined, FacebookOutlined, YoutubeOutlined } from '@ant-design/icons';
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { db } from "../../services/firebase/firebase";
+import { getDocs, collection } from "firebase/firestore";
 
 const Footer = () => {
+    const [categories, setCategories] = useState([]);
+
+    useEffect(() => {
+        getDocs(collection(db, 'categories')).then((querySnapshot) => {
+        const categories = querySnapshot.docs.map(doc => {
+        return { id: doc.id, ...doc.data() }
+        })
+        setCategories(categories)
+        })
+      },[])
+
     return(
         <footer>
             <div className="footerContainer">
@@ -13,10 +27,14 @@ const Footer = () => {
                     <ul>
                         <li><Link to={"/"}>HOME</Link></li>
                         <li><div className="line"></div></li>
-                        <li><Link to={"/category/movies"}>MOVIES</Link></li>
-                        <li><div className="line"></div></li>
-                        <li><Link to={"/category/series"}>SERIES</Link></li>
-                        <li><div className="line"></div></li>
+                        <div className="categories">
+                            {categories.map(categ =>
+                            <div className="categoriesMap" key={categ.id}>
+                                <Link className="categoryOption" to={`/category/${categ.id}`}>{categ.description}</Link>
+                                <li><div className="line"></div></li>
+                            </div>
+                            )}
+                        </div>
                         <li>FAQ</li>
                     </ul>
                 </div>

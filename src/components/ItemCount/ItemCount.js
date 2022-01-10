@@ -1,6 +1,6 @@
-import "../../sass/components/itemDetail.css"
+import "../../sass/components/itemDetail.css";
 import { useContext, useState } from "react";
-import Context from "../Context/CartContext";
+import Context from "../../context/CartContext";
 import { Link } from "react-router-dom";
 
 const ItemCount = ({stock, item, price}) => {

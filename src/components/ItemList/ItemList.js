@@ -1,5 +1,5 @@
+import "../../sass/components/item.css";
 import Item from "../Item/Item";
-import "../../sass/components/item.css"
 
 const ItemList = ({products}) => {
     

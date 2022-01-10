@@ -89,7 +89,7 @@ categories -> id: series -> description: series
 item -> automatic id -> category(movies or series) / duration(string with movie lenght) / genre / img(url) / name / plot / price(number type) / stock(number type) / trailer(youtube link)
 ```
 
-## Code 🍿
+## Code Description 🍿
 
 > ### src/App.js
 > 

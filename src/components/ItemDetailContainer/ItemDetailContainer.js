@@ -9,7 +9,7 @@ import { css } from "@emotion/react";
 import ClipLoader from "react-spinners/ClipLoader";
 
 const ItemDetailContainer = () => {
-    const [item, setItem] = useState([])
+    const [item, setItem] = useState([]);
     const [loading, setLoading] = useState(true);
     const { paramId } = useParams();
     

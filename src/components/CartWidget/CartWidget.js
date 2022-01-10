@@ -2,7 +2,7 @@ import '../../sass/components/nav.css';
 import { ShoppingCartOutlined } from '@ant-design/icons';
 import { Link } from "react-router-dom";
 import { useContext} from "react";
-import Context from "../Context/CartContext";
+import Context from "../../context/CartContext";
 
 const CartWidget = () => {
 
@@ -11,7 +11,7 @@ const CartWidget = () => {
 
     return (
         <>
-        <li className="cartIcon"><Link to={"/cart"}><ShoppingCartOutlined /></Link></li>
+        <li className="cartIcon"><Link to={"/cart"}><ShoppingCartOutlined/></Link></li>
         { number === 0 ?
         <li className="cartNumberEmpty"></li>
         :

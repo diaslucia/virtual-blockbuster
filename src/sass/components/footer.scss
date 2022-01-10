@@ -27,6 +27,26 @@ footer {
                     height: 3rem;
                     background-color: $white;
                 }
+                .categories{
+                    @include flex(row, center);
+                    list-style: none;
+                    .categoriesMap{
+                        @include flex(row, space-around);
+                        .categoryOption{
+                            @include font (2rem);
+                            text-transform: uppercase;
+                            padding: 3rem;
+                            letter-spacing: 2px;
+                            color: $white;
+                            text-decoration: none;
+                            a{
+                                text-decoration: none;
+                                color: $white;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
             }
         }
         .footerLogo{

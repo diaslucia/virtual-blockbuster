@@ -1,23 +1,19 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 const Context = React.createContext()
 
 export const CartContext = ({children}) => {
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState([]);
 
     const addCart = (item) => {
         if(!checkDuplicate(item.id)){
             setCart([...cart, item]);
-        } else if(checkDuplicate(item.id) && item.id.includes("rent")){
-            console.log("su producto ya esta en el carrito")
         } else {
             let prod = cart.find(product => product.id === item.id);
             prod.quantity = item.quantity + prod.quantity;
             prod.price = item.price + prod.price;
             if(prod.quantity <= prod.stock){
                 setCart([...cart]);
-            } else {
-                console.log("no hay suficiente stock")
             }
         }
     }

@@ -1,15 +1,17 @@
 import "../../sass/components/checkout.css"
-import Context from "../Context/CartContext";
-import UserContext from "../Context/UserContext";
+import Context from "../../context/CartContext";
+import UserContext from "../../context/UserContext";
 import { Link } from "react-router-dom";
 import { db } from "../../services/firebase/firebase";
 import { collection, addDoc, doc, writeBatch, Timestamp, getDoc} from "firebase/firestore";
 import { useContext, useEffect, useState } from "react";
+import { css } from "@emotion/react";
+import ClipLoader from "react-spinners/ClipLoader";
 
 const Checkout = () => {
-    const [processingOrder, setProcessingOrder] = useState(false);
     const [checkEmail, setCheckEmail] = useState(false);
     const [orderDone, setOrderDone] = useState(false);
+    const [loading, setLoading] = useState(false);
     const [idOrder, setIdOrder] = useState("");
     const [userName, setUserName] = useState("");
     const [userEmail, setUserEmail] = useState("");
@@ -22,13 +24,9 @@ const Checkout = () => {
         return cart
     }, [cart])
 
-    const changeOrderDone = () => {
-        setOrderDone(false)
-    }
-
     const confirmOrder = () => {
         if(userEmail === userEmailAgain) {
-            setProcessingOrder(true);
+            setLoading(true);
         
             const objOrder = {
                 name: userName,
@@ -63,7 +61,7 @@ const Checkout = () => {
                 }).catch((error) => {
                     console.log(`Eror: ${error}`)
                 }).finally(() => {
-                    setProcessingOrder(false);
+                    setLoading(false);
                     setCheckEmail(false);
                     deleteCart()
                 })
@@ -73,8 +71,14 @@ const Checkout = () => {
         }
     }
 
-    if(processingOrder) {
-        return <h1>Your order is being processed</h1>
+    if(loading) {
+        const override = css`
+        display: block;
+        margin: auto;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        `;
+        return <ClipLoader size={50} color={"#1C4DA4"} loading={loading} css={override}/>
     }
 
     return(
@@ -83,11 +87,11 @@ const Checkout = () => {
             <div className="checkoutContainer">
                 <div className="titleContainer">
                     <p>To proceed with the checkout<br></br>fill in the form</p>
-                    { checkEmail === true ?
-                    <p className="checkEmail">Sorry, we were unable to match the email address entered.<br></br> Please, check your entries and try again.</p>
-                    :
-                    <></>
-                    }
+                    {(() => {
+                        if (checkEmail) {
+                        return <p className="checkEmail">Sorry, we were unable to match the email address entered.<br></br> Please, check your entries and try again.</p>
+                        }
+                    })()}
                 </div>
                 <div className="formContainer">
                     <form>
@@ -97,20 +101,11 @@ const Checkout = () => {
                         </label>
                         <label>
                             Email:
-                            {user === undefined ?
-                            <input type="email" id="email" name="email" value={userEmail} onChange={(e)=> setUserEmail(e.target.value)}></input>
-                            :
-                            <input type="email" id="email" name="email" value={user.email} onChange={(e)=> setUserEmail(e.target.value)}></input>
-                            }
+                            <input type="email" id="email" name="email" value={ user === undefined ? userEmail : user.email} onChange={(e)=> setUserEmail(e.target.value)}></input>
                         </label>
                         <label>
                             Type Email Again:
-                            {user === undefined ?
-                            <input type="email" id="email2" name="email2" value={userEmailAgain} onChange={(e)=> setUserEmailAgain(e.target.value)}></input>
-                            :
-                            <input type="email" id="email2" name="email2" value={user.email} onChange={(e)=> setUserEmailAgain(e.target.value)}></input>
-                            }
-                            
+                            <input type="email" id="email" name="email2" value={user === undefined ? userEmailAgain : user.email} onChange={(e)=> setUserEmailAgain(e.target.value)}></input>
                         </label>
                         <label>
                             Phone Number:
@@ -126,7 +121,7 @@ const Checkout = () => {
             <div className="thankYou">
                 <p>Your confirmation code is:</p>
                 <h1>{idOrder}</h1>
-                <Link to="/" className="doneOrder" onClick={changeOrderDone}>Go back shopping</Link>
+                <Link to="/" className="doneOrder" onClick={()=> setOrderDone(false)}>Go back shopping</Link>
             </div>
             }
         </>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Context = React.createContext()
+const Context = React.createContext();
 
 export const UserContextProvider = ({children}) => {
     const [user, setUser] = useState();
@@ -12,6 +12,7 @@ export const UserContextProvider = ({children}) => {
         });
         window.localStorage.setItem("user", JSON.stringify(objUserLogin))
     }
+    
     const logout = () => {
         setUser();
         window.localStorage.removeItem("user");

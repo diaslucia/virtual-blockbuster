@@ -1,4 +1,4 @@
-import "../../sass/components/item.css"
+import "../../sass/components/item.css";
 import { Link } from "react-router-dom";
 
 const Item = ({product}) => {
