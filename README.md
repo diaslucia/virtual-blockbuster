@@ -80,14 +80,14 @@ $npm install --save @ant-design/icons
 1. Configure the .env file with your firebase credentials
 
 2. Fields for the first firebase db collection (categories)
-
+```
 > categories -> id: movies -> description: movies
 > categories -> id: series -> description: series
-
+```
 3. Fields for the second firebase db collection (movies and series)
-
+```
 > item -> automatic id -> category(movies or series) / duration(string with movie lenght) / genre / img(url) / name / plot / price(number type) / stock(number type) / trailer(youtube link)
-
+```
 
 ## Code 🍿
 
