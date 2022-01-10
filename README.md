@@ -79,12 +79,12 @@ $npm install --save @ant-design/icons
 
 1. Configure the .env file with your firebase credentials
 
-2. Fields of first firebase database colection with the categories
+2. Fields for the first firebase db colection (categories)
 
 > categories -> id: movies -> description: movies
 > categories -> id: series -> description: series
 
-3. Fields of second firebase database colection with all the movies and series
+3. Fields for the second firebase db colection (movies and series)
 
 > item -> automatic id -> category(movies or series) / duration(string with movie lenght) / genre / img(url) / name / plot / price(number type) / stock(number type) / trailer(youtube link)
 
@@ -93,13 +93,21 @@ $npm install --save @ant-design/icons
 
 > ### src/App.js
 > In this file you will find the route map:
+> 
 > ***Path="/"*** contains the home page with the ***Banner*** and ***ItemListContainer*** components.
+> 
 > ***Path="/category/:category"*** contains the ***ItemListContainer*** component filtered by category.
+> 
 > ***Path="/item/:paramId"*** contains the ***ItemDetailContainer*** component and shows the details of the product you clicked in.
+> 
 > ***Path="/cart"*** contains the ***Cart*** component with the summary of your purchase.
+> 
 > ***Path="/checkout"*** contains the ***Checkout*** component with form to finished your purchase and returns your order number.
+>
 > ***Path="/login"*** contains the ***Login*** component.
+> 
 > The ***NavBar*** and ***Footer*** components render in every avaliable route.
+> 
 > ***CartContext*** wraps the whole app and contains the functions related to the cart.
 
 > ### src/components/NavBar.js
