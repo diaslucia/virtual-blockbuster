@@ -166,6 +166,15 @@ html {
                     padding: .3rem;
                     letter-spacing: 1px;
                 }
+                .categories{
+                    .categoriesMap{
+                        .categoryOption{
+                            @include font (2rem);
+                            padding: .3rem;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -215,6 +224,15 @@ html {
                     padding: .5rem;
                     letter-spacing: 2px;
                 }
+                .categories{
+                    .categoriesMap{
+                        .categoryOption{
+                            @include font (2rem);
+                            padding: .5rem;
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -249,6 +267,23 @@ html {
                     padding: 1.5rem;
                     letter-spacing: 2px;
                 }
+                .categories{
+                    .categoriesMap{
+                        .categoryOption{
+                            @include font (2.5rem);
+                            text-transform: uppercase;
+                            padding: 1.5rem;
+                            letter-spacing: 2px;
+                            color: $blue;
+                            text-decoration: none;
+                            a{
+                                text-decoration: none;
+                                color: $blue;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -277,9 +312,29 @@ html {
                     padding: 1rem .5rem 0rem 0rem;
                 }
                 li {
-                    @include font (2.5rem);
+                    @include font (2.4rem);
                     padding: 1rem;
-                    letter-spacing: 2px;
+                    letter-spacing: 1px;
+                }
+                .categories{
+                    @include flex(row, center);
+                    list-style: none;
+                    .categoriesMap{
+                        @include flex(row, space-around);
+                        .categoryOption{
+                            @include font (2.4rem);
+                            text-transform: uppercase;
+                            padding: 1rem;
+                            letter-spacing: 1px;
+                            color: $blue;
+                            text-decoration: none;
+                            a{
+                                text-decoration: none;
+                                color: $blue;
+                                cursor: pointer;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -312,6 +367,26 @@ html {
                     @include font (2.8rem);
                     padding: 1.5rem;
                     letter-spacing: 1px;
+                }
+                .categories{
+                    @include flex(row, center);
+                    list-style: none;
+                    .categoriesMap{
+                        @include flex(row, space-around);
+                        .categoryOption{
+                            @include font (2.8rem);
+                            text-transform: uppercase;
+                            padding: .5rem;
+                            letter-spacing: 1px;
+                            color: $blue;
+                            text-decoration: none;
+                            a{
+                                text-decoration: none;
+                                color: $blue;
+                                cursor: pointer;
+                            }
+                        }
+                    }
                 }
             }
         }

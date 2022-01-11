@@ -8,6 +8,16 @@
     margin-bottom: 3rem;
 }
 
+.bannerHome{
+    @include flex(row, center);
+    flex-wrap: wrap;
+    img {
+        display: inline-block;
+        width: 45vw;
+        margin: 8rem 0rem 5rem 0rem;
+    }
+}
+
 .seeMore{
     @include button(2.3rem, $yellow, $blue, .5rem 4rem);
     text-decoration: none;
@@ -24,4 +34,78 @@
             background-color: $darkblue;
             box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
         }
+}
+
+/* EXTRA SMALL */
+
+@media only screen and (max-width: 320px) {
+    .bannerHome{
+        @include flex(row, center);
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        img {
+            display: inline-block;
+            width: 98vw;
+            margin: 0rem;
+        }
+    }
+    .seeMore{
+        @include button(1.5rem, $yellow, $blue, .5rem 2rem);
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+    }
+}
+
+/* SMALL */
+
+@media only screen and (min-width: 321px) and (max-width: 500px) {
+    .bannerHome{
+        @include flex(row, center);
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        img {
+            display: inline-block;
+            width: 98vw;
+            margin: 0rem;
+        }
+    }
+    .seeMore{
+        @include button(1.5rem, $yellow, $blue, .5rem 2rem);
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+    }
+}
+
+/* MEDIUM */
+
+@media only screen and (min-width: 501px) and (max-width: 810px) {
+    .bannerHome{
+        @include flex(row, center);
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        img {
+            display: inline-block;
+            width: 98vw;
+            margin: 0rem;
+        }
+    }
+    .seeMore{
+        @include button(1.9rem, $yellow, $blue, .5rem 2.8rem);
+        margin-top: 2rem;
+        margin-bottom: 8rem;
+    }
+}
+
+
+/* BIG */
+
+@media only screen and (min-width: 811px) and (max-width: 1000px) {
+    .seeMore{
+        @include button(2rem, $yellow, $blue, .5rem 3rem);
+        margin-top: 2rem;
+        margin-bottom: 8rem;
+    }
 }

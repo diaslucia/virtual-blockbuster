@@ -242,6 +242,12 @@ html {
     padding: .3rem;
     letter-spacing: 1px;
   }
+  .NavBarContainer .nav .navMenuContainer .categories .categoriesMap .categoryOption {
+    font-size: 2rem;
+    font-family: anton, sans-serif;
+    padding: .3rem;
+    letter-spacing: 1px;
+  }
 }
 
 /* SMALL */
@@ -295,6 +301,12 @@ html {
     padding: .5rem;
     letter-spacing: 2px;
   }
+  .NavBarContainer .nav .navMenuContainer .categories .categoriesMap .categoryOption {
+    font-size: 2rem;
+    font-family: anton, sans-serif;
+    padding: .5rem;
+    letter-spacing: 2px;
+  }
 }
 
 /* MEDIUM */
@@ -334,6 +346,20 @@ html {
     padding: 1.5rem;
     letter-spacing: 2px;
   }
+  .NavBarContainer .nav .navMenuContainer .categories .categoriesMap .categoryOption {
+    font-size: 2.5rem;
+    font-family: anton, sans-serif;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    letter-spacing: 2px;
+    color: #1c4da4;
+    text-decoration: none;
+  }
+  .NavBarContainer .nav .navMenuContainer .categories .categoriesMap .categoryOption a {
+    text-decoration: none;
+    color: #1c4da4;
+    cursor: pointer;
+  }
 }
 
 /* BIG */
@@ -358,10 +384,54 @@ html {
     padding: 1rem .5rem 0rem 0rem;
   }
   .NavBarContainer .nav .navMenuContainer li {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     font-family: anton, sans-serif;
     padding: 1rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+  }
+  .NavBarContainer .nav .navMenuContainer .categories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+  }
+  .NavBarContainer .nav .navMenuContainer .categories .categoriesMap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .NavBarContainer .nav .navMenuContainer .categories .categoriesMap .categoryOption {
+    font-size: 2.4rem;
+    font-family: anton, sans-serif;
+    text-transform: uppercase;
+    padding: 1rem;
+    letter-spacing: 1px;
+    color: #1c4da4;
+    text-decoration: none;
+  }
+  .NavBarContainer .nav .navMenuContainer .categories .categoriesMap .categoryOption a {
+    text-decoration: none;
+    color: #1c4da4;
+    cursor: pointer;
   }
 }
 
@@ -391,6 +461,50 @@ html {
     font-family: anton, sans-serif;
     padding: 1.5rem;
     letter-spacing: 1px;
+  }
+  .NavBarContainer .nav .navMenuContainer .categories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+  }
+  .NavBarContainer .nav .navMenuContainer .categories .categoriesMap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .NavBarContainer .nav .navMenuContainer .categories .categoriesMap .categoryOption {
+    font-size: 2.8rem;
+    font-family: anton, sans-serif;
+    text-transform: uppercase;
+    padding: .5rem;
+    letter-spacing: 1px;
+    color: #1c4da4;
+    text-decoration: none;
+  }
+  .NavBarContainer .nav .navMenuContainer .categories .categoriesMap .categoryOption a {
+    text-decoration: none;
+    color: #1c4da4;
+    cursor: pointer;
   }
 }
 

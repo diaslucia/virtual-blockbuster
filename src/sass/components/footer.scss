@@ -116,3 +116,592 @@ footer {
         }
     }
 }
+
+/* EXTRA SMALL */
+
+@media only screen and (max-width: 320px) {
+    footer {
+        padding: 2rem 0rem;
+        margin-top: 8rem;
+        .footerContainer{
+            @include flex2(row, flex-start, flex-start);
+            flex-wrap: wrap;
+            margin: 0rem 3rem;
+            .footerNav{
+                align-self: center;
+                justify-self: flex-end;
+                width: 100vw;
+                ul {
+                    @include flex(row, center);
+                    list-style: none;
+                    padding: 0rem;
+                    li {
+                        @include font (1.3rem);
+                        padding: .5rem;
+                        letter-spacing: 1px;
+                    }
+                    .categories{
+                        @include flex(row, center);
+                        list-style: none;
+                        .categoriesMap{
+                            @include flex(row, space-around);
+                            .categoryOption{
+                                @include font (1.3rem);
+                                padding: .5rem;
+                                letter-spacing: 1px;
+                            }
+                        }
+                    }
+                }
+            }
+            .footerLogo{
+                width: 100vw;
+                .logoFooter{
+                    width: 150px;
+                    margin: 0rem 0rem;
+                }
+            }
+            .footerAboutUs{
+                margin: 1rem;
+                h1{
+                    @include font2(1.3rem);
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                    margin: 0rem 0rem .5rem 0rem;
+                }
+                p{
+                    @include font2(1.2rem);
+                    margin: .3rem 0rem;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                }
+            }
+            .footerHelp{
+                margin: 1rem;
+                h1{
+                    @include font2(1.3rem);
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                    margin: 0rem 0rem .5rem 0rem;
+                }
+                p{
+                    @include font2(1.2rem);
+                    margin: .3rem 0rem;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                }
+            }
+            .footerConnect{
+                margin: 1rem;
+                h1{
+                    @include font2(1.3rem);
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                    margin: 0rem 0rem .5rem 0rem;
+                }
+                .icons{
+                    @include flex(row, center);
+                    .iconConnect{
+                        font-size: 2rem;
+                    }
+                    .iconConnectMiddle {
+                        margin: 1rem;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+/* SMALL */
+
+@media only screen and (min-width: 321px) and (max-width: 500px) {
+    footer {
+        padding: 2rem 0rem;
+        margin-top: 8rem;
+        .footerContainer{
+            @include flex2(row, flex-start, flex-start);
+            flex-wrap: wrap;
+            margin: 0rem 3rem;
+            .footerNav{
+                align-self: center;
+                justify-self: flex-end;
+                width: 100vw;
+                ul {
+                    @include flex(row, center);
+                    list-style: none;
+                    padding: 0rem;
+                    li {
+                        @include font (1.5rem);
+                        padding: .5rem;
+                        letter-spacing: 2px;
+                    }
+                    .categories{
+                        @include flex(row, center);
+                        list-style: none;
+                        .categoriesMap{
+                            @include flex(row, space-around);
+                            .categoryOption{
+                                @include font (1.5rem);
+                                padding: .5rem;
+                                letter-spacing: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+            .footerLogo{
+                width: 100vw;
+                .logoFooter{
+                    width: 150px;
+                    margin: 0rem 0rem;
+                }
+            }
+            .footerAboutUs{
+                margin: 1rem;
+                h1{
+                    @include font2(1.5rem);
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                    margin: 0rem 0rem .5rem 0rem;
+                }
+                p{
+                    @include font2(1.2rem);
+                    margin: .3rem 0rem;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                }
+            }
+            .footerHelp{
+                margin: 1rem;
+                h1{
+                    @include font2(1.5rem);
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                    margin: 0rem 0rem .5rem 0rem;
+                }
+                p{
+                    @include font2(1.2rem);
+                    margin: .3rem 0rem;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                }
+            }
+            .footerConnect{
+                margin: 1rem;
+                h1{
+                    @include font2(1.5rem);
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                    margin: 0rem 0rem .5rem 0rem;
+                }
+                .icons{
+                    @include flex(row, center);
+                    .iconConnect{
+                        font-size: 3rem;
+                        color: $white;
+                    }
+                    .iconConnectMiddle {
+                        margin: 1rem;
+                    }
+                }
+                
+            }
+        }
+    }  
+}
+
+/* MEDIUM */
+
+@media only screen and (min-width: 501px) and (max-width: 810px) {
+    footer {
+        padding: 2rem 0rem;
+        margin-top: 8rem;
+        .footerContainer{
+            @include flex2(row, space-around, flex-start);
+            flex-wrap: wrap;
+            margin: 0rem 3rem;
+            .footerNav{
+                align-self: center;
+                justify-self: flex-end;
+                width: 100vw;
+                ul {
+                    @include flex(row, center);
+                    list-style: none;
+                    padding: 0rem;
+                    li {
+                        @include font (2rem);
+                        padding: 1.5rem;
+                        letter-spacing: 2px;
+                    }
+                    .categories{
+                        @include flex(row, center);
+                        list-style: none;
+                        .categoriesMap{
+                            @include flex(row, space-around);
+                            .categoryOption{
+                                @include font (2rem);
+                                padding: 1.5rem;
+                                letter-spacing: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+            .footerLogo{
+                width: 100vw;
+                .logoFooter{
+                    width: 150px;
+                    margin: 0rem 0rem;
+                }
+            }
+            .footerAboutUs{
+                margin: 1rem;
+                h1{
+                    @include font2(1.5rem);
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                    margin: 0rem 0rem .5rem 0rem;
+                }
+                p{
+                    @include font2(1.2rem);
+                    margin: .3rem 0rem;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                }
+            }
+            .footerHelp{
+                margin: 1rem;
+                h1{
+                    @include font2(1.5rem);
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                    margin: 0rem 0rem .5rem 0rem;
+                }
+                p{
+                    @include font2(1.2rem);
+                    margin: .3rem 0rem;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                }
+            }
+            .footerConnect{
+                margin: 1rem;
+                h1{
+                    @include font2(1.5rem);
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                    margin: 0rem 0rem .5rem 0rem;
+                }
+                .icons{
+                    @include flex(row, center);
+                    .iconConnect{
+                        font-size: 3rem;
+                        color: $white;
+                    }
+                    .iconConnectMiddle {
+                        margin: 1rem;
+                    }
+                }
+                
+            }
+        }
+    }  
+}
+
+/* BIG */
+
+@media only screen and (min-width: 811px) and (max-width: 1000px) {
+    footer {
+        padding: 2rem 0rem;
+        margin-top: 8rem;
+        .footerContainer{
+            @include flex2(row, space-around, flex-start);
+            flex-wrap: wrap;
+            margin: 0rem 3rem;
+            .footerNav{
+                align-self: center;
+                justify-self: flex-end;
+                width: 70vw;
+                ul {
+                    @include flex(row, center);
+                    list-style: none;
+                    padding: 0rem;
+                    li {
+                        @include font (2rem);
+                        padding: 1.5rem;
+                        letter-spacing: 2px;
+                    }
+                    .categories{
+                        @include flex(row, center);
+                        list-style: none;
+                        .categoriesMap{
+                            @include flex(row, space-around);
+                            .categoryOption{
+                                @include font (2rem);
+                                padding: 1.5rem;
+                                letter-spacing: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+            .footerLogo{
+                width: 20vw;
+                .logoFooter{
+                    width: 180px;
+                    margin: 0rem 1rem;
+                }
+            }
+            .footerAboutUs{
+                margin: 1rem;
+                h1{
+                    @include font2(1.5rem);
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                    margin: 0rem 0rem .5rem 0rem;
+                }
+                p{
+                    @include font2(1.2rem);
+                    margin: .3rem 0rem;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                }
+            }
+            .footerHelp{
+                margin: 1rem;
+                h1{
+                    @include font2(1.5rem);
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                    margin: 0rem 0rem .5rem 0rem;
+                }
+                p{
+                    @include font2(1.2rem);
+                    margin: .3rem 0rem;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                }
+            }
+            .footerConnect{
+                margin: 1rem;
+                h1{
+                    @include font2(1.5rem);
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                    margin: 0rem 0rem .5rem 0rem;
+                }
+                .icons{
+                    @include flex(row, center);
+                    .iconConnect{
+                        font-size: 3rem;
+                        color: $white;
+                    }
+                    .iconConnectMiddle {
+                        margin: 1rem;
+                    }
+                }
+                
+            }
+        }
+    }  
+}
+
+/* LARGE */
+
+@media only screen and (min-width: 1001px) and (max-width: 1100px) {
+    footer {
+        padding: 2rem 0rem;
+        margin-top: 8rem;
+        .footerContainer{
+            @include flex2(row, space-around, flex-start);
+            margin: 0rem 3rem;
+            .footerNav{
+                align-self: center;
+                justify-self: flex-end;
+                ul {
+                    @include flex(row, center);
+                    list-style: none;
+                    padding: 0rem;
+                    li {
+                        @include font (1.8rem);
+                        padding: 1rem;
+                        letter-spacing: 2px;
+                    }
+                    .categories{
+                        @include flex(row, center);
+                        list-style: none;
+                        .categoriesMap{
+                            @include flex(row, space-around);
+                            .categoryOption{
+                                @include font (1.8rem);
+                                padding: 1rem;
+                                letter-spacing: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+            .footerLogo{
+                .logoFooter{
+                    width: 150px;
+                    margin: 0rem 1rem;
+                }
+            }
+            .footerAboutUs{
+                margin: 1rem;
+                h1{
+                    @include font2(1.5rem);
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                    margin: 0rem 0rem .5rem 0rem;
+                }
+                p{
+                    @include font2(1.2rem);
+                    margin: .3rem 0rem;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                }
+            }
+            .footerHelp{
+                margin: 1rem;
+                h1{
+                    @include font2(1.5rem);
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                    margin: 0rem 0rem .5rem 0rem;
+                }
+                p{
+                    @include font2(1.2rem);
+                    margin: .3rem 0rem;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                }
+            }
+            .footerConnect{
+                margin: 1rem;
+                h1{
+                    @include font2(1.5rem);
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                    margin: 0rem 0rem .5rem 0rem;
+                }
+                .icons{
+                    @include flex(row, center);
+                    .iconConnect{
+                        font-size: 3rem;
+                        color: $white;
+                    }
+                    .iconConnectMiddle {
+                        margin: 1rem;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+/* EXTRA LARGE */
+
+@media only screen and (min-width: 1101px) and (max-width: 1500px) {
+    footer {
+        padding: 2rem 0rem;
+        margin-top: 8rem;
+        .footerContainer{
+            margin: 0rem 3rem;
+            .footerNav{
+                ul {
+                    padding: 0rem;
+                    li {
+                        @include font (2rem);
+                        padding: 1rem;
+                    }
+                    .categories{
+                        .categoriesMap{
+                            .categoryOption{
+                                @include font (2rem);
+                                padding: 1rem;
+                                letter-spacing: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+            .footerLogo{
+                .logoFooter{
+                    width: 180px;
+                    margin: 0rem 1rem;
+                }
+            }
+            .footerAboutUs{
+                margin: 1rem;
+                h1{
+                    @include font2(1.5rem);
+                }
+                p{
+                    @include font2(1.2rem);
+                    margin: .3rem 0rem;
+                    letter-spacing: 1px;
+                }
+            }
+            .footerHelp{
+                margin: 1rem;
+                h1{
+                    @include font2(1.5rem);
+                    letter-spacing: 1px;
+                    margin: 0rem 0rem .5rem 0rem;
+                }
+                p{
+                    @include font2(1.2rem);
+                    margin: .3rem 0rem;
+                    letter-spacing: 1px;
+                }
+            }
+            .footerConnect{
+                margin: 1rem;
+                h1{
+                    @include font2(1.5rem);
+                    letter-spacing: 1px;
+                    margin: 0rem 0rem .5rem 0rem;
+                }
+                .icons{
+                    @include flex(row, center);
+                    .iconConnect{
+                        font-size: 3rem;
+                    }
+                    .iconConnectMiddle {
+                        margin: 1rem;
+                    }
+                }
+                
+            }
+        }
+    }
+}

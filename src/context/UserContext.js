@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { setLocalStorage, removeLocalStorage } from "../utils/HelperLocalStorage" 
 
 const Context = React.createContext();
 
@@ -10,12 +11,12 @@ export const UserContextProvider = ({children}) => {
             username: objUserLogin.username,
             email: objUserLogin.email
         });
-        window.localStorage.setItem("user", JSON.stringify(objUserLogin))
+        setLocalStorage("user", objUserLogin);
     }
     
     const logout = () => {
         setUser();
-        window.localStorage.removeItem("user");
+        removeLocalStorage("user");
     }
 
     return(

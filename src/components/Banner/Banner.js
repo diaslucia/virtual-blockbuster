@@ -1,4 +1,4 @@
-import "../../sass/components/banner.css";
+import "../../sass/components/home.css";
 
 const Banner = () => {
     return(

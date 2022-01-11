@@ -1,11 +1,9 @@
 import '../../sass/components/home.css';
 import ItemList from "../ItemList/ItemList";
+import LoadingSpinner from '../Loading/Loading';
 import {useState, useEffect} from "react"
 import { useParams } from "react-router";
 import { getProducts } from "../../services/firebase/firebase";
-import { css } from "@emotion/react";
-import ClipLoader from "react-spinners/ClipLoader";
-
 
 const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
@@ -28,19 +26,8 @@ const ItemListContainer = () => {
       })
   }, [category, amountProd])
 
-
-  if(loading) {
-    const override = css`
-    display: block;
-    margin: auto;
-    margin-top: 20rem;
-    margin-bottom: 20rem;
-    `;
-    return <ClipLoader size={50} color={"#1C4DA4"} loading={loading} css={override}/>
-  }
-
   return (
-    <>
+    <LoadingSpinner loading={loading}>
       {(() => {
         if (category === "movies") {
           return <img className="banner2" src="/assets/movies.jpg" alt="banner"></img>
@@ -56,7 +43,7 @@ const ItemListContainer = () => {
           return <button onClick={() => setAmountProd(amountProd + 14)} className="seeMore">Show More</button>
           }
       })()}
-    </>
+    </LoadingSpinner>
   );
 }
 

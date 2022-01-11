@@ -64,4 +64,84 @@
   color: #1c4da4;
   margin: 0rem 0rem 1rem 0rem;
 }
+
+/* EXTRA SMALL */
+@media only screen and (max-width: 320px) {
+  .itemCardContainer .itemCard {
+    margin: 0rem 1rem;
+    width: 100px;
+    height: 230px;
+  }
+  .itemCardContainer .itemCard .itemCardImg {
+    width: 100px;
+  }
+  .itemCardContainer .itemCard .itemCardName {
+    font-size: 1.2rem;
+    font-family: oswald, sans-serif;
+  }
+  .itemCardContainer .itemCard .itemCardPrice {
+    font-size: 1rem;
+    font-family: oswald, sans-serif;
+  }
+}
+
+/* SMALL */
+@media only screen and (min-width: 321px) and (max-width: 500px) {
+  .itemCardContainer .itemCard {
+    margin: 0rem 1rem;
+    width: 100px;
+    height: 230px;
+  }
+  .itemCardContainer .itemCard .itemCardImg {
+    width: 100px;
+  }
+  .itemCardContainer .itemCard .itemCardName {
+    font-size: 1.2rem;
+    font-family: oswald, sans-serif;
+  }
+  .itemCardContainer .itemCard .itemCardPrice {
+    font-size: 1rem;
+    font-family: oswald, sans-serif;
+  }
+}
+
+/* MEDIUM */
+@media only screen and (min-width: 501px) and (max-width: 810px) {
+  .itemCardContainer .itemCard {
+    margin: 0rem 1rem;
+    width: 200px;
+    height: 300px;
+  }
+  .itemCardContainer .itemCard .itemCardImg {
+    width: 140px;
+  }
+  .itemCardContainer .itemCard .itemCardName {
+    font-size: 1.6rem;
+    font-family: oswald, sans-serif;
+  }
+  .itemCardContainer .itemCard .itemCardPrice {
+    font-size: 1.4rem;
+    font-family: oswald, sans-serif;
+  }
+}
+
+/* BIG */
+@media only screen and (min-width: 811px) and (max-width: 1000px) {
+  .itemCardContainer .itemCard {
+    height: 340px;
+  }
+  .itemCardContainer .itemCard .itemCardImg {
+    width: 150px;
+    margin: 1rem 1rem 0.5rem 1rem;
+  }
+  .itemCardContainer .itemCard .itemCardName {
+    font-size: 1.8rem;
+    font-family: oswald, sans-serif;
+    letter-spacing: .2px;
+  }
+  .itemCardContainer .itemCard .itemCardPrice {
+    font-size: 1.4rem;
+    font-family: oswald, sans-serif;
+  }
+}
 /*# sourceMappingURL=item.css.map */

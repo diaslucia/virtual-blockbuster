@@ -131,7 +131,7 @@ item -> automatic id -> category(movies or series) / duration(string with movie 
 > 
 > ***setProducts()*** saves the products so we can display them.
 > 
-> We also imported a ***ClipLoader*** from the Spinner library that disappears once the products are loaded.
+> We also imported the ***LoadingSpinner*** component that contains a spinner from the Spinner Library. If *loading* is set true, the spinner will show. But, when the state changes to false, the children component will show.
 
 > ### src/services/firebase/firebase.js
 >
@@ -151,7 +151,7 @@ item -> automatic id -> category(movies or series) / duration(string with movie 
 >
 > We import the function ***GetProducts()*** from ***firebase*** that takes the item with the id that matches the id of our path (*paramId*)
 >
-> We also imported a ***ClipLoader*** from the Spinner library that disappears once the product is loaded.
+> We also imported the ***LoadingSpinner*** component that contains a spinner from the Spinner Library. If *loading* is set true, the spinner will show. But, when the state changes to false, the children component will show.
 
 > ### src/components/ItemDetail.js
 >
@@ -193,7 +193,7 @@ item -> automatic id -> category(movies or series) / duration(string with movie 
 >
 > ***objOrder*** builds an object with the user information. Then, for each product they buy, we check there is stock and we substract the amount they are buying from the firebase database.
 >
-> We also imported a ***ClipLoader*** from the Spinner library that disappears once the order number is loaded.
+> We also imported the ***LoadingSpinner*** component that contains a spinner from the Spinner Library. If *loading* is set true, the spinner will show. But, when the state changes to false, the children component will show.
 
 > ### src/context/UserContext.js
 >
@@ -205,6 +205,15 @@ item -> automatic id -> category(movies or series) / duration(string with movie 
 >
 > ***logout()*** sets the ***user*** as empty and deletes the user object from the LocalStorage.
 
+> ### src/utils/HelperLocalStorage.js
+>
+> Inside this Helper we can find the function to get, set and remove a value from the Local Storage.
+
 > ### src/components/Login.js
 >
 > When we submit the form, the function ***handleLogin()*** is ejecuted. The function builds an object with the information the user typed on the form and sends them as props to ***login()***.
+
+> ### src/components/Loading.js
+>
+> This components stores the spinner from the *react-spinners* library.
+

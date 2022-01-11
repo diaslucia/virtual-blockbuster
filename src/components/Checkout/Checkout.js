@@ -1,12 +1,11 @@
 import "../../sass/components/checkout.css"
 import Context from "../../context/CartContext";
 import UserContext from "../../context/UserContext";
+import LoadingSpinner from '../Loading/Loading';
 import { Link } from "react-router-dom";
 import { db } from "../../services/firebase/firebase";
 import { collection, addDoc, doc, writeBatch, Timestamp, getDoc} from "firebase/firestore";
 import { useContext, useEffect, useState } from "react";
-import { css } from "@emotion/react";
-import ClipLoader from "react-spinners/ClipLoader";
 
 const Checkout = () => {
     const [checkEmail, setCheckEmail] = useState(false);
@@ -71,18 +70,8 @@ const Checkout = () => {
         }
     }
 
-    if(loading) {
-        const override = css`
-        display: block;
-        margin: auto;
-        margin-top: 10rem;
-        margin-bottom: 10rem;
-        `;
-        return <ClipLoader size={50} color={"#1C4DA4"} loading={loading} css={override}/>
-    }
-
     return(
-        <>
+        <LoadingSpinner loading={loading}>
         {orderDone === false ?
             <div className="checkoutContainer">
                 <div className="titleContainer">
@@ -124,7 +113,7 @@ const Checkout = () => {
                 <Link to="/" className="doneOrder" onClick={()=> setOrderDone(false)}>Go back shopping</Link>
             </div>
             }
-        </>
+        </LoadingSpinner>
     )
 }
 

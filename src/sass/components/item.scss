@@ -34,3 +34,88 @@
         }
     }
 }
+
+/* EXTRA SMALL */
+
+@media only screen and (max-width: 320px) {
+    .itemCardContainer {
+        .itemCard {
+            margin: 0rem 1rem;
+            width: 100px;
+            height: 230px;
+            .itemCardImg {
+                width: 100px;
+            }
+            .itemCardName {
+                @include font2(1.2rem);
+            }
+            .itemCardPrice {
+                @include font2(1.0rem);
+            }
+        }
+    }
+}
+
+/* SMALL */
+
+@media only screen and (min-width: 321px) and (max-width: 500px) {
+    .itemCardContainer {
+        .itemCard {
+            margin: 0rem 1rem;
+            width: 100px;
+            height: 230px;
+            .itemCardImg {
+                width: 100px;
+            }
+            .itemCardName {
+                @include font2(1.2rem);
+            }
+            .itemCardPrice {
+                @include font2(1.0rem);
+            }
+        }
+    }
+}
+
+
+/* MEDIUM */
+
+@media only screen and (min-width: 501px) and (max-width: 810px) {
+    .itemCardContainer {
+        .itemCard {
+            margin: 0rem 1rem;
+            width: 200px;
+            height: 300px;
+            .itemCardImg {
+                width: 140px;
+            }
+            .itemCardName {
+                @include font2(1.6rem);
+            }
+            .itemCardPrice {
+                @include font2(1.4rem);
+            }
+        }
+    }
+}
+
+/* BIG */
+
+@media only screen and (min-width: 811px) and (max-width: 1000px) {
+    .itemCardContainer {
+        .itemCard {
+            height: 340px;
+            .itemCardImg {
+                width: 150px;
+                margin: 1rem 1rem 0.5rem 1rem;
+            }
+            .itemCardName {
+                @include font2(1.8rem);
+                letter-spacing: .2px;
+            }
+            .itemCardPrice {
+                @include font2(1.4rem);
+            }
+        }
+    }
+}

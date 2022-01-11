@@ -2,6 +2,7 @@ import React, { useEffect, useContext } from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { CartContext } from './context/CartContext';
 import UserContext from "./context/UserContext";
+import { getLocalStorage } from './utils/HelperLocalStorage';
 import NavBar from './components/NavBar/NavBar.js';
 import CartWidget from './components/CartWidget/CartWidget.js';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.js';
@@ -16,7 +17,7 @@ function App() {
   const { login } = useContext(UserContext);
 
   useEffect(() => {
-    const loggedUserJSON = window.localStorage.getItem("user");
+    const loggedUserJSON = getLocalStorage("user");
     if (loggedUserJSON) {
       const objUserLogin = JSON.parse(loggedUserJSON);
       login(objUserLogin);
