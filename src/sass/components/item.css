@@ -108,7 +108,7 @@
 /* MEDIUM */
 @media only screen and (min-width: 501px) and (max-width: 810px) {
   .itemCardContainer .itemCard {
-    margin: 0rem 1rem;
+    margin: 0rem 0rem;
     width: 200px;
     height: 300px;
   }
@@ -128,6 +128,7 @@
 /* BIG */
 @media only screen and (min-width: 811px) and (max-width: 1000px) {
   .itemCardContainer .itemCard {
+    margin: 0rem;
     height: 340px;
   }
   .itemCardContainer .itemCard .itemCardImg {

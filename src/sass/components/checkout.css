@@ -214,4 +214,371 @@
   -webkit-box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
           box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
 }
+
+/* EXTRA SMALL */
+@media only screen and (max-width: 320px) {
+  .checkoutContainer {
+    margin: 0rem;
+    height: auto;
+    padding: 4rem 0rem;
+  }
+  .checkoutContainer .titleContainer p {
+    font-size: 1.7rem;
+    font-family: oswald, sans-serif;
+  }
+  .checkoutContainer .titleContainer .checkEmail {
+    width: 80vw;
+    font-size: 1.4rem;
+    font-family: oswald, sans-serif;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #ea2194;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .checkoutContainer .formContainer {
+    margin: 0rem;
+  }
+  .checkoutContainer .formContainer form label {
+    font-size: 1.5rem;
+    font-family: oswald, sans-serif;
+    width: 70vw;
+    letter-spacing: .5px;
+    padding: 1rem;
+    margin: .5rem;
+  }
+  .checkoutContainer .formContainer form input {
+    width: 30vw;
+  }
+  .checkoutContainer .buyContainer .confirmButton {
+    font-size: 1.5rem;
+    font-family: anton, sans-serif;
+    color: #fed406;
+    text-transform: uppercase;
+    background-color: #1c4da4;
+    letter-spacing: 3px;
+    padding: 0.5rem 1.7rem;
+    border: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  .checkoutContainer .buyContainer .confirmButton:hover {
+    cursor: pointer;
+    color: #1b458f;
+  }
+  .checkoutContainer .buyContainer .confirmButton:active {
+    cursor: pointer;
+    color: #1b458f;
+    -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+            box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+  .thankYou {
+    margin: 0rem;
+    background-image: none;
+    padding: 6rem 0rem;
+  }
+  .thankYou p {
+    font-size: 1.7rem;
+    font-family: oswald, sans-serif;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: #1c4da4;
+    margin: 0rem 0rem .5rem 0rem;
+    text-align: center;
+  }
+  .thankYou h1 {
+    font-size: 1.8rem;
+    font-family: oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0rem 0rem 2rem 0rem;
+  }
+  .thankYou .doneOrder {
+    font-size: 1.7rem;
+    font-family: anton, sans-serif;
+    color: #fed406;
+    text-transform: uppercase;
+    background-color: #1c4da4;
+    letter-spacing: 3px;
+    padding: 0.5rem 1.5rem;
+    border: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  .thankYou .doneOrder:hover {
+    cursor: pointer;
+    color: #1b458f;
+  }
+  .thankYou .doneOrder:active {
+    cursor: pointer;
+    color: #1b458f;
+    -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+            box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+}
+
+/* SMALL */
+@media only screen and (min-width: 321px) and (max-width: 500px) {
+  .checkoutContainer {
+    margin: 0rem;
+    height: auto;
+    padding: 4rem 0rem;
+  }
+  .checkoutContainer .titleContainer p {
+    font-size: 2rem;
+    font-family: oswald, sans-serif;
+  }
+  .checkoutContainer .titleContainer .checkEmail {
+    width: 80vw;
+    font-size: 1.5rem;
+    font-family: oswald, sans-serif;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #ea2194;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .checkoutContainer .formContainer {
+    margin: 0rem;
+  }
+  .checkoutContainer .formContainer form label {
+    font-size: 1.5rem;
+    font-family: oswald, sans-serif;
+    width: 70vw;
+    letter-spacing: .5px;
+    padding: 1rem;
+    margin: .5rem;
+  }
+  .checkoutContainer .formContainer form input {
+    width: 30vw;
+  }
+  .checkoutContainer .buyContainer .confirmButton {
+    font-size: 1.5rem;
+    font-family: anton, sans-serif;
+    color: #fed406;
+    text-transform: uppercase;
+    background-color: #1c4da4;
+    letter-spacing: 3px;
+    padding: 0.5rem 1.7rem;
+    border: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  .checkoutContainer .buyContainer .confirmButton:hover {
+    cursor: pointer;
+    color: #1b458f;
+  }
+  .checkoutContainer .buyContainer .confirmButton:active {
+    cursor: pointer;
+    color: #1b458f;
+    -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+            box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+  .thankYou {
+    margin: 0rem;
+    background-image: none;
+    padding: 6rem 0rem;
+  }
+  .thankYou p {
+    font-size: 1.8rem;
+    font-family: oswald, sans-serif;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: #1c4da4;
+    margin: 0rem 0rem .5rem 0rem;
+    text-align: center;
+  }
+  .thankYou h1 {
+    font-size: 2rem;
+    font-family: oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0rem 0rem 2rem 0rem;
+  }
+  .thankYou .doneOrder {
+    font-size: 1.8rem;
+    font-family: anton, sans-serif;
+    color: #fed406;
+    text-transform: uppercase;
+    background-color: #1c4da4;
+    letter-spacing: 3px;
+    padding: 0.5rem 1.8rem;
+    border: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  .thankYou .doneOrder:hover {
+    cursor: pointer;
+    color: #1b458f;
+  }
+  .thankYou .doneOrder:active {
+    cursor: pointer;
+    color: #1b458f;
+    -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+            box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+}
+
+/* MEDIUM */
+@media only screen and (min-width: 501px) and (max-width: 810px) {
+  .checkoutContainer {
+    margin: 0rem;
+    height: auto;
+    padding: 4rem 0rem;
+  }
+  .checkoutContainer .titleContainer p {
+    font-size: 2.4rem;
+    font-family: oswald, sans-serif;
+  }
+  .checkoutContainer .titleContainer .checkEmail {
+    font-size: 1.5rem;
+    font-family: oswald, sans-serif;
+    width: 80vw;
+  }
+  .checkoutContainer .formContainer {
+    margin: 0rem;
+  }
+  .checkoutContainer .formContainer form label {
+    font-size: 2rem;
+    font-family: oswald, sans-serif;
+    width: 85vw;
+    letter-spacing: .5px;
+    padding: 1rem;
+    margin: .5rem;
+  }
+  .checkoutContainer .formContainer form input {
+    width: 45vw;
+  }
+  .thankYou {
+    margin: 0rem;
+    background-image: none;
+    padding: 6rem 0rem;
+  }
+  .thankYou p {
+    font-size: 2rem;
+    font-family: oswald, sans-serif;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: #1c4da4;
+    margin: 0rem 0rem .5rem 0rem;
+    text-align: center;
+  }
+  .thankYou h1 {
+    font-size: 2.5rem;
+    font-family: oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0rem 0rem 2rem 0rem;
+  }
+  .thankYou .doneOrder {
+    font-size: 2rem;
+    font-family: anton, sans-serif;
+    color: #fed406;
+    text-transform: uppercase;
+    background-color: #1c4da4;
+    letter-spacing: 3px;
+    padding: 0.5rem 2rem;
+    border: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  .thankYou .doneOrder:hover {
+    cursor: pointer;
+    color: #1b458f;
+  }
+  .thankYou .doneOrder:active {
+    cursor: pointer;
+    color: #1b458f;
+    -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+            box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+}
+
+/* BIG */
+@media only screen and (min-width: 811px) and (max-width: 1000px) {
+  .checkoutContainer {
+    margin-top: 10rem;
+    margin-bottom: 0rem;
+    height: 50vh;
+  }
+  .checkoutContainer .titleContainer p {
+    font-size: 2.4rem;
+    font-family: oswald, sans-serif;
+  }
+  .checkoutContainer .titleContainer .checkEmail {
+    font-size: 1.5rem;
+    font-family: oswald, sans-serif;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #ea2194;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .checkoutContainer .formContainer {
+    margin: 0rem;
+  }
+  .checkoutContainer .formContainer form label {
+    font-size: 2rem;
+    font-family: oswald, sans-serif;
+    width: 35vw;
+    letter-spacing: .5px;
+    padding: 1rem;
+    margin: .5rem;
+  }
+  .checkoutContainer .formContainer form input {
+    width: 10vw;
+  }
+  .thankYou {
+    margin: 12rem 0rem 0rem 0rem;
+  }
+  .thankYou p {
+    font-size: 2.4rem;
+    font-family: oswald, sans-serif;
+  }
+  .thankYou h1 {
+    font-size: 3rem;
+    font-family: oswald, sans-serif;
+  }
+}
+
+/* LARGE */
+@media only screen and (min-width: 1001px) and (max-width: 1100px) {
+  .checkoutContainer {
+    margin-top: 10rem;
+    margin-bottom: 0rem;
+    height: 50vh;
+  }
+  .checkoutContainer .titleContainer p {
+    font-size: 2.4rem;
+    font-family: oswald, sans-serif;
+  }
+  .checkoutContainer .titleContainer .checkEmail {
+    font-size: 1.5rem;
+    font-family: oswald, sans-serif;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #ea2194;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .checkoutContainer .formContainer {
+    margin: 0rem;
+  }
+  .checkoutContainer .formContainer form label {
+    font-size: 2rem;
+    font-family: oswald, sans-serif;
+    width: 35vw;
+    letter-spacing: .5px;
+    padding: 1rem;
+    margin: .5rem;
+  }
+  .checkoutContainer .formContainer form input {
+    width: 10vw;
+  }
+}
 /*# sourceMappingURL=checkout.css.map */

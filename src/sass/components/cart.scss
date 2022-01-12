@@ -121,3 +121,309 @@
         a {text-decoration: none; color: $yellow;}
     }
 }
+
+/* EXTRA SMALL */
+
+@media only screen and (max-width: 320px) {
+    .cart {
+        @include flex(column, flex-start);
+        background-image: none;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+        padding: 0rem;
+        .cartItemContainer{
+            width: 100vw;
+            height: 15vh;
+            padding: 3rem 0rem;
+            margin: 0rem;
+            .cartImgContainer {
+                img{
+                    width:50px;
+                    border: 2px solid $yellow;
+                }
+            }
+        }
+        .cartTotal {
+            @include flex2(column, flex-start, flex-start);
+            padding: 0rem;
+            margin: 0rem 2rem;
+            width: 90vw;
+            p {
+                @include font2(1.9rem);
+            }
+            div {
+                @include flex2(column, flex-start, flex-start);
+                .emptyCartButton{
+                    @include button(1.5rem, $yellow, $blue, .5rem 1.8rem);
+                    margin: 2rem 1rem 1rem 0rem;
+                }
+                .checkoutButton{
+                    @include button(1.5rem, $yellow, $blue, .5rem 1.8rem);
+                }
+            }
+            
+        }
+    }
+    .emptyCart {
+        height: 30vh;
+        margin: 0rem;
+        h1 {
+            @include font2(2rem);
+        }
+        p {
+            @include button(1.5rem, $yellow, $blue, .5rem 2rem);
+                
+        }
+    } 
+}
+
+/* SMALL */
+
+@media only screen and (min-width: 321px) and (max-width: 500px) {
+    .cart {
+        @include flex(column, flex-start);
+        background-image: none;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+        padding: 0rem;
+        .cartItemContainer{
+            width: 100vw;
+            height: 15vh;
+            padding: 3rem 0rem;
+            .cartImgContainer {
+                img{
+                    width:60px;
+                    border: 2px solid $yellow;
+                }
+            }
+        }
+        .cartTotal {
+            @include flex2(column, flex-start, flex-start);
+            padding: 0rem;
+            margin: 0rem 2rem;
+            width: 90vw;
+            p {
+                @include font2(1.9rem);
+            }
+            div {
+                @include flex2(column, flex-start, flex-start);
+                .emptyCartButton{
+                    @include button(1.5rem, $yellow, $blue, .5rem 1.8rem);
+                    margin: 2rem 1rem 1rem 0rem;
+                }
+                .checkoutButton{
+                    @include button(1.5rem, $yellow, $blue, .5rem 1.8rem);
+                }
+            }
+            
+        }
+    }
+    .emptyCart {
+        height: 30vh;
+        margin: 0rem;
+        h1 {
+            @include font2(2rem);
+        }
+        p {
+            @include button(1.5rem, $yellow, $blue, .5rem 2rem);
+                
+        }
+    }    
+}
+
+/* MEDIUM */
+
+@media only screen and (min-width: 501px) and (max-width: 810px) {
+    .cart {
+        @include flex(column, flex-start);
+        background-image: none;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+        padding: 0rem;
+        .cartItemContainer{
+            width: 65vw;
+            height: 15vh;
+            padding: 3rem 0rem;
+        }
+        .cartTotal {
+            @include flex2(column, flex-start, flex-start);
+            padding: 0rem;
+            width: 45vw;
+            p {
+                @include font2(1.9rem);
+            }
+            div {
+                @include flex2(column, flex-start, flex-start);
+                .emptyCartButton{
+                    @include button(1.5rem, $yellow, $blue, .5rem 1.8rem);
+                    margin: 2rem 1rem 1rem 0rem;
+                }
+                .checkoutButton{
+                    @include button(1.5rem, $yellow, $blue, .5rem 1.8rem);
+                }
+            }
+            
+        }
+    }
+    .emptyCart {
+        margin-top: 1rem;
+        margin-bottom:1rem;
+        h1 {
+            @include font2(2.8rem);
+        }
+        p {
+            @include button(1.7rem, $yellow, $blue, .8rem 2.8rem);
+                
+        }
+    } 
+}
+
+/* BIG */
+
+@media only screen and (min-width: 811px) and (max-width: 1000px) {
+    .cart {
+        background-image: none;
+        margin: 0rem;
+        margin-top: 12rem;
+        padding: 0rem;
+        .cartItemContainer{
+            width: 65vw;
+            height: 15vh;
+            padding: 3rem 0rem;
+            .cartImgContainer {
+                img{
+                    width:80px;
+                    border: 2px solid $yellow;
+                }
+            }
+            .cartItemDetails {
+                margin: 0rem 2rem;
+                h1{
+                    width: 100px;
+                    @include font2(1.3rem);
+                    letter-spacing: .5px;
+                    text-transform: uppercase;
+                    overflow:hidden;
+                    color: $yellow;
+                    margin: .5rem 0rem;
+                }
+                p{
+                    @include font2(1.5rem);
+                    letter-spacing: .5px;
+                    text-transform: uppercase;
+                    color: $yellow;
+                    margin: .5rem 0rem;
+                }
+            }
+            .removeItem {
+                font-size:2rem;
+                color: $yellow;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        .cartTotal {
+            @include flex2(column, flex-start, flex-start);
+            padding: 3rem 0rem;
+            width: 45vw;
+            p {
+                @include font2(1.9rem);
+            }
+            div {
+                @include flex2(column, flex-start, flex-start);
+                .emptyCartButton{
+                    @include button(1.5rem, $yellow, $blue, .5rem 1.8rem);
+                    margin: 2rem 1rem 1rem 0rem;
+                }
+                .checkoutButton{
+                    @include button(1.5rem, $yellow, $blue, .5rem 1.8rem);
+                }
+            }
+            
+        }
+    }
+    .emptyCart {
+        h1 {
+            @include font2(3.1rem);
+        }
+        p {
+            @include button(1.8rem, $yellow, $blue, .8rem 2.8rem);
+                
+        }
+    } 
+}
+
+/* LARGE */
+
+@media only screen and (min-width: 1001px) and (max-width: 1100px) {
+    .cart {
+        margin: 4rem 0rem;
+        margin-top: 7rem;
+        .cartItemContainer{
+            width: 65vw;
+            height: 15vh;
+            padding: 3rem 0rem;
+            .cartImgContainer {
+                img{
+                    width:80px;
+                    border: 2px solid $yellow;
+                }
+            }
+            .cartItemDetails {
+                margin: 0rem 2rem;
+                h1{
+                    width: 100px;
+                    @include font2(1.3rem);
+                    letter-spacing: .5px;
+                    text-transform: uppercase;
+                    overflow:hidden;
+                    color: $yellow;
+                    margin: .5rem 0rem;
+                }
+                p{
+                    @include font2(1.5rem);
+                    letter-spacing: .5px;
+                    text-transform: uppercase;
+                    color: $yellow;
+                    margin: .5rem 0rem;
+                }
+            }
+            .removeItem {
+                font-size:2rem;
+                color: $yellow;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        .cartTotal {
+            @include flex2(column, flex-start, flex-start);
+            padding: 3rem 0rem;
+            width: 45vw;
+            p {
+                @include font2(1.9rem);
+            }
+            div {
+                @include flex2(column, flex-start, flex-start);
+                .emptyCartButton{
+                    @include button(1.5rem, $yellow, $blue, .5rem 1.8rem);
+                    margin: 2rem 1rem 1rem 0rem;
+                }
+                .checkoutButton{
+                    @include button(1.5rem, $yellow, $blue, .5rem 1.8rem);
+                }
+            }
+            
+        }
+    }
+    .emptyCart {
+        h1 {
+            @include font2(3.1rem);
+        }
+        p {
+            @include button(1.8rem, $yellow, $blue, .8rem 2.8rem);
+                
+        }
+    }  
+}

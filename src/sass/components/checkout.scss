@@ -119,3 +119,277 @@
         }
     }
 }
+
+/* EXTRA SMALL */
+
+@media only screen and (max-width: 320px) {
+    .checkoutContainer {
+        margin: 0rem;
+        height: auto;
+        padding: 4rem 0rem;
+        .titleContainer {
+            p {
+                @include font2(1.7rem);
+            }
+            .checkEmail {
+                width: 80vw;
+                @include font2(1.4rem);
+                letter-spacing: 0px;
+                text-transform:none;
+                color: $pink;
+                margin-top: 2rem;
+                text-align: center;
+            }
+        }
+        .formContainer {
+            margin: 0rem;
+            form {
+                label {
+                    @include font2(1.5rem);
+                    width: 70vw;
+                    letter-spacing: .5px;
+                    padding: 1rem;
+                    margin: .5rem;
+                }
+                input {
+                    width: 30vw;
+                }
+            }
+            
+        }
+        .buyContainer {
+            .confirmButton{
+                @include button(1.5rem, $yellow, $blue, .5rem 1.7rem);
+            }
+        }
+    }
+    .thankYou {
+        margin: 0rem;
+        background-image: none;
+        padding: 6rem 0rem;
+        p{
+            @include font2(1.7rem);
+            letter-spacing: .5px;
+            text-transform: uppercase;
+            color: $blue;
+            margin: 0rem 0rem .5rem 0rem;
+            text-align: center; 
+        }
+        h1 {
+            @include font2(1.8rem);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0rem 0rem 2rem 0rem;
+        }
+        .doneOrder{
+            @include button(1.7rem, $yellow, $blue, .5rem 1.5rem);
+        }
+    } 
+}
+
+/* SMALL */
+
+@media only screen and (min-width: 321px) and (max-width: 500px) {
+    .checkoutContainer {
+        margin: 0rem;
+        height: auto;
+        padding: 4rem 0rem;
+        .titleContainer {
+            p {
+                @include font2(2rem);
+            }
+            .checkEmail {
+                width: 80vw;
+                @include font2(1.5rem);
+                letter-spacing: 0px;
+                text-transform:none;
+                color: $pink;
+                margin-top: 2rem;
+                text-align: center;
+            }
+        }
+        .formContainer {
+            margin: 0rem;
+            form {
+                label {
+                    @include font2(1.5rem);
+                    width: 70vw;
+                    letter-spacing: .5px;
+                    padding: 1rem;
+                    margin: .5rem;
+                }
+                input {
+                    width: 30vw;
+                }
+            }
+            
+        }
+        .buyContainer {
+            .confirmButton{
+                @include button(1.5rem, $yellow, $blue, .5rem 1.7rem);
+            }
+        }
+    }
+    .thankYou {
+        margin: 0rem;
+        background-image: none;
+        padding: 6rem 0rem;
+        p{
+            @include font2(1.8rem);
+            letter-spacing: .5px;
+            text-transform: uppercase;
+            color: $blue;
+            margin: 0rem 0rem .5rem 0rem;
+            text-align: center; 
+        }
+        h1 {
+            @include font2(2rem);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0rem 0rem 2rem 0rem;
+        }
+        .doneOrder{
+            @include button(1.8rem, $yellow, $blue, .5rem 1.8rem);
+        }
+    }    
+}
+
+/* MEDIUM */
+
+@media only screen and (min-width: 501px) and (max-width: 810px) {
+    .checkoutContainer {
+        margin: 0rem;
+        height: auto;
+        padding: 4rem 0rem;
+        .titleContainer {
+            p {
+                @include font2(2.4rem);
+            }
+            .checkEmail {
+                @include font2(1.5rem);
+                width: 80vw;
+            }
+        }
+        .formContainer {
+            margin: 0rem;
+            form {
+                label {
+                    @include font2(2rem);
+                    width: 85vw;
+                    letter-spacing: .5px;
+                    padding: 1rem;
+                    margin: .5rem;
+                }
+                input {
+                    width: 45vw;
+                }
+            }
+            
+        }
+    }
+    .thankYou {
+        margin: 0rem;
+        background-image: none;
+        padding: 6rem 0rem;
+        p{
+            @include font2(2rem);
+            letter-spacing: .5px;
+            text-transform: uppercase;
+            color: $blue;
+            margin: 0rem 0rem .5rem 0rem;
+            text-align: center; 
+        }
+        h1 {
+            @include font2(2.5rem);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0rem 0rem 2rem 0rem;
+        }
+        .doneOrder{
+            @include button(2rem, $yellow, $blue, .5rem 2rem);
+        }
+    }
+}
+
+/* BIG */
+
+@media only screen and (min-width: 811px) and (max-width: 1000px) {
+    .checkoutContainer {
+        margin-top: 10rem;
+        margin-bottom:0rem;
+        height: 50vh;
+        .titleContainer {
+            p {
+                @include font2(2.4rem);
+            }
+            .checkEmail {
+                @include font2(1.5rem);
+                letter-spacing: 0px;
+                text-transform:none;
+                color: $pink;
+                margin-top: 2rem;
+                text-align: center;
+            }
+        }
+        .formContainer {
+            margin: 0rem;
+            form {
+                label {
+                    @include font2(2rem);
+                    width: 35vw;
+                    letter-spacing: .5px;
+                    padding: 1rem;
+                    margin: .5rem;
+                }
+                input {
+                    width: 10vw;
+                }
+            }
+            
+        }
+    }
+    .thankYou {
+        margin: 12rem 0rem 0rem 0rem;
+        p{@include font2(2.4rem); }
+        h1 { @include font2(3rem);}
+    }
+}
+
+/* LARGE */
+
+@media only screen and (min-width: 1001px) and (max-width: 1100px) {
+    .checkoutContainer {
+        margin-top: 10rem;
+        margin-bottom:0rem;
+        height: 50vh;
+        .titleContainer {
+            p {
+                @include font2(2.4rem);
+            }
+            .checkEmail {
+                @include font2(1.5rem);
+                letter-spacing: 0px;
+                text-transform:none;
+                color: $pink;
+                margin-top: 2rem;
+                text-align: center;
+            }
+        }
+        .formContainer {
+            margin: 0rem;
+            form {
+                label {
+                    @include font2(2rem);
+                    width: 35vw;
+                    letter-spacing: .5px;
+                    padding: 1rem;
+                    margin: .5rem;
+                }
+                input {
+                    width: 10vw;
+                }
+            }
+            
+        }
+    }
+}

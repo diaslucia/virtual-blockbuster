@@ -129,4 +129,102 @@
   -webkit-box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
           box-shadow: rgba(13, 41, 116, 0.815) 3px 3px 6px 0px inset, rgba(6, 31, 112, 0.301) -3px -3px 6px 1px inset;
 }
+
+/* EXTRA SMALL */
+@media only screen and (max-width: 320px) {
+  .loginContainer {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    background-image: none;
+  }
+  .loginContainer .logTitle h1 {
+    font-size: 2rem;
+    font-family: oswald, sans-serif;
+    letter-spacing: .5px;
+  }
+  .loginContainer .formContainer form label {
+    font-size: 1.5rem;
+    font-family: oswald, sans-serif;
+    width: 70vw;
+  }
+  .loginContainer .formContainer form input {
+    width: 30vw;
+  }
+}
+
+/* SMALL */
+@media only screen and (min-width: 321px) and (max-width: 500px) {
+  .loginContainer {
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+    background-image: none;
+  }
+  .loginContainer .logTitle h1 {
+    font-size: 2.3rem;
+    font-family: oswald, sans-serif;
+    letter-spacing: .5px;
+  }
+  .loginContainer .formContainer form label {
+    font-size: 1.5rem;
+    font-family: oswald, sans-serif;
+    width: 70vw;
+  }
+  .loginContainer .formContainer form input {
+    width: 30vw;
+  }
+}
+
+/* MEDIUM */
+@media only screen and (min-width: 501px) and (max-width: 810px) {
+  .loginContainer {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    background-image: url("../../assets/wallpaperCart.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50vh;
+  }
+  .loginContainer .logTitle h1 {
+    font-size: 2.3rem;
+    font-family: oswald, sans-serif;
+    letter-spacing: .5px;
+  }
+  .loginContainer .formContainer form label {
+    width: 50vw;
+  }
+  .loginContainer .formContainer form input {
+    width: 25vw;
+  }
+}
+
+/* BIG */
+@media only screen and (min-width: 811px) and (max-width: 1000px) {
+  .loginContainer {
+    margin-top: 10rem;
+    margin-bottom: 0rem;
+    height: 40vh;
+  }
+  .loginContainer .formContainer form label {
+    width: 50vw;
+  }
+  .loginContainer .formContainer form input {
+    width: 25vw;
+  }
+}
+
+/* LARGE */
+@media only screen and (min-width: 1001px) and (max-width: 1100px) {
+  .loginContainer {
+    margin-top: 10rem;
+    margin-bottom: 0rem;
+    height: 50vh;
+  }
+  .loginContainer .formContainer form label {
+    width: 40vw;
+  }
+  .loginContainer .formContainer form input {
+    width: 20vw;
+  }
+}
 /*# sourceMappingURL=login.css.map */

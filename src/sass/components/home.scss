@@ -39,6 +39,10 @@
 /* EXTRA SMALL */
 
 @media only screen and (max-width: 320px) {
+    .banner2{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
     .bannerHome{
         @include flex(row, center);
         flex-wrap: wrap;
@@ -60,6 +64,10 @@
 /* SMALL */
 
 @media only screen and (min-width: 321px) and (max-width: 500px) {
+    .banner2{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
     .bannerHome{
         @include flex(row, center);
         flex-wrap: wrap;
@@ -81,6 +89,9 @@
 /* MEDIUM */
 
 @media only screen and (min-width: 501px) and (max-width: 810px) {
+    .banner2{
+        margin-top: 2rem;
+    }
     .bannerHome{
         @include flex(row, center);
         flex-wrap: wrap;
@@ -103,6 +114,9 @@
 /* BIG */
 
 @media only screen and (min-width: 811px) and (max-width: 1000px) {
+    .banner2{
+        margin-top: 12rem;
+    }
     .seeMore{
         @include button(2rem, $yellow, $blue, .5rem 3rem);
         margin-top: 2rem;

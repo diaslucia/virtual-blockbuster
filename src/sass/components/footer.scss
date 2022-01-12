@@ -122,7 +122,7 @@ footer {
 @media only screen and (max-width: 320px) {
     footer {
         padding: 2rem 0rem;
-        margin-top: 8rem;
+        margin-top: 0rem;
         .footerContainer{
             @include flex2(row, flex-start, flex-start);
             flex-wrap: wrap;
@@ -224,7 +224,7 @@ footer {
 @media only screen and (min-width: 321px) and (max-width: 500px) {
     footer {
         padding: 2rem 0rem;
-        margin-top: 8rem;
+        margin-top: 1rem;
         .footerContainer{
             @include flex2(row, flex-start, flex-start);
             flex-wrap: wrap;
@@ -327,7 +327,7 @@ footer {
 @media only screen and (min-width: 501px) and (max-width: 810px) {
     footer {
         padding: 2rem 0rem;
-        margin-top: 8rem;
+        margin-top: 1rem;
         .footerContainer{
             @include flex2(row, space-around, flex-start);
             flex-wrap: wrap;
@@ -430,7 +430,7 @@ footer {
 @media only screen and (min-width: 811px) and (max-width: 1000px) {
     footer {
         padding: 2rem 0rem;
-        margin-top: 8rem;
+        margin-top: 4rem;
         .footerContainer{
             @include flex2(row, space-around, flex-start);
             flex-wrap: wrap;
