@@ -202,8 +202,6 @@
                 width: 80vw;
                 @include font2(1.5rem);
                 letter-spacing: 0px;
-                text-transform:none;
-                color: $pink;
                 margin-top: 2rem;
                 text-align: center;
             }
@@ -237,14 +235,11 @@
         p{
             @include font2(1.8rem);
             letter-spacing: .5px;
-            text-transform: uppercase;
-            color: $blue;
             margin: 0rem 0rem .5rem 0rem;
             text-align: center; 
         }
         h1 {
             @include font2(2rem);
-            text-transform: uppercase;
             letter-spacing: 3px;
             margin: 0rem 0rem 2rem 0rem;
         }
@@ -294,14 +289,11 @@
         p{
             @include font2(2rem);
             letter-spacing: .5px;
-            text-transform: uppercase;
-            color: $blue;
             margin: 0rem 0rem .5rem 0rem;
             text-align: center; 
         }
         h1 {
             @include font2(2.5rem);
-            text-transform: uppercase;
             letter-spacing: 3px;
             margin: 0rem 0rem 2rem 0rem;
         }
@@ -325,8 +317,6 @@
             .checkEmail {
                 @include font2(1.5rem);
                 letter-spacing: 0px;
-                text-transform:none;
-                color: $pink;
                 margin-top: 2rem;
                 text-align: center;
             }
@@ -369,8 +359,6 @@
             .checkEmail {
                 @include font2(1.5rem);
                 letter-spacing: 0px;
-                text-transform:none;
-                color: $pink;
                 margin-top: 2rem;
                 text-align: center;
             }

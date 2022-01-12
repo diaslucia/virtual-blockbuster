@@ -293,7 +293,6 @@
             .cartImgContainer {
                 img{
                     width:80px;
-                    border: 2px solid $yellow;
                 }
             }
             .cartItemDetails {
@@ -302,25 +301,16 @@
                     width: 100px;
                     @include font2(1.3rem);
                     letter-spacing: .5px;
-                    text-transform: uppercase;
-                    overflow:hidden;
-                    color: $yellow;
                     margin: .5rem 0rem;
                 }
                 p{
                     @include font2(1.5rem);
                     letter-spacing: .5px;
-                    text-transform: uppercase;
-                    color: $yellow;
                     margin: .5rem 0rem;
                 }
             }
             .removeItem {
                 font-size:2rem;
-                color: $yellow;
-                &:hover{
-                    cursor: pointer;
-                }
             }
         }
         .cartTotal {
@@ -376,25 +366,16 @@
                     width: 100px;
                     @include font2(1.3rem);
                     letter-spacing: .5px;
-                    text-transform: uppercase;
-                    overflow:hidden;
-                    color: $yellow;
                     margin: .5rem 0rem;
                 }
                 p{
                     @include font2(1.5rem);
                     letter-spacing: .5px;
-                    text-transform: uppercase;
-                    color: $yellow;
                     margin: .5rem 0rem;
                 }
             }
             .removeItem {
                 font-size:2rem;
-                color: $yellow;
-                &:hover{
-                    cursor: pointer;
-                }
             }
         }
         .cartTotal {

@@ -9,6 +9,10 @@ Why not letting yourself get inspired by the simplicity of the past and create a
 ## Project status 🚧
 
 The project is finished but it has potencially many other features that can be added.
+
+## Website Navigation 🧭
+
+![Website Navigation](https://imgur.com/a/QvhYpGo)
  
 ## Tecnologies 🛠️
 

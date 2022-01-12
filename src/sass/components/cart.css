@@ -715,7 +715,6 @@
   }
   .cart .cartItemContainer .cartImgContainer img {
     width: 80px;
-    border: 2px solid #fed406;
   }
   .cart .cartItemContainer .cartItemDetails {
     margin: 0rem 2rem;
@@ -725,25 +724,16 @@
     font-size: 1.3rem;
     font-family: oswald, sans-serif;
     letter-spacing: .5px;
-    text-transform: uppercase;
-    overflow: hidden;
-    color: #fed406;
     margin: .5rem 0rem;
   }
   .cart .cartItemContainer .cartItemDetails p {
     font-size: 1.5rem;
     font-family: oswald, sans-serif;
     letter-spacing: .5px;
-    text-transform: uppercase;
-    color: #fed406;
     margin: .5rem 0rem;
   }
   .cart .cartItemContainer .removeItem {
     font-size: 2rem;
-    color: #fed406;
-  }
-  .cart .cartItemContainer .removeItem:hover {
-    cursor: pointer;
   }
   .cart .cartTotal {
     display: -webkit-box;
@@ -880,25 +870,16 @@
     font-size: 1.3rem;
     font-family: oswald, sans-serif;
     letter-spacing: .5px;
-    text-transform: uppercase;
-    overflow: hidden;
-    color: #fed406;
     margin: .5rem 0rem;
   }
   .cart .cartItemContainer .cartItemDetails p {
     font-size: 1.5rem;
     font-family: oswald, sans-serif;
     letter-spacing: .5px;
-    text-transform: uppercase;
-    color: #fed406;
     margin: .5rem 0rem;
   }
   .cart .cartItemContainer .removeItem {
     font-size: 2rem;
-    color: #fed406;
-  }
-  .cart .cartItemContainer .removeItem:hover {
-    cursor: pointer;
   }
   .cart .cartTotal {
     display: -webkit-box;

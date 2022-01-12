@@ -166,16 +166,12 @@ footer {
                 h1{
                     @include font2(1.3rem);
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                     margin: 0rem 0rem .5rem 0rem;
                 }
                 p{
                     @include font2(1.2rem);
                     margin: .3rem 0rem;
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                 }
             }
             .footerHelp{
@@ -183,16 +179,12 @@ footer {
                 h1{
                     @include font2(1.3rem);
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                     margin: 0rem 0rem .5rem 0rem;
                 }
                 p{
                     @include font2(1.2rem);
                     margin: .3rem 0rem;
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                 }
             }
             .footerConnect{
@@ -200,8 +192,6 @@ footer {
                 h1{
                     @include font2(1.3rem);
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                     margin: 0rem 0rem .5rem 0rem;
                 }
                 .icons{
@@ -235,7 +225,6 @@ footer {
                 width: 100vw;
                 ul {
                     @include flex(row, center);
-                    list-style: none;
                     padding: 0rem;
                     li {
                         @include font (1.5rem);
@@ -244,7 +233,6 @@ footer {
                     }
                     .categories{
                         @include flex(row, center);
-                        list-style: none;
                         .categoriesMap{
                             @include flex(row, space-around);
                             .categoryOption{
@@ -268,16 +256,12 @@ footer {
                 h1{
                     @include font2(1.5rem);
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                     margin: 0rem 0rem .5rem 0rem;
                 }
                 p{
                     @include font2(1.2rem);
                     margin: .3rem 0rem;
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                 }
             }
             .footerHelp{
@@ -285,16 +269,12 @@ footer {
                 h1{
                     @include font2(1.5rem);
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                     margin: 0rem 0rem .5rem 0rem;
                 }
                 p{
                     @include font2(1.2rem);
                     margin: .3rem 0rem;
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                 }
             }
             .footerConnect{
@@ -302,15 +282,12 @@ footer {
                 h1{
                     @include font2(1.5rem);
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                     margin: 0rem 0rem .5rem 0rem;
                 }
                 .icons{
                     @include flex(row, center);
                     .iconConnect{
                         font-size: 3rem;
-                        color: $white;
                     }
                     .iconConnectMiddle {
                         margin: 1rem;
@@ -338,7 +315,6 @@ footer {
                 width: 100vw;
                 ul {
                     @include flex(row, center);
-                    list-style: none;
                     padding: 0rem;
                     li {
                         @include font (2rem);
@@ -347,7 +323,6 @@ footer {
                     }
                     .categories{
                         @include flex(row, center);
-                        list-style: none;
                         .categoriesMap{
                             @include flex(row, space-around);
                             .categoryOption{
@@ -371,16 +346,12 @@ footer {
                 h1{
                     @include font2(1.5rem);
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                     margin: 0rem 0rem .5rem 0rem;
                 }
                 p{
                     @include font2(1.2rem);
                     margin: .3rem 0rem;
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                 }
             }
             .footerHelp{
@@ -388,16 +359,12 @@ footer {
                 h1{
                     @include font2(1.5rem);
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                     margin: 0rem 0rem .5rem 0rem;
                 }
                 p{
                     @include font2(1.2rem);
                     margin: .3rem 0rem;
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                 }
             }
             .footerConnect{
@@ -405,15 +372,12 @@ footer {
                 h1{
                     @include font2(1.5rem);
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                     margin: 0rem 0rem .5rem 0rem;
                 }
                 .icons{
                     @include flex(row, center);
                     .iconConnect{
                         font-size: 3rem;
-                        color: $white;
                     }
                     .iconConnectMiddle {
                         margin: 1rem;
@@ -441,7 +405,6 @@ footer {
                 width: 70vw;
                 ul {
                     @include flex(row, center);
-                    list-style: none;
                     padding: 0rem;
                     li {
                         @include font (2rem);
@@ -450,7 +413,6 @@ footer {
                     }
                     .categories{
                         @include flex(row, center);
-                        list-style: none;
                         .categoriesMap{
                             @include flex(row, space-around);
                             .categoryOption{
@@ -474,16 +436,12 @@ footer {
                 h1{
                     @include font2(1.5rem);
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                     margin: 0rem 0rem .5rem 0rem;
                 }
                 p{
                     @include font2(1.2rem);
                     margin: .3rem 0rem;
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                 }
             }
             .footerHelp{
@@ -491,16 +449,12 @@ footer {
                 h1{
                     @include font2(1.5rem);
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                     margin: 0rem 0rem .5rem 0rem;
                 }
                 p{
                     @include font2(1.2rem);
                     margin: .3rem 0rem;
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                 }
             }
             .footerConnect{
@@ -508,15 +462,12 @@ footer {
                 h1{
                     @include font2(1.5rem);
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                     margin: 0rem 0rem .5rem 0rem;
                 }
                 .icons{
                     @include flex(row, center);
                     .iconConnect{
                         font-size: 3rem;
-                        color: $white;
                     }
                     .iconConnectMiddle {
                         margin: 1rem;
@@ -542,7 +493,6 @@ footer {
                 justify-self: flex-end;
                 ul {
                     @include flex(row, center);
-                    list-style: none;
                     padding: 0rem;
                     li {
                         @include font (1.8rem);
@@ -551,7 +501,6 @@ footer {
                     }
                     .categories{
                         @include flex(row, center);
-                        list-style: none;
                         .categoriesMap{
                             @include flex(row, space-around);
                             .categoryOption{
@@ -574,16 +523,12 @@ footer {
                 h1{
                     @include font2(1.5rem);
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                     margin: 0rem 0rem .5rem 0rem;
                 }
                 p{
                     @include font2(1.2rem);
                     margin: .3rem 0rem;
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                 }
             }
             .footerHelp{
@@ -591,16 +536,12 @@ footer {
                 h1{
                     @include font2(1.5rem);
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                     margin: 0rem 0rem .5rem 0rem;
                 }
                 p{
                     @include font2(1.2rem);
                     margin: .3rem 0rem;
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                 }
             }
             .footerConnect{
@@ -608,15 +549,12 @@ footer {
                 h1{
                     @include font2(1.5rem);
                     letter-spacing: 1px;
-                    text-transform: uppercase;
-                    color: $white;
                     margin: 0rem 0rem .5rem 0rem;
                 }
                 .icons{
                     @include flex(row, center);
                     .iconConnect{
                         font-size: 3rem;
-                        color: $white;
                     }
                     .iconConnectMiddle {
                         margin: 1rem;

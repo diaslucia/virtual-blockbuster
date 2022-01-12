@@ -348,8 +348,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-size: 1.3rem;
     font-family: oswald, sans-serif;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
     margin: 0rem 0rem .5rem 0rem;
   }
   footer .footerContainer .footerAboutUs p {
@@ -357,8 +355,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-family: oswald, sans-serif;
     margin: .3rem 0rem;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
   }
   footer .footerContainer .footerHelp {
     margin: 1rem;
@@ -367,8 +363,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-size: 1.3rem;
     font-family: oswald, sans-serif;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
     margin: 0rem 0rem .5rem 0rem;
   }
   footer .footerContainer .footerHelp p {
@@ -376,8 +370,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-family: oswald, sans-serif;
     margin: .3rem 0rem;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
   }
   footer .footerContainer .footerConnect {
     margin: 1rem;
@@ -386,8 +378,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-size: 1.3rem;
     font-family: oswald, sans-serif;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
     margin: 0rem 0rem .5rem 0rem;
   }
   footer .footerContainer .footerConnect .icons {
@@ -458,7 +448,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    list-style: none;
     padding: 0rem;
   }
   footer .footerContainer .footerNav ul li {
@@ -481,7 +470,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    list-style: none;
   }
   footer .footerContainer .footerNav ul .categories .categoriesMap {
     display: -webkit-box;
@@ -517,8 +505,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-size: 1.5rem;
     font-family: oswald, sans-serif;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
     margin: 0rem 0rem .5rem 0rem;
   }
   footer .footerContainer .footerAboutUs p {
@@ -526,8 +512,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-family: oswald, sans-serif;
     margin: .3rem 0rem;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
   }
   footer .footerContainer .footerHelp {
     margin: 1rem;
@@ -536,8 +520,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-size: 1.5rem;
     font-family: oswald, sans-serif;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
     margin: 0rem 0rem .5rem 0rem;
   }
   footer .footerContainer .footerHelp p {
@@ -545,8 +527,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-family: oswald, sans-serif;
     margin: .3rem 0rem;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
   }
   footer .footerContainer .footerConnect {
     margin: 1rem;
@@ -555,8 +535,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-size: 1.5rem;
     font-family: oswald, sans-serif;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
     margin: 0rem 0rem .5rem 0rem;
   }
   footer .footerContainer .footerConnect .icons {
@@ -576,7 +554,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
   }
   footer .footerContainer .footerConnect .icons .iconConnect {
     font-size: 3rem;
-    color: #ffffff;
   }
   footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     margin: 1rem;
@@ -627,7 +604,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    list-style: none;
     padding: 0rem;
   }
   footer .footerContainer .footerNav ul li {
@@ -650,7 +626,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    list-style: none;
   }
   footer .footerContainer .footerNav ul .categories .categoriesMap {
     display: -webkit-box;
@@ -686,8 +661,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-size: 1.5rem;
     font-family: oswald, sans-serif;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
     margin: 0rem 0rem .5rem 0rem;
   }
   footer .footerContainer .footerAboutUs p {
@@ -695,8 +668,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-family: oswald, sans-serif;
     margin: .3rem 0rem;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
   }
   footer .footerContainer .footerHelp {
     margin: 1rem;
@@ -705,8 +676,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-size: 1.5rem;
     font-family: oswald, sans-serif;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
     margin: 0rem 0rem .5rem 0rem;
   }
   footer .footerContainer .footerHelp p {
@@ -714,8 +683,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-family: oswald, sans-serif;
     margin: .3rem 0rem;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
   }
   footer .footerContainer .footerConnect {
     margin: 1rem;
@@ -724,8 +691,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-size: 1.5rem;
     font-family: oswald, sans-serif;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
     margin: 0rem 0rem .5rem 0rem;
   }
   footer .footerContainer .footerConnect .icons {
@@ -745,7 +710,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
   }
   footer .footerContainer .footerConnect .icons .iconConnect {
     font-size: 3rem;
-    color: #ffffff;
   }
   footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     margin: 1rem;
@@ -796,7 +760,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    list-style: none;
     padding: 0rem;
   }
   footer .footerContainer .footerNav ul li {
@@ -819,7 +782,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    list-style: none;
   }
   footer .footerContainer .footerNav ul .categories .categoriesMap {
     display: -webkit-box;
@@ -855,8 +817,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-size: 1.5rem;
     font-family: oswald, sans-serif;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
     margin: 0rem 0rem .5rem 0rem;
   }
   footer .footerContainer .footerAboutUs p {
@@ -864,8 +824,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-family: oswald, sans-serif;
     margin: .3rem 0rem;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
   }
   footer .footerContainer .footerHelp {
     margin: 1rem;
@@ -874,8 +832,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-size: 1.5rem;
     font-family: oswald, sans-serif;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
     margin: 0rem 0rem .5rem 0rem;
   }
   footer .footerContainer .footerHelp p {
@@ -883,8 +839,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-family: oswald, sans-serif;
     margin: .3rem 0rem;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
   }
   footer .footerContainer .footerConnect {
     margin: 1rem;
@@ -893,8 +847,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-size: 1.5rem;
     font-family: oswald, sans-serif;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
     margin: 0rem 0rem .5rem 0rem;
   }
   footer .footerContainer .footerConnect .icons {
@@ -914,7 +866,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
   }
   footer .footerContainer .footerConnect .icons .iconConnect {
     font-size: 3rem;
-    color: #ffffff;
   }
   footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     margin: 1rem;
@@ -962,7 +913,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    list-style: none;
     padding: 0rem;
   }
   footer .footerContainer .footerNav ul li {
@@ -985,7 +935,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    list-style: none;
   }
   footer .footerContainer .footerNav ul .categories .categoriesMap {
     display: -webkit-box;
@@ -1018,8 +967,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-size: 1.5rem;
     font-family: oswald, sans-serif;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
     margin: 0rem 0rem .5rem 0rem;
   }
   footer .footerContainer .footerAboutUs p {
@@ -1027,8 +974,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-family: oswald, sans-serif;
     margin: .3rem 0rem;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
   }
   footer .footerContainer .footerHelp {
     margin: 1rem;
@@ -1037,8 +982,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-size: 1.5rem;
     font-family: oswald, sans-serif;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
     margin: 0rem 0rem .5rem 0rem;
   }
   footer .footerContainer .footerHelp p {
@@ -1046,8 +989,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-family: oswald, sans-serif;
     margin: .3rem 0rem;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
   }
   footer .footerContainer .footerConnect {
     margin: 1rem;
@@ -1056,8 +997,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     font-size: 1.5rem;
     font-family: oswald, sans-serif;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
     margin: 0rem 0rem .5rem 0rem;
   }
   footer .footerContainer .footerConnect .icons {
@@ -1077,7 +1016,6 @@ footer .footerContainer .footerConnect .icons .iconConnectMiddle {
   }
   footer .footerContainer .footerConnect .icons .iconConnect {
     font-size: 3rem;
-    color: #ffffff;
   }
   footer .footerContainer .footerConnect .icons .iconConnectMiddle {
     margin: 1rem;
