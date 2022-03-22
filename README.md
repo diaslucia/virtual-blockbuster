@@ -10,7 +10,9 @@ Why not letting yourself get inspired by the simplicity of the past and create a
 
 The project is finished but it has potencially many other features that can be added.
 
-## Website Navigation 🧭
+## Website Navigation / Deploy 🧭
+
+https://blockbuster-virtual.herokuapp.com/
 
 ![Gif](https://user-images.githubusercontent.com/88150989/149206376-208bb0d9-cc78-43c0-a2ad-345fa13154be.gif)
 
