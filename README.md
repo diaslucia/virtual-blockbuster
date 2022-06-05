@@ -5,10 +5,6 @@ This website simulates an online shop to buy movies or series.
 I came up with the idea after noticing the inconvinience of suscribing to soo many different streaming services, in order to watch your favorite movie/serie.
 
 Why not letting yourself get inspired by the simplicity of the past and create a place where you can find anything you want to watch? That's how "Blockbuster Virtual, just like the good old times" was born.
- 
-## Project status 🚧
-
-The project is finished but it has potencially many other features that can be added.
 
 ## Website Navigation / Deploy 🧭
 
