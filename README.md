@@ -8,7 +8,7 @@ Why not letting yourself get inspired by the simplicity of the past and create a
 
 ## Website Navigation / Deploy 🧭
 
-https://blockbuster-virtual.herokuapp.com/
+https://blockbuster-virtual.000webhostapp.com/
 
 ![Gif](https://user-images.githubusercontent.com/88150989/149206376-208bb0d9-cc78-43c0-a2ad-345fa13154be.gif)
 
